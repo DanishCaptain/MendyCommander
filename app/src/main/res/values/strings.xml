@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">MendyCommander</string>
+    <string name="title_activity_commander">CommanderActivity</string>
 </resources>
