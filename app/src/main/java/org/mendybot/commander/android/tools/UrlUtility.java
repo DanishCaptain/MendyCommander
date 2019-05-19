@@ -98,8 +98,8 @@ public final class UrlUtility {
             URL url = new URL(urlString);
             client = (HttpURLConnection) url.openConnection();
             client.setConnectTimeout(TIME_OUT);
-            client.setDoInput(false);
-            client.setDoOutput(true);
+            client.setDoInput(true);
+            client.setDoOutput(false);
             client.setInstanceFollowRedirects(false);
             client.setRequestMethod("POST");
             client.setRequestProperty("Content-Type", "text/json");

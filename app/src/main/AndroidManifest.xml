@@ -11,6 +11,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".activity.ScheduleMoviesActivity"></activity>
+        <activity android:name=".activity.ScheduleTvShowsActivity"></activity>
+        <activity android:name=".activity.VideoCommandsActivity" />
         <activity
             android:name=".activity.CommanderActivity"
             android:label="@string/title_activity_commander"

@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.CommanderActivity"
-    tools:showIn="@layout/activity_commander">
+    tools:context=".activity.VideoCommandsActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -14,40 +13,48 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent" >
 
+    <Button
+        android:id="@+id/send-video-quit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="128dp"
+        android:text="Quit Video" />
         <Button
-            android:id="@+id/send-commandsc"
+            android:id="@+id/send-video-pause"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="128dp"
-            android:text="" />
-
+            android:text="Pause Video" />
         <Button
-            android:id="@+id/send-commandsd"
+            android:id="@+id/send-video-subtitles"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="128dp"
-            android:text="" />
-
+            android:text="Video Subtitles" />
         <Button
-            android:id="@+id/send-commands"
+            android:id="@+id/send-video-vol-up"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="128dp"
-            android:text="Commands" />
-
+            android:text="Video vol UP" />
         <Button
-            android:id="@+id/schedule-movies"
+            android:id="@+id/send-video-vol-down"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="128dp"
-            android:text="Schedule Movies" />
-
+            android:text="Video vol DOWN" />
         <Button
-            android:id="@+id/schedule-tv-shows"
+            android:id="@+id/send-video-chap-prev"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="128dp"
-            android:text="Schedule TV Shows" />
+            android:text="Video Prev Chapter" />
+        <Button
+            android:id="@+id/send-video-chap-next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="128dp"
+            android:text="Video Next Chapter" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
