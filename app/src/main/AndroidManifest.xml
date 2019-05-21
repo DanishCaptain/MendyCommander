@@ -11,16 +11,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.ScheduleMoviesActivity"></activity>
-        <activity android:name=".activity.ScheduleTvShowsActivity"></activity>
-        <activity android:name=".activity.music.ScheduleMusicActivity"></activity>
-        <activity android:name=".activity.music.ScheduleMusicAlbumnActivity"></activity>
-        <activity android:name=".activity.VideoCommandsActivity" />
-        <activity android:name=".activity.AudioCommandsActivity" />
+        <activity android:name=".activity.ScheduleMoviesActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity android:name=".activity.ScheduleTvShowsActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity android:name=".activity.music.ScheduleMusicActivity"
+            android:label="@string/title_activity_schedule_music"
+            />
+        <activity android:name=".activity.music.ScheduleMusicAlbumnActivity"
+            />
+        <activity android:name=".activity.VideoCommandsActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            />
+        <activity android:name=".activity.AudioCommandsActivity"
+            android:label="@string/title_activity_audio_commands"
+            />
         <activity
             android:name=".activity.CommanderActivity"
             android:label="@string/title_activity_commander"
-            android:theme="@style/AppTheme.NoActionBar">
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

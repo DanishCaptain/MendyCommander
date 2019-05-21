@@ -25,8 +25,8 @@ public class CommanderActivity extends AppCompatActivity implements View.OnClick
         MediaModel.getInstance().init(this);
 
         setContentView(R.layout.activity_commander);
-        Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+//        Toolbar toolbar = findViewById(R.id.toolbar);
+//        setSupportActionBar(toolbar);
 
         bSendVideoCommands = findViewById(R.id.send_video_commands);
         bSendVideoCommands.setOnClickListener(this);

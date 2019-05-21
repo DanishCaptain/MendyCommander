@@ -40,6 +40,16 @@ public final class MediaModel {
         initMovies(g);
         initTvShows(g);
         initMusic(g);
+
+        /*
+        SongArtist artist = new SongArtist("Rush");
+        Albumn albumn = artist.lookupAlbumn("2112");
+        albumnL.add(albumn);
+        SongTrack track = albumn.lookup(UUID.randomUUID());
+        track.setName("Prelude");
+        AudioFile f = new AudioFile(UUID.randomUUID().toString(), "foobar");
+        track.add(f);
+        */
     }
 
     private void initMovies(final Gson g) {
@@ -112,8 +122,6 @@ public final class MediaModel {
                             track.add(f);
                         }
                     }
-
-//                    songs.addAll(f);
                 }
             }.start();
         } catch (Exception e) {

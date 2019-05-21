@@ -3,9 +3,11 @@ package org.mendybot.commander.android.activity.music;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
@@ -29,9 +31,15 @@ public class ScheduleMusicActivity extends AppCompatActivity {
         setContentView(R.layout.activity_schedue_music);
 
 
-        View recyclerView = findViewById(R.id.albumn_list);
+        RecyclerView recyclerView = findViewById(R.id.albumn_list);
         assert recyclerView != null;
         setupRecyclerView((RecyclerView) recyclerView);
+
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
+
 
     }
 
@@ -54,6 +62,8 @@ public class ScheduleMusicActivity extends AppCompatActivity {
 
         private void select(Albumn item) {
             MediaModel.getInstance().setActive(item);
+
+            mParentActivity.getSupportActionBar().setTitle(mParentActivity.getResources().getString(R.string.title_activity_schedule_music) + " - " + item.getName());
 
             TextView mMusicSelectedArtistView = (TextView) mParentActivity.findViewById(R.id.music_selected_albumn_artist);
             mMusicSelectedArtistView.setText(item.getArtist().getName());
@@ -88,7 +98,7 @@ public class ScheduleMusicActivity extends AppCompatActivity {
         @Override
         public void onBindViewHolder(final MusicViewHolder holder, int position) {
             Albumn current = mValues.get(position);
-            holder.mMusicArtistView.setText("["+current.getArtist().getName()+"]");
+            holder.mMusicArtistView.setText("[" + current.getArtist().getName() + "]");
             holder.mMusicAlbumnView.setText(current.getName());
 
             holder.itemView.setTag(current);
@@ -125,5 +135,11 @@ public class ScheduleMusicActivity extends AppCompatActivity {
                 mMusicAlbumnView = (TextView) view.findViewById(R.id.music_albumn_name);
             }
         }
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        finish();
+        return true;
     }
 }

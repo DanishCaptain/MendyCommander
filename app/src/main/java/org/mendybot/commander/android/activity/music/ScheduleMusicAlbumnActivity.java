@@ -2,9 +2,11 @@ package org.mendybot.commander.android.activity.music;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -30,10 +32,18 @@ public class ScheduleMusicAlbumnActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_schedue_music_albumn);
 
+        Albumn item = MediaModel.getInstance().getActive();
+        getSupportActionBar().setTitle(getResources().getString(R.string.title_activity_schedule_music)+" - "+item.getName());
 
         View recyclerView = findViewById(R.id.music_list);
         assert recyclerView != null;
         setupRecyclerView((RecyclerView) recyclerView);
+
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
+
 
     }
 
@@ -129,5 +139,11 @@ public class ScheduleMusicAlbumnActivity extends AppCompatActivity {
                 mMusicTrackNameView = (TextView) view.findViewById(R.id.music_title);
             }
         }
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        finish();
+        return true;
     }
 }
