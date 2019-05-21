@@ -48,6 +48,33 @@ public class ScheduleMusicAlbumnActivity extends AppCompatActivity {
         recyclerView.setAdapter(new SimpleItemRecyclerViewAdapter(this, list));
     }
 
+    public static void schedule(String name, List<AudioFile> vv) {
+        GsonBuilder b = new GsonBuilder();
+        Gson g = b.create();
+
+        if (vv.size() == 1) {
+            AudioFile ff = vv.get(0);
+            ff.setTitle(name);
+            ff.setAnnounce(false);
+        } else {
+            int counter = 1;
+            for (AudioFile ff : vv) {
+                ff.setTitle(name+" part "+(counter++));
+                ff.setAnnounce(false);
+            }
+        }
+        final String request = g.toJson(vv);
+        System.out.println(request);
+        new Thread() {
+            @Override
+            public void run() {
+                String rr = UrlUtility.exchangeJson("http://192.168.100.50:21121/audio", request);
+                System.out.println(rr);
+            }
+        }.start();
+    }
+
+
     public static class SimpleItemRecyclerViewAdapter
             extends RecyclerView.Adapter<SimpleItemRecyclerViewAdapter.MusicViewHolder> {
 
@@ -62,31 +89,9 @@ public class ScheduleMusicAlbumnActivity extends AppCompatActivity {
         };
 
         private void schedule(SongTrack item) {
-            GsonBuilder b = new GsonBuilder();
-            Gson g = b.create();
             ArrayList<AudioFile> vv = new ArrayList<>();
             vv.addAll(item.getFiles());
-
-            if (vv.size() == 1) {
-                AudioFile ff = vv.get(0);
-                ff.setTitle(item.getName());
-                ff.setAnnounce(false);
-            } else {
-                int counter = 1;
-                for (AudioFile ff : vv) {
-                    ff.setTitle(item.getName()+" part "+(counter++));
-                    ff.setAnnounce(false);
-                }
-            }
-            final String request = g.toJson(vv);
-            System.out.println(request);
-            new Thread() {
-                @Override
-                public void run() {
-                    String rr = UrlUtility.exchangeJson("http://192.168.100.50:21121/audio", request);
-                    System.out.println(rr);
-                }
-            }.start();
+            mParentActivity.schedule(item.getName(), vv);
         }
 
         SimpleItemRecyclerViewAdapter(ScheduleMusicAlbumnActivity parent,

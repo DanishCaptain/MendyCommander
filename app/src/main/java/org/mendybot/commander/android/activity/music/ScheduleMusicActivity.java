@@ -8,10 +8,14 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import org.mendybot.commander.android.R;
+import org.mendybot.commander.android.activity.ScheduleMoviesActivity;
 import org.mendybot.commander.android.domain.Albumn;
+import org.mendybot.commander.android.domain.AudioFile;
+import org.mendybot.commander.android.domain.SongTrack;
 import org.mendybot.commander.android.model.MediaModel;
 
 import java.util.Collections;
@@ -36,7 +40,7 @@ public class ScheduleMusicActivity extends AppCompatActivity {
     }
 
     public static class SimpleItemRecyclerViewAdapter
-            extends RecyclerView.Adapter<SimpleItemRecyclerViewAdapter.MusicViewHolder> {
+            extends RecyclerView.Adapter<SimpleItemRecyclerViewAdapter.MusicViewHolder> implements View.OnClickListener {
 
         private final ScheduleMusicActivity mParentActivity;
         private final List<Albumn> mValues;
@@ -50,8 +54,22 @@ public class ScheduleMusicActivity extends AppCompatActivity {
 
         private void select(Albumn item) {
             MediaModel.getInstance().setActive(item);
-            Intent intent = new Intent(mParentActivity, ScheduleMusicAlbumnActivity.class);
-            mParentActivity.startActivity(intent);
+
+            TextView mMusicSelectedArtistView = (TextView) mParentActivity.findViewById(R.id.music_selected_albumn_artist);
+            mMusicSelectedArtistView.setText(item.getArtist().getName());
+            TextView mMusicSelectedAlbumnView = (TextView) mParentActivity.findViewById(R.id.music_selected_albumn_name);
+            mMusicSelectedAlbumnView.setText(item.getName());
+            Button mMusicSelectedAlbumnButton = (Button) mParentActivity.findViewById(R.id.music_selected_albumn_button);
+            if (mMusicSelectedAlbumnButton.getVisibility() == Button.INVISIBLE) {
+                mMusicSelectedAlbumnButton.setVisibility(Button.VISIBLE);
+            }
+            mMusicSelectedAlbumnButton.setOnClickListener(this);
+            Button mMusicSelectedAllAlbumnButton = (Button) mParentActivity.findViewById(R.id.music_selected_all_albumn_button);
+            if (mMusicSelectedAllAlbumnButton.getVisibility() == Button.INVISIBLE) {
+                mMusicSelectedAllAlbumnButton.setVisibility(Button.VISIBLE);
+            }
+            mMusicSelectedAllAlbumnButton.setOnClickListener(this);
+
         }
 
         SimpleItemRecyclerViewAdapter(ScheduleMusicActivity parent,
@@ -80,6 +98,21 @@ public class ScheduleMusicActivity extends AppCompatActivity {
         @Override
         public int getItemCount() {
             return mValues.size();
+        }
+
+        @Override
+        public void onClick(View view) {
+            if (view.getId() == R.id.music_selected_albumn_button) {
+                Intent intent = new Intent(mParentActivity, ScheduleMusicAlbumnActivity.class);
+                mParentActivity.startActivity(intent);
+            } else if (view.getId() == R.id.music_selected_all_albumn_button) {
+                Albumn a = MediaModel.getInstance().getActive();
+                List<SongTrack> list = a.getTracks();
+                for (SongTrack track : list) {
+                    List<AudioFile> files = track.getFiles();
+                    ScheduleMusicAlbumnActivity.schedule(track.getName(), files);
+                }
+            }
         }
 
         class MusicViewHolder extends RecyclerView.ViewHolder {
