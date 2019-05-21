@@ -13,7 +13,10 @@
         android:theme="@style/AppTheme">
         <activity android:name=".activity.ScheduleMoviesActivity"></activity>
         <activity android:name=".activity.ScheduleTvShowsActivity"></activity>
+        <activity android:name=".activity.music.ScheduleMusicActivity"></activity>
+        <activity android:name=".activity.music.ScheduleMusicAlbumnActivity"></activity>
         <activity android:name=".activity.VideoCommandsActivity" />
+        <activity android:name=".activity.AudioCommandsActivity" />
         <activity
             android:name=".activity.CommanderActivity"
             android:label="@string/title_activity_commander"

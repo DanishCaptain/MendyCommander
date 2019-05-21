@@ -6,19 +6,30 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
+import org.mendybot.commander.android.domain.Albumn;
 import org.mendybot.commander.android.domain.AudioFile;
 import org.mendybot.commander.android.domain.Movie;
+import org.mendybot.commander.android.domain.SongArtist;
+import org.mendybot.commander.android.domain.SongInput;
+import org.mendybot.commander.android.domain.SongTrack;
 import org.mendybot.commander.android.domain.TvShow;
 import org.mendybot.commander.android.tools.UrlUtility;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
+import java.util.Map;
+import java.util.UUID;
 
 public final class MediaModel {
     private static MediaModel singleton;
-    private List<Movie> movies = new ArrayList<>();
-    private List<TvShow> tvShows = new ArrayList<>();
+    private List<Movie> movieL = new ArrayList<>();
+    private List<TvShow> tvShowL = new ArrayList<>();
+    private Map<String, SongArtist> artistM = new HashMap<>();
+    private List<Albumn> albumnL = new ArrayList<>();
+    private Albumn activeAlbumn;
 
     private MediaModel() {
     }
@@ -28,6 +39,7 @@ public final class MediaModel {
         final Gson g = b.create();
         initMovies(g);
         initTvShows(g);
+        initMusic(g);
     }
 
     private void initMovies(final Gson g) {
@@ -38,7 +50,7 @@ public final class MediaModel {
                 public void run() {
                     String result = UrlUtility.grabJson("http://192.168.100.50:21123/movies");
                     List<Movie> f = g.fromJson(result, type);
-                    movies.addAll(f);
+                    movieL.addAll(f);
                 }
             }.start();
         } catch (Exception e) {
@@ -59,7 +71,7 @@ public final class MediaModel {
                         for (AudioFile f : files) {
                             TvShow show = new TvShow(tv.getUuid(), f.getTitle(), tv.getSeason());
                             show.add(f);
-                            tvShows.add(show);
+                            tvShowL.add(show);
                         }
                     }
 //                    tvShows.addAll(f);
@@ -70,12 +82,55 @@ public final class MediaModel {
         }
     }
 
+    private void initMusic(final Gson g) {
+        final Type type = new TypeToken<List<SongInput>>(){}.getType();
+        try {
+            new Thread() {
+                @Override
+                public void run() {
+                    String result = UrlUtility.grabJson("http://192.168.100.50:21125/music");
+                    List<SongInput> songs = g.fromJson(result, type);
+                    for (SongInput song : songs) {
+                        String artistName = song.getArtist();
+                        SongArtist artist = artistM.get(artistName);
+                        if (artist == null) {
+                            artist = new SongArtist(artistName);
+                            artistM.put(artistName, artist);
+                        }
+                        String albumnName = song.getAlbumn();
+                        Albumn albumn = artist.lookupAlbumn(albumnName);
+                        if (!albumnL.contains(albumn)) {
+                            albumnL.add(albumn);
+                        }
+                        List<AudioFile> files = song.getFiles();
+                        for (AudioFile f : files) {
+//                            UUID trackId = UUID.fromString(song.getUuid());
+                            UUID trackId = UUID.fromString(f.getUuid());
+                            String trackName = f.getTitle();
+                            SongTrack track = albumn.lookup(trackId);
+                            track.setName(trackName);
+                            track.add(f);
+                        }
+                    }
+
+//                    songs.addAll(f);
+                }
+            }.start();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
     public List<Movie> getMovies() {
-        return movies;
+        return movieL;
     }
 
     public List<TvShow> getTvShows() {
-        return tvShows;
+        return tvShowL;
+    }
+
+    public List<Albumn> getAlbumns() {
+        return albumnL;
     }
 
     public synchronized static MediaModel getInstance() {
@@ -85,4 +140,11 @@ public final class MediaModel {
         return singleton;
     }
 
+    public void setActive(Albumn albumn) {
+        this.activeAlbumn = albumn;
+    }
+
+    public Albumn getActive() {
+        return activeAlbumn;
+    }
 }
