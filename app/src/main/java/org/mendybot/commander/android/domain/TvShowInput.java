@@ -5,17 +5,11 @@ import android.support.annotation.NonNull;
 import java.util.ArrayList;
 import java.util.List;
 
-public class TvShow implements Comparable<TvShow> {
-    private ArrayList<AudioFile> files = new ArrayList<>();
+public class TvShowInput implements Comparable<TvShowInput> {
+    private ArrayList<MediaFile> files = new ArrayList<>();
     private String uuid;
     private String title;
     private int season;
-
-    public TvShow(String uuid, String title, int season) {
-        this.uuid = uuid;
-        this.title = title;
-        this.season = season;
-    }
 
     public String getUuid() {
         return uuid;
@@ -29,20 +23,20 @@ public class TvShow implements Comparable<TvShow> {
         return season;
     }
 
-    public List<AudioFile> getFiles() {
+    public List<MediaFile> getFiles() {
         return files;
     }
 
-    public void add(AudioFile audioFile) {
+    public void add(MediaFile audioFile) {
         files.add(audioFile);
     }
 
-    public void addAll(List<AudioFile> audioFiles) {
+    public void addAll(List<MediaFile> audioFiles) {
         files.addAll(audioFiles);
     }
 
     @Override
-    public int compareTo(@NonNull TvShow tvShow) {
+    public int compareTo(@NonNull TvShowInput tvShow) {
         return title.compareTo(tvShow.title);
     }
 }

@@ -2,13 +2,13 @@ package org.mendybot.commander.android.domain;
 
 import java.util.UUID;
 
-public class AudioFile {
+public class MediaFile {
     private String uuid;
     private String title;
     private String fileName;
     private boolean announce;
 
-    public AudioFile(String uuid, String title) {
+    public MediaFile(String uuid, String title) {
         this.uuid = uuid;
         this.title = title;
     }

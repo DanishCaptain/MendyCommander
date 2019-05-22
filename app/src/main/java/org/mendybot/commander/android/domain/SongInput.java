@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SongInput {
-    private ArrayList<AudioFile> files = new ArrayList<>();
+    private ArrayList<MediaFile> files = new ArrayList<>();
     private String title;
     private String uuid;
     private String artist;
@@ -26,7 +26,7 @@ public class SongInput {
         return title;
     }
 
-    public List<AudioFile> getFiles() {
+    public List<MediaFile> getFiles() {
         return files;
     }
 

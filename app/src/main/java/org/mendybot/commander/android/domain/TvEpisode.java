@@ -6,20 +6,21 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
 
-public class SongTrack implements Comparable<SongTrack> {
+public class TvEpisode implements Comparable<TvEpisode> {
     private ArrayList<MediaFile> fileL = new ArrayList<>();
     private final UUID id;
-    private final Albumn albumn;
+    private final TvSeason season;
     private String name;
 
-    public SongTrack(Albumn albumn, UUID id) {
-        this.albumn = albumn;
+    public TvEpisode(TvSeason season, UUID id) {
+        this.season = season;
         this.id = id;
     }
 
-    public Albumn getAlbumn() {
-        return albumn;
+    public TvSeason getSeason() {
+        return season;
     }
+
     public void setName(String name) {
         this.name = name;
     }
@@ -33,8 +34,8 @@ public class SongTrack implements Comparable<SongTrack> {
     }
 
     @Override
-    public int compareTo(@NonNull SongTrack songTrack) {
-        return name.compareTo(songTrack.name);
+    public int compareTo(@NonNull TvEpisode e) {
+        return name.compareTo(e.name);
     }
 
     public List<MediaFile> getFiles() {

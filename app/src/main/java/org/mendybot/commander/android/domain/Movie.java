@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Movie implements Comparable<Movie> {
-    private ArrayList<AudioFile> files = new ArrayList<>();
+    private ArrayList<MediaFile> files = new ArrayList<>();
     private String uuid;
     private String title;
 
@@ -23,15 +23,15 @@ public class Movie implements Comparable<Movie> {
         return title;
     }
 
-    public List<AudioFile> getFiles() {
+    public List<MediaFile> getFiles() {
         return files;
     }
 
-    public void add(AudioFile audioFile) {
+    public void add(MediaFile audioFile) {
         files.add(audioFile);
     }
 
-    public void addAll(List<AudioFile> audioFiles) {
+    public void addAll(List<MediaFile> audioFiles) {
         files.addAll(audioFiles);
     }
 

@@ -3,11 +3,14 @@ package org.mendybot.commander.android.activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.support.v7.widget.Toolbar;
 import android.view.View;
 
 import org.mendybot.commander.android.R;
-import org.mendybot.commander.android.activity.music.ScheduleMusicActivity;
+import org.mendybot.commander.android.activity.command.AudioCommandsActivity;
+import org.mendybot.commander.android.activity.command.VideoCommandsActivity;
+import org.mendybot.commander.android.activity.movie.ScheduleMoviesActivity;
+import org.mendybot.commander.android.activity.music.ScheduleMusicAlbumActivity;
+import org.mendybot.commander.android.activity.tv.ScheduleSeriesActivity;
 import org.mendybot.commander.android.model.MediaModel;
 
 public class CommanderActivity extends AppCompatActivity implements View.OnClickListener {
@@ -62,10 +65,10 @@ public class CommanderActivity extends AppCompatActivity implements View.OnClick
             Intent intent = new Intent(this, ScheduleMoviesActivity.class);
             startActivity(intent);
         } else if (view == bScheduleTvShows) {
-            Intent intent = new Intent(this, ScheduleTvShowsActivity.class);
+            Intent intent = new Intent(this, ScheduleSeriesActivity.class);
             startActivity(intent);
         } else if (view == bScheduleMusic) {
-            Intent intent = new Intent(this, ScheduleMusicActivity.class);
+            Intent intent = new Intent(this, ScheduleMusicAlbumActivity.class);
             startActivity(intent);
         }
     }

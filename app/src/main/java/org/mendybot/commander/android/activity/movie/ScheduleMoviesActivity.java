@@ -1,28 +1,25 @@
-package org.mendybot.commander.android.activity;
+package org.mendybot.commander.android.activity.movie;
 
-import android.content.Context;
-import android.content.Intent;
 import android.support.annotation.NonNull;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.CheckBox;
 import android.widget.TextView;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
-import com.google.gson.reflect.TypeToken;
 
 import org.mendybot.commander.android.R;
-import org.mendybot.commander.android.domain.AudioFile;
+import org.mendybot.commander.android.domain.MediaFile;
 import org.mendybot.commander.android.domain.Movie;
 import org.mendybot.commander.android.model.MediaModel;
 import org.mendybot.commander.android.tools.UrlUtility;
 
-import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
@@ -32,12 +29,18 @@ public class ScheduleMoviesActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_schedue_movies);
+        setContentView(R.layout.activity_schedule_movies);
 
 
         View recyclerView = findViewById(R.id.movie_list);
         assert recyclerView != null;
         setupRecyclerView((RecyclerView) recyclerView);
+
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
+
 
     }
 
@@ -61,16 +64,16 @@ public class ScheduleMoviesActivity extends AppCompatActivity {
         private void schedule(Movie item) {
             GsonBuilder b = new GsonBuilder();
             Gson g = b.create();
-            ArrayList<AudioFile> vv = new ArrayList<>();
+            ArrayList<MediaFile> vv = new ArrayList<>();
             vv.addAll(item.getFiles());
 
             if (vv.size() == 1) {
-                AudioFile ff = vv.get(0);
+                MediaFile ff = vv.get(0);
                 ff.setTitle(item.getTitle());
                 ff.setAnnounce(false);
             } else {
                 int counter = 1;
-                for (AudioFile ff : vv) {
+                for (MediaFile ff : vv) {
                     ff.setTitle(item.getTitle()+" part "+(counter++));
                     ff.setAnnounce(false);
                 }
@@ -121,5 +124,11 @@ public class ScheduleMoviesActivity extends AppCompatActivity {
                 mMovieTitleView = (TextView) view.findViewById(R.id.movie_title);
             }
         }
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        finish();
+        return true;
     }
 }

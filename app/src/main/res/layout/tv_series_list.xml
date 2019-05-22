@@ -9,7 +9,7 @@
 
     <android.support.v7.widget.RecyclerView
         xmlns:tools="http://schemas.android.com/tools"
-        android:id="@+id/show_list"
+        android:id="@+id/series_list"
         android:name="org.mendybot.android.todo.ItemListFragment"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
@@ -17,8 +17,8 @@
         android:layout_marginRight="16dp"
         android:scrollbarStyle="outsideOverlay"
         app:layoutManager="LinearLayoutManager"
-        tools:context=".activity.tv.ScheduleTvShowActivity"
-        tools:listitem="@layout/tv_show_item_content" />
+        tools:context=".activity.tv.ScheduleSeriesActivity"
+        tools:listitem="@layout/tv_series_item_content" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -26,31 +26,33 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/selected_series_title"
+            android:id="@+id/selected_series_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
             />
 
         <TextView
-            android:id="@+id/selected_season_title"
+            android:id="@+id/selected_season_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
-            />
-        <TextView
-            android:id="@+id/selected_episode_title"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="@dimen/text_margin"
-            />
+           />
 
         <Button
-            android:id="@+id/submit_episode_button"
+            android:id="@+id/selected_series_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
             android:visibility="invisible"
-            android:text="Submit Track" />
+            android:text="Select" />
+
+        <Button
+            android:id="@+id/submit_all_episodes_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/text_margin"
+            android:visibility="invisible"
+            android:text="Submit All" />
     </LinearLayout>
 </LinearLayout>

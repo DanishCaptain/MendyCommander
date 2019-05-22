@@ -9,6 +9,7 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.TextView;
 
 import com.google.gson.Gson;
@@ -16,7 +17,7 @@ import com.google.gson.GsonBuilder;
 
 import org.mendybot.commander.android.R;
 import org.mendybot.commander.android.domain.Albumn;
-import org.mendybot.commander.android.domain.AudioFile;
+import org.mendybot.commander.android.domain.MediaFile;
 import org.mendybot.commander.android.domain.SongTrack;
 import org.mendybot.commander.android.model.MediaModel;
 import org.mendybot.commander.android.tools.UrlUtility;
@@ -25,17 +26,17 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class ScheduleMusicAlbumnActivity extends AppCompatActivity {
+public class ScheduleMusicTrackActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_schedue_music_albumn);
+        setContentView(R.layout.activity_schedule_music_track);
 
-        Albumn item = MediaModel.getInstance().getActive();
+        Albumn item = MediaModel.getInstance().getActiveAlbumn();
         getSupportActionBar().setTitle(getResources().getString(R.string.title_activity_schedule_music)+" - "+item.getName());
 
-        View recyclerView = findViewById(R.id.music_list);
+        RecyclerView recyclerView = findViewById(R.id.music_track_list);
         assert recyclerView != null;
         setupRecyclerView((RecyclerView) recyclerView);
 
@@ -48,7 +49,7 @@ public class ScheduleMusicAlbumnActivity extends AppCompatActivity {
     }
 
     private void setupRecyclerView(@NonNull RecyclerView recyclerView) {
-        Albumn albumn = MediaModel.getInstance().getActive();
+        Albumn albumn = MediaModel.getInstance().getActiveAlbumn();
         List<SongTrack> list;
         if (albumn == null) {
             list = new ArrayList<>();
@@ -58,17 +59,17 @@ public class ScheduleMusicAlbumnActivity extends AppCompatActivity {
         recyclerView.setAdapter(new SimpleItemRecyclerViewAdapter(this, list));
     }
 
-    public static void schedule(String name, List<AudioFile> vv) {
+    public static void schedule(String name, List<MediaFile> vv) {
         GsonBuilder b = new GsonBuilder();
         Gson g = b.create();
 
         if (vv.size() == 1) {
-            AudioFile ff = vv.get(0);
+            MediaFile ff = vv.get(0);
             ff.setTitle(name);
             ff.setAnnounce(false);
         } else {
             int counter = 1;
-            for (AudioFile ff : vv) {
+            for (MediaFile ff : vv) {
                 ff.setTitle(name+" part "+(counter++));
                 ff.setAnnounce(false);
             }
@@ -86,25 +87,39 @@ public class ScheduleMusicAlbumnActivity extends AppCompatActivity {
 
 
     public static class SimpleItemRecyclerViewAdapter
-            extends RecyclerView.Adapter<SimpleItemRecyclerViewAdapter.MusicViewHolder> {
+            extends RecyclerView.Adapter<SimpleItemRecyclerViewAdapter.MusicViewHolder> implements View.OnClickListener {
 
-        private final ScheduleMusicAlbumnActivity mParentActivity;
+        private final ScheduleMusicTrackActivity mParentActivity;
         private final List<SongTrack> mValues;
         private final View.OnClickListener mOnClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 SongTrack item = (SongTrack) view.getTag();
-                schedule(item);
+                select(item);
             }
         };
 
-        private void schedule(SongTrack item) {
-            ArrayList<AudioFile> vv = new ArrayList<>();
-            vv.addAll(item.getFiles());
-            mParentActivity.schedule(item.getName(), vv);
+        private void select(SongTrack item) {
+            MediaModel.getInstance().setActiveTrack(item);
+
+            mParentActivity.getSupportActionBar().setTitle(mParentActivity.getResources().getString(R.string.title_activity_schedule_music) + " - " + item.getAlbumn().getName()+" - "+item.getName());
+
+            TextView mMusicTrackArtist = (TextView) mParentActivity.findViewById(R.id.music_selected_track_artist_name);
+            mMusicTrackArtist.setText(item.getAlbumn().getArtist().getName());
+            TextView mMusicTrackAlbumn = (TextView) mParentActivity.findViewById(R.id.music_selected_track_albumn_name);
+            mMusicTrackAlbumn.setText(item.getAlbumn().getName());
+            TextView mMusicTrackName = (TextView) mParentActivity.findViewById(R.id.music_selected_track_name);
+            mMusicTrackName.setText(item.getName());
+            Button mMusicSubmitTrackButton = (Button) mParentActivity.findViewById(R.id.music_submit_track_button);
+            mMusicSubmitTrackButton.setVisibility(Button.VISIBLE);
+            if (mMusicSubmitTrackButton.getVisibility() == Button.INVISIBLE) {
+                mMusicSubmitTrackButton.setVisibility(Button.VISIBLE);
+            }
+            mMusicSubmitTrackButton.setOnClickListener(this);
+
         }
 
-        SimpleItemRecyclerViewAdapter(ScheduleMusicAlbumnActivity parent,
+        SimpleItemRecyclerViewAdapter(ScheduleMusicTrackActivity parent,
                                       List<SongTrack> items) {
             Collections.sort(items);
             mValues = items;
@@ -113,7 +128,7 @@ public class ScheduleMusicAlbumnActivity extends AppCompatActivity {
 
         @Override
         public MusicViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.music_item_content, parent, false);
+            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.music_track_item_content, parent, false);
             return new MusicViewHolder(view);
         }
 
@@ -131,12 +146,21 @@ public class ScheduleMusicAlbumnActivity extends AppCompatActivity {
             return mValues.size();
         }
 
+        @Override
+        public void onClick(View view) {
+            if (view.getId() == R.id.music_submit_track_button) {
+                SongTrack t = MediaModel.getInstance().getActiveTrack();
+                List<MediaFile> list = t.getFiles();
+                ScheduleMusicTrackActivity.schedule(t.getName(), list);
+            }
+        }
+
         class MusicViewHolder extends RecyclerView.ViewHolder {
             final TextView mMusicTrackNameView;
 
             MusicViewHolder(View view) {
                 super(view);
-                mMusicTrackNameView = (TextView) view.findViewById(R.id.music_title);
+                mMusicTrackNameView = (TextView) view.findViewById(R.id.track_title);
             }
         }
     }

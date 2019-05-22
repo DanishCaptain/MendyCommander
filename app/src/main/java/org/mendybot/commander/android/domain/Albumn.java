@@ -33,7 +33,7 @@ public class Albumn implements Comparable<Albumn> {
     public SongTrack lookup(UUID id) {
         SongTrack t = trackM.get(id);
         if (t == null) {
-            t = new SongTrack(id);
+            t = new SongTrack(this, id);
             trackM.put(id, t);
             trackL.add(t);
         }

@@ -1,7 +1,5 @@
 package org.mendybot.commander.android.tools;
 
-import android.provider.MediaStore;
-
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
@@ -9,9 +7,9 @@ import com.google.gson.reflect.TypeToken;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
-import org.mendybot.commander.android.domain.AudioFile;
+import org.mendybot.commander.android.domain.MediaFile;
 import org.mendybot.commander.android.domain.Movie;
-import org.mendybot.commander.android.domain.TvShow;
+import org.mendybot.commander.android.domain.TvShowInput;
 
 import java.lang.reflect.Type;
 import java.util.ArrayList;
@@ -48,7 +46,7 @@ public class UrlUtilityTest {
         assertNotNull(f);
         System.out.println(result);
 
-        ArrayList<AudioFile> vv = new ArrayList<>();
+        ArrayList<MediaFile> vv = new ArrayList<>();
 
         Movie v0 = f.get(322);
 
@@ -61,7 +59,7 @@ public class UrlUtilityTest {
 //        vv.addAll(v1.getFiles());
 //        vv.addAll(v2.getFiles());
 
-        for (AudioFile ff : vv) {
+        for (MediaFile ff : vv) {
             ff.setTitle(v0.getTitle());
             ff.setAnnounce(false);
         }
@@ -79,16 +77,16 @@ public class UrlUtilityTest {
         assertNotNull(result);
         GsonBuilder b = new GsonBuilder();
         Gson g = b.create();
-        Type type = new TypeToken<List<TvShow>>(){}.getType();
-        List<TvShow> f = g.fromJson(result, type);
+        Type type = new TypeToken<List<TvShowInput>>(){}.getType();
+        List<TvShowInput> f = g.fromJson(result, type);
         assertNotNull(f);
 
-        ArrayList<AudioFile> vv = new ArrayList<>();
-        TvShow v = f.get(165);
+        ArrayList<MediaFile> vv = new ArrayList<>();
+        TvShowInput v = f.get(165);
 
         vv.addAll(v.getFiles());
 
-        for (AudioFile ff : vv) {
+        for (MediaFile ff : vv) {
             ff.setAnnounce(false);
         }
         String request = g.toJson(vv);

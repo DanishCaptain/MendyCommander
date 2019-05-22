@@ -17,12 +17,11 @@
         tools:layout_editor_absoluteX="0dp">
 
         <Button
-            android:id="@+id/schedule-movies"
+            android:id="@+id/send-video-commands"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="128dp"
-            android:text="@string/content_schedule_movies"
-            app:layout_constraintBottom_toTopOf="@+id/schedule-movies_outer" />
+            android:layout_marginLeft="128dp"
+            android:text="Video Commands" />
 
         <Button
             android:id="@+id/send-audio-commands"
@@ -32,18 +31,19 @@
             android:text="Audio Commands" />
 
         <Button
+            android:id="@+id/schedule-movies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="128dp"
+            android:text="@string/content_schedule_movies"
+            app:layout_constraintBottom_toTopOf="@+id/schedule-movies_outer" />
+
+        <Button
             android:id="@+id/schedule-tv-shows"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="128dp"
             android:text="Schedule TV Shows" />
-
-        <Button
-            android:id="@+id/send-video-commands"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="128dp"
-            android:text="Video Commands" />
 
         <Button
             android:id="@+id/schedule-music"

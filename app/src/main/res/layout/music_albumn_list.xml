@@ -18,7 +18,7 @@
         android:scrollbarStyle="outsideOverlay"
         app:layoutManager="LinearLayoutManager"
         tools:context=".activity.music.ScheduleMusicActivity"
-        tools:listitem="@layout/albumn_item_content" />
+        tools:listitem="@layout/music_albumn_item_content" />
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -48,12 +48,11 @@
             android:text="Select" />
 
         <Button
-            android:id="@+id/music_selected_all_albumn_button"
+            android:id="@+id/music_submit_all_albumn_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
             android:visibility="invisible"
-            android:text="Select All" />
+            android:text="Submit All" />
     </LinearLayout>
-
 </LinearLayout>

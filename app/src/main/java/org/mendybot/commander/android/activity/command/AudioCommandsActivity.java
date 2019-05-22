@@ -1,4 +1,4 @@
-package org.mendybot.commander.android.activity;
+package org.mendybot.commander.android.activity.command;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;

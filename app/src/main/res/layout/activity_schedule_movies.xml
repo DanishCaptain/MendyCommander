@@ -4,14 +4,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.ScheduleTvShowsActivity">
+    tools:context=".activity.movie.ScheduleMoviesActivity">
 
     <FrameLayout
         android:id="@+id/frameLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
-        <include layout="@layout/tv_show_list" />
+        <include layout="@layout/movie_list" />
 
     </FrameLayout>
 
