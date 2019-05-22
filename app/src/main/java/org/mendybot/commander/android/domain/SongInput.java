@@ -8,7 +8,7 @@ public class SongInput {
     private String title;
     private String uuid;
     private String artist;
-    private String albumn;
+    private String album;
 
     public String getUuid() {
         return uuid;
@@ -18,8 +18,8 @@ public class SongInput {
         return artist;
     }
 
-    public String getAlbumn() {
-        return albumn;
+    public String getAlbum() {
+        return album;
     }
 
     public String getTitle() {

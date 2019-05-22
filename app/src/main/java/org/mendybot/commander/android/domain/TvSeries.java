@@ -5,14 +5,14 @@ import java.util.UUID;
 
 public class TvSeries {
     private HashMap<UUID, TvSeason> seasonM = new HashMap<>();
-    private final String name;
+    private final String title;
 
-    public TvSeries(String name) {
-        this.name = name;
+    public TvSeries(String title) {
+        this.title = title;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
     public TvSeason lookupSeason(UUID uuid) {

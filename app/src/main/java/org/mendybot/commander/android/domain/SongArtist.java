@@ -3,7 +3,7 @@ package org.mendybot.commander.android.domain;
 import java.util.HashMap;
 
 public class SongArtist {
-    private HashMap<String, Albumn> albumnM = new HashMap<>();
+    private HashMap<String, SongAlbum> albumM = new HashMap<>();
     private final String name;
 
     public SongArtist(String name) {
@@ -14,11 +14,11 @@ public class SongArtist {
         return name;
     }
 
-    public Albumn lookupAlbumn(String name) {
-        Albumn a = albumnM.get(name);
+    public SongAlbum lookupAlbum(String name) {
+        SongAlbum a = albumM.get(name);
         if (a == null) {
-            a = new Albumn(this, name);
-            albumnM.put(name, a);
+            a = new SongAlbum(this, name);
+            albumM.put(name, a);
         }
         return a;
     }

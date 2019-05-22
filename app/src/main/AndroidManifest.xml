@@ -42,6 +42,34 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <provider
+            android:name=".provider.MovieProvider"
+            android:authorities="@string/content_authority_movie"
+            android:exported="false"/>
+        <provider
+            android:name=".provider.SongAlbumProvider"
+            android:authorities="@string/content_authority_music_album"
+            android:exported="false"/>
+        <provider
+            android:name=".provider.SongArtistProvider"
+            android:authorities="@string/content_authority_music_artist"
+            android:exported="false"/>
+        <provider
+            android:name=".provider.SongTrackProvider"
+            android:authorities="@string/content_authority_music_track"
+            android:exported="false"/>
+        <provider
+            android:name=".provider.TvEpisodeProvider"
+            android:authorities="@string/content_authority_tv_episode"
+            android:exported="false"/>
+        <provider
+            android:name=".provider.TvSeasonProvider"
+            android:authorities="@string/content_authority_tv_season"
+            android:exported="false"/>
+        <provider
+            android:name=".provider.TvSeriesProvider"
+            android:authorities="@string/content_authority_tv_series"
+            android:exported="false"/>
     </application>
 
 </manifest>

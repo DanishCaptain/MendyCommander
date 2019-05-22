@@ -62,12 +62,12 @@ public class ScheduleSeriesActivity extends AppCompatActivity {
         private void select(TvSeason item) {
             MediaModel.getInstance().setActiveSeason(item);
 
-            mParentActivity.getSupportActionBar().setTitle(mParentActivity.getResources().getString(R.string.title_activity_schedule_tv_shows) + " - " + item.getName());
+            mParentActivity.getSupportActionBar().setTitle(mParentActivity.getResources().getString(R.string.title_activity_schedule_tv_shows) + " - " + item.getTitle());
 
             TextView mSelectedSeason = mParentActivity.findViewById(R.id.selected_season_name);
-            mSelectedSeason.setText(item.getName());
+            mSelectedSeason.setText(item.getTitle());
             TextView mSelectedSeries = mParentActivity.findViewById(R.id.selected_series_name);
-            mSelectedSeries.setText(item.getSeries().getName());
+            mSelectedSeries.setText(item.getSeries().getTitle());
             Button mSelectedSeriesButton = mParentActivity.findViewById(R.id.selected_series_button);
             if (mSelectedSeriesButton.getVisibility() == Button.INVISIBLE) {
                 mSelectedSeriesButton.setVisibility(Button.VISIBLE);
@@ -97,8 +97,8 @@ public class ScheduleSeriesActivity extends AppCompatActivity {
         @Override
         public void onBindViewHolder(final SeriesViewHolder holder, int position) {
             TvSeason current = mValues.get(position);
-            holder.mSeasonName.setText("[" + current.getSeries().getName() + "]");
-            holder.mSeriesName.setText(current.getName());
+            holder.mSeasonName.setText("[" + current.getSeries().getTitle() + "]");
+            holder.mSeriesName.setText(current.getTitle());
 
             holder.itemView.setTag(current);
             holder.itemView.setOnClickListener(mOnClickListener);
@@ -119,7 +119,7 @@ public class ScheduleSeriesActivity extends AppCompatActivity {
                 List<TvEpisode> list = a.getEpisodes();
                 for (TvEpisode track : list) {
                     List<MediaFile> files = track.getFiles();
-                    ScheduleShowActivity.schedule(track.getName(), files);
+                    ScheduleShowActivity.schedule(track.getTitle(), files);
                 }
             }
         }

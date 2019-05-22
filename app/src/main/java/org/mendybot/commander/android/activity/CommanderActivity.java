@@ -2,6 +2,7 @@ package org.mendybot.commander.android.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
@@ -41,16 +42,13 @@ public class CommanderActivity extends AppCompatActivity implements View.OnClick
         bScheduleTvShows.setOnClickListener(this);
         bScheduleMusic = findViewById(R.id.schedule_music);
         bScheduleMusic.setOnClickListener(this);
-        /*
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                MediaModel.getInstance().reloadData();
             }
         });
-        */
     }
 
     @Override

@@ -34,7 +34,7 @@ public class ScheduleShowActivity extends AppCompatActivity {
         setContentView(R.layout.activity_schedule_tv_show);
 
         TvSeason item = MediaModel.getInstance().getActiveSeason();
-        getSupportActionBar().setTitle(getResources().getString(R.string.title_activity_schedule_tv_shows)+" - "+item.getName());
+        getSupportActionBar().setTitle(getResources().getString(R.string.title_activity_schedule_tv_shows)+" - "+item.getTitle());
 
         RecyclerView recyclerView = findViewById(R.id.show_list);
         assert recyclerView != null;
@@ -102,14 +102,14 @@ public class ScheduleShowActivity extends AppCompatActivity {
         private void select(TvEpisode item) {
             MediaModel.getInstance().setActiveEpisode(item);
 
-            mParentActivity.getSupportActionBar().setTitle(mParentActivity.getResources().getString(R.string.title_activity_schedule_tv_shows) + " - " + item.getSeason().getName()+" - "+item.getName());
+            mParentActivity.getSupportActionBar().setTitle(mParentActivity.getResources().getString(R.string.title_activity_schedule_tv_shows) + " - " + item.getSeason().getTitle()+" - "+item.getTitle());
 
             TextView mSeasonTitle = mParentActivity.findViewById(R.id.selected_season_title);
-            mSeasonTitle.setText(item.getSeason().getSeries().getName());
+            mSeasonTitle.setText(item.getSeason().getSeries().getTitle());
             TextView mSeriesTitle = mParentActivity.findViewById(R.id.selected_series_title);
-            mSeriesTitle.setText(item.getSeason().getName());
+            mSeriesTitle.setText(item.getSeason().getTitle());
             TextView mEpisodeTitle = (TextView) mParentActivity.findViewById(R.id.selected_episode_title);
-            mEpisodeTitle.setText(item.getName());
+            mEpisodeTitle.setText(item.getTitle());
             Button mSubmitEpisideButton = (Button) mParentActivity.findViewById(R.id.submit_episode_button);
             mSubmitEpisideButton.setVisibility(Button.VISIBLE);
             if (mSubmitEpisideButton.getVisibility() == Button.INVISIBLE) {
@@ -135,7 +135,7 @@ public class ScheduleShowActivity extends AppCompatActivity {
         @Override
         public void onBindViewHolder(final ShowViewHolder holder, int position) {
             TvEpisode current = mValues.get(position);
-            holder.mEpisodeTitle.setText(current.getName());
+            holder.mEpisodeTitle.setText(current.getTitle());
 
             holder.itemView.setTag(current);
             holder.itemView.setOnClickListener(mOnClickListener);
@@ -151,7 +151,7 @@ public class ScheduleShowActivity extends AppCompatActivity {
             if (view.getId() == R.id.submit_episode_button) {
                 TvEpisode t = MediaModel.getInstance().getActiveEpisode();
                 List<MediaFile> list = t.getFiles();
-                ScheduleShowActivity.schedule(t.getName(), list);
+                ScheduleShowActivity.schedule(t.getTitle(), list);
             }
         }
 

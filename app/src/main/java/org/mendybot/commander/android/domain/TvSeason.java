@@ -12,7 +12,7 @@ public class TvSeason implements Comparable<TvSeason> {
     private final UUID uuid;
     private ArrayList<TvEpisode> episodeL = new ArrayList<>();
     private HashMap<UUID, TvEpisode> episodeM = new HashMap<>();
-    private String name;
+    private String title;
 
     public TvSeason(TvSeries series, UUID uuid) {
         this.series = series;
@@ -23,12 +23,16 @@ public class TvSeason implements Comparable<TvSeason> {
         return series;
     }
 
-    public String getName() {
-        return name;
+    public UUID getUuid() {
+        return uuid;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public String getTitle() {
+        return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public List<TvEpisode> getEpisodes() {
@@ -45,13 +49,13 @@ public class TvSeason implements Comparable<TvSeason> {
         return t;
     }
 
-    private String getLongName() {
-        return series.getName()+"::"+name;
+    private String getLongTitle() {
+        return series.getTitle()+"::"+title;
     }
 
     @Override
     public int compareTo(@NonNull TvSeason albumn) {
-        return getLongName().compareTo(albumn.getLongName());
+        return getLongTitle().compareTo(albumn.getLongTitle());
     }
 
 }

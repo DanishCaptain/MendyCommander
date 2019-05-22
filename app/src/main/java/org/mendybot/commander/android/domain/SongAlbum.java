@@ -7,23 +7,23 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.UUID;
 
-public class Albumn implements Comparable<Albumn> {
+public class SongAlbum implements Comparable<SongAlbum> {
     private final SongArtist artist;
-    private final String name;
+    private final String title;
     private ArrayList<SongTrack> trackL = new ArrayList<>();
     private HashMap<UUID, SongTrack> trackM = new HashMap<>();
 
-    public Albumn(SongArtist artist, String name) {
+    public SongAlbum(SongArtist artist, String title) {
         this.artist = artist;
-        this.name = name;
+        this.title = title;
     }
 
     public SongArtist getArtist() {
         return artist;
     }
 
-    public String getName() {
-        return name;
+    public String getTitle() {
+        return title;
     }
 
     public List<SongTrack> getTracks() {
@@ -41,11 +41,11 @@ public class Albumn implements Comparable<Albumn> {
     }
 
     private String getLongName() {
-        return artist.getName()+"::"+name;
+        return artist.getName()+"::"+title;
     }
 
     @Override
-    public int compareTo(@NonNull Albumn albumn) {
+    public int compareTo(@NonNull SongAlbum albumn) {
         return getLongName().compareTo(albumn.getLongName());
     }
 

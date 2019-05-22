@@ -4,18 +4,19 @@ import android.support.annotation.NonNull;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 public class Movie implements Comparable<Movie> {
     private ArrayList<MediaFile> files = new ArrayList<>();
-    private String uuid;
+    private UUID uuid;
     private String title;
 
-    public Movie(String uuid, String title) {
+    public Movie(UUID uuid, String title) {
         this.uuid = uuid;
         this.title = title;
     }
 
-    public String getUuid() {
+    public UUID getUuid() {
         return uuid;
     }
 
@@ -39,4 +40,5 @@ public class Movie implements Comparable<Movie> {
     public int compareTo(@NonNull Movie movie) {
         return title.compareTo(movie.title);
     }
+
 }

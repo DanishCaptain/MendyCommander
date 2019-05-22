@@ -8,25 +8,29 @@ import java.util.UUID;
 
 public class TvEpisode implements Comparable<TvEpisode> {
     private ArrayList<MediaFile> fileL = new ArrayList<>();
-    private final UUID id;
+    private final UUID uuid;
     private final TvSeason season;
-    private String name;
+    private String title;
 
-    public TvEpisode(TvSeason season, UUID id) {
+    public TvEpisode(TvSeason season, UUID uuid) {
         this.season = season;
-        this.id = id;
+        this.uuid = uuid;
     }
 
     public TvSeason getSeason() {
         return season;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public UUID getUuid() {
+        return uuid;
     }
 
-    public String getName() {
-        return name;
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public String getTitle() {
+        return title;
     }
 
     public void add(MediaFile f) {
@@ -35,7 +39,7 @@ public class TvEpisode implements Comparable<TvEpisode> {
 
     @Override
     public int compareTo(@NonNull TvEpisode e) {
-        return name.compareTo(e.name);
+        return title.compareTo(e.title);
     }
 
     public List<MediaFile> getFiles() {
