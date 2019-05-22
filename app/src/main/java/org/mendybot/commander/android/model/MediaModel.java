@@ -64,7 +64,7 @@ public final class MediaModel {
             new Thread() {
                 @Override
                 public void run() {
-                    String result = UrlUtility.grabJson("http://192.168.100.50:21123/movies");
+                    String result = UrlUtility.grabJson("http://192.168.100.50:21122/movies");
                     List<Movie> f = g.fromJson(result, type);
                     movieL.addAll(f);
                 }
@@ -80,7 +80,7 @@ public final class MediaModel {
             new Thread() {
                 @Override
                 public void run() {
-                    String result = UrlUtility.grabJson("http://192.168.100.50:21124/tv_shows");
+                    String result = UrlUtility.grabJson("http://192.168.100.50:21122/tv_shows");
                     List<TvShowInput> shows = g.fromJson(result, type);
                     for (TvShowInput show : shows) {
                         UUID uuid = UUID.fromString(show.getUuid());
@@ -128,7 +128,7 @@ public final class MediaModel {
             new Thread() {
                 @Override
                 public void run() {
-                    String result = UrlUtility.grabJson("http://192.168.100.50:21125/music");
+                    String result = UrlUtility.grabJson("http://192.168.100.50:21121/music");
                     List<SongInput> songs = g.fromJson(result, type);
                     for (SongInput song : songs) {
                         String artistName = song.getArtist();
