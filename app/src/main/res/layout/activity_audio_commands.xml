@@ -4,69 +4,57 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.CommanderActivity"
-    tools:showIn="@layout/activity_commander"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    >
+    tools:context=".activity.command.AudioCommandsActivity">
 
     <LinearLayout
-        android:id="@+id/schedule-movies_outer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="0dp">
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" >
 
+    <Button
+        android:id="@+id/send-audio-quit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="128dp"
+        android:text="Quit Audio" />
         <Button
-            android:id="@+id/send-video-commands"
+            android:id="@+id/send-audio-pause"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="128dp"
-            android:text="Video Commands" />
-
+            android:text="Pause Audio" />
         <Button
-            android:id="@+id/send-audio-commands"
+            android:id="@+id/send-audio-subtitles"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="128dp"
-            android:text="Audio Commands" />
-
+            android:text="Audio Subtitles" />
         <Button
-            android:id="@+id/schedule-movies"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="128dp"
-            android:text="@string/content_schedule_movies"
-            app:layout_constraintBottom_toTopOf="@+id/schedule-movies_outer" />
-
-        <Button
-            android:id="@+id/schedule-tv-shows"
+            android:id="@+id/send-audio-vol-up"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="128dp"
-            android:text="Schedule TV Shows" />
-
+            android:text="Audio vol UP" />
         <Button
-            android:id="@+id/schedule-music"
+            android:id="@+id/send-audio-vol-down"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="128dp"
-            android:text="Schedule Music" />
-
+            android:text="Audio vol DOWN" />
         <Button
-            android:id="@+id/schedule-audio-book"
+            android:id="@+id/send-audio-chap-prev"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="128dp"
-            android:text="Schedule Audio Book" />
-
-        <android.support.design.widget.FloatingActionButton
-            android:id="@+id/fab"
+            android:text="Audio Prev Chapter" />
+        <Button
+            android:id="@+id/send-audio-chap-next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
-            android:layout_margin="@dimen/fab_margin"
-            app:srcCompat="@android:drawable/ic_dialog_email" />
-
+            android:layout_marginLeft="128dp"
+            android:text="Audio Next Chapter" />
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
