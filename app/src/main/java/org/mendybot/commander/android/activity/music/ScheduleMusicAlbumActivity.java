@@ -29,7 +29,6 @@ public class ScheduleMusicAlbumActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_schedule_music_album);
 
-
         RecyclerView recyclerView = findViewById(R.id.albumn_list);
         assert recyclerView != null;
         setupRecyclerView((RecyclerView) recyclerView);
@@ -38,8 +37,6 @@ public class ScheduleMusicAlbumActivity extends AppCompatActivity {
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
-
-
     }
 
     private void setupRecyclerView(@NonNull RecyclerView recyclerView) {

@@ -1,8 +1,10 @@
 package org.mendybot.commander.android.activity.command;
 
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.MenuItem;
 import android.view.View;
 
 import org.mendybot.commander.android.R;
@@ -39,6 +41,10 @@ public class VideoCommandsActivity extends AppCompatActivity implements View.OnC
         bSendVideoNextChapter = findViewById(R.id.send_video_chap_next);
         bSendVideoNextChapter.setOnClickListener(this);
 
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
     }
 
     @Override
@@ -100,4 +106,9 @@ public class VideoCommandsActivity extends AppCompatActivity implements View.OnC
 
     }
 
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        finish();
+        return true;
+    }
 }

@@ -27,7 +27,7 @@
             android:label="@string/title_activity_schedule_music"
             />
         <activity android:name=".activity.command.VideoCommandsActivity"
-            android:theme="@style/AppTheme.NoActionBar"
+            android:label="@string/title_activity_video_commands"
             />
         <activity android:name=".activity.command.AudioCommandsActivity"
             android:label="@string/title_activity_audio_commands"

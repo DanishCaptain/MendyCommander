@@ -29,7 +29,6 @@ public class ScheduleSeriesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_schedule_tv_series);
 
-
         RecyclerView recyclerView = findViewById(R.id.series_list);
         assert recyclerView != null;
         setupRecyclerView(recyclerView);
@@ -38,8 +37,6 @@ public class ScheduleSeriesActivity extends AppCompatActivity {
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
-
-
     }
 
     private void setupRecyclerView(@NonNull RecyclerView recyclerView) {
@@ -120,6 +117,7 @@ public class ScheduleSeriesActivity extends AppCompatActivity {
             } else if (view.getId() == R.id.submit_all_episodes_button) {
                 TvSeason a = MediaModel.getInstance().getActiveSeason();
                 List<TvEpisode> list = a.getEpisodes();
+                Collections.sort(list);
                 for (TvEpisode track : list) {
                     List<MediaFile> files = track.getFiles();
                     ScheduleShowActivity.schedule(track.getTitle(), files);

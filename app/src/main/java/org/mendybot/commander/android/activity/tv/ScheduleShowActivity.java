@@ -28,7 +28,6 @@ import java.util.Collections;
 import java.util.List;
 
 public class ScheduleShowActivity extends AppCompatActivity {
-
     private static final String TAG = ScheduleShowActivity.class.getSimpleName();
 
     @Override

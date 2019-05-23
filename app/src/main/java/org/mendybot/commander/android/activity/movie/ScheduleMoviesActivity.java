@@ -26,15 +26,16 @@ import java.util.Collections;
 import java.util.List;
 
 public class ScheduleMoviesActivity extends AppCompatActivity {
+    private static final String TAG = ScheduleMoviesActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_schedule_movies);
 
-        View recyclerView = findViewById(R.id.movie_list);
+        RecyclerView recyclerView = findViewById(R.id.movie_list);
         assert recyclerView != null;
-        setupRecyclerView((RecyclerView) recyclerView);
+        setupRecyclerView(recyclerView);
 
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
@@ -57,7 +58,7 @@ public class ScheduleMoviesActivity extends AppCompatActivity {
                 Movie item = (Movie) view.getTag();
                 schedule(item);
             }
-        };
+    };
 
         private void schedule(Movie item) {
             GsonBuilder b = new GsonBuilder();
