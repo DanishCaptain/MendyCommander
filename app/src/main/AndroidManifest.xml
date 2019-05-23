@@ -38,6 +38,9 @@
         <activity android:name=".activity.audioBook.ScheduleAudioBookTrackActivity"
             android:label="@string/title_activity_schedule_audio_book"
             />
+        <activity android:name=".activity.PreferencesActivity"
+            android:label="@string/title_activity_settings"
+            />
         <activity
             android:name=".activity.CommanderActivity"
             android:label="@string/title_activity_commander"

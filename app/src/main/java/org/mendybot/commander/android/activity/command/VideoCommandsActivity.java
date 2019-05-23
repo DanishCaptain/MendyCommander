@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import org.mendybot.commander.android.R;
+import org.mendybot.commander.android.model.MediaModel;
 import org.mendybot.commander.android.tools.UrlUtility;
 
 public class VideoCommandsActivity extends AppCompatActivity implements View.OnClickListener {
@@ -99,7 +100,7 @@ public class VideoCommandsActivity extends AppCompatActivity implements View.OnC
         new Thread() {
             @Override
             public void run() {
-                String rr = UrlUtility.exchangeJson("http://192.168.100.50:21122/movies/cmd", request);
+                String rr = UrlUtility.exchangeJson("http://"+ MediaModel.getInstance().getIpAddress()+":21122/movies/cmd", request);
                 Log.d(TAG, "result: "+rr);
             }
         }.start();

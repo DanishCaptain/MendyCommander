@@ -13,6 +13,7 @@
     <string name="title_activity_schedule_movies">Schedule Movies</string>
     <string name="title_activity_schedule_tv_shows">Schedule TV</string>
     <string name="title_activity_schedule_music">Schedule Music</string>
+    <string name="title_activity_settings">Settings</string>
     <string name="title_activity_schedule_audio_book">Schedule Audio Book</string>
     <string name="content_authority_media_locker">org.mendybot.commander.android.media_locker</string>
 
@@ -25,5 +26,33 @@
     <string name="menu_send">Send</string>
     <string name="title_activity_command">CommandActivity</string>
     <string name="content_schedule_movies">Schedule Movies</string>
+
+
+    <!-- Preferences START -->
+    <string name="welcome">Preferences Example</string>
+    <string name="list_size">List Size</string>
+    <string name="settings">Settings</string>
+    <string name="settings_summary">Example of Preferences</string>
+    <string name="pref_show_delete">Show delete button?</string>
+    <string name="pref_list_limit">List Size</string>
+    <string name="pref_summary_list_size">Maximun rows to be shown in a list page</string>
+    <string name="pref_color_theme">Color theme</string>
+    <string name="pref_color_theme_value">#87CEEB</string>
+    <string name="ip_address">IP Address:</string>
+
+    <string-array name="pref_color_theme_entries">
+        <item>Black</item>
+        <item>Sky Blue</item>
+        <item>Red</item>
+        <item>White</item>
+    </string-array>
+
+    <string-array name="pref_color_theme_values">
+        <item>#000000</item>
+        <item>#87CEEB</item>
+        <item>#FF0000</item>
+        <item>#FFFFFF</item>
+    </string-array>
+    <!-- Preferences END -->
 
 </resources>

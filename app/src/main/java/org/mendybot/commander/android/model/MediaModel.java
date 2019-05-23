@@ -3,7 +3,9 @@ package org.mendybot.commander.android.model;
 import android.content.ContentResolver;
 import android.content.ContentValues;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.database.Cursor;
+import android.preference.PreferenceManager;
 import android.util.Log;
 
 import com.google.gson.Gson;
@@ -39,6 +41,8 @@ public final class MediaModel {
     private static final String KEY_TV_SHOW = "TV_SHOW";
     private static final String KEY_MUSIC = "MUSIC";
     private static final String KEY_AUDIO_BOOK = "AUDIO_BOOK";
+    private static final String NO_IP = "NO IP ADDRESS - see settings in menu";
+    private static final String DEFAULT_IP_ADDRESS = null; //"192.168.100.50";
     private static MediaModel singleton;
     private List<Movie> movieL = new ArrayList<>();
     private Map<String, TvSeries> seriesM = new HashMap<>();
@@ -50,7 +54,9 @@ public final class MediaModel {
     private List<SongAlbum> abAlbumL = new ArrayList<>();
 
     private boolean initialized;
+    private SharedPreferences sharedPrefs;
     private ContentResolver resolver;
+    private String ipAddress;
     private SongAlbum activeAlbum;
     private SongTrack activeTrack;
     private SongAlbum abActiveAlbum;
@@ -64,7 +70,13 @@ public final class MediaModel {
     public void init(Context context) {
         if (!initialized) {
             initialized = true;
+            sharedPrefs = PreferenceManager.getDefaultSharedPreferences(context);
         }
+
+        //sharedPrefs.getString("prefUsername", "NULL");
+        //sharedPrefs.getBoolean("prefSendReport", false);
+
+        ipAddress = sharedPrefs.getString("ip_address", DEFAULT_IP_ADDRESS);
         resolver = context.getContentResolver();
 
         initMedia(resolver);
@@ -192,15 +204,19 @@ public final class MediaModel {
             new Thread() {
                 @Override
                 public void run() {
-                    String result = UrlUtility.grabJson("http://192.168.100.50:21122/movies");
-                    List<Movie> f = g.fromJson(result, type);
-                    if (f.size() > 0) {
-                        ContentValues value = new ContentValues();
-                        value.put(COLUMN_KEY, KEY_MOVIE);
-                        value.put(COLUMN_VALUE, result);
-                        resolver.bulkInsert(
-                                MediaTable.CONTENT_URI,
-                                new ContentValues[]{value});
+                    if (ipAddress != null) {
+                        String result = UrlUtility.grabJson("http://"+ipAddress+":21122/movies");
+                        List<Movie> f = g.fromJson(result, type);
+                        if (f.size() > 0) {
+                            ContentValues value = new ContentValues();
+                            value.put(COLUMN_KEY, KEY_MOVIE);
+                            value.put(COLUMN_VALUE, result);
+                            resolver.bulkInsert(
+                                    MediaTable.CONTENT_URI,
+                                    new ContentValues[]{value});
+                        }
+                    } else {
+                        System.out.println(NO_IP);
                     }
                 }
             }.start();
@@ -215,15 +231,19 @@ public final class MediaModel {
             new Thread() {
                 @Override
                 public void run() {
-                    String result = UrlUtility.grabJson("http://192.168.100.50:21122/tv_shows");
-                    List<TvShowInput> shows = g.fromJson(result, type);
-                    if (shows.size() > 0) {
-                        ContentValues value = new ContentValues();
-                        value.put(COLUMN_KEY, KEY_TV_SHOW);
-                        value.put(COLUMN_VALUE, result);
-                        resolver.bulkInsert(
-                                MediaTable.CONTENT_URI,
-                                new ContentValues[]{value});
+                    if (ipAddress != null) {
+                        String result = UrlUtility.grabJson("http://"+ipAddress+":21122/tv_shows");
+                        List<TvShowInput> shows = g.fromJson(result, type);
+                        if (shows.size() > 0) {
+                            ContentValues value = new ContentValues();
+                            value.put(COLUMN_KEY, KEY_TV_SHOW);
+                            value.put(COLUMN_VALUE, result);
+                            resolver.bulkInsert(
+                                    MediaTable.CONTENT_URI,
+                                    new ContentValues[]{value});
+                        }
+                    } else {
+                        System.out.println(NO_IP);
                     }
                 }
             }.start();
@@ -238,15 +258,19 @@ public final class MediaModel {
             new Thread() {
                 @Override
                 public void run() {
-                    String result = UrlUtility.grabJson("http://192.168.100.50:21121/music");
-                    List<SongInput> songs = g.fromJson(result, type);
-                    if (songs.size() > 0) {
-                        ContentValues value = new ContentValues();
-                        value.put(COLUMN_KEY, KEY_MUSIC);
-                        value.put(COLUMN_VALUE, result);
-                        resolver.bulkInsert(
-                                MediaTable.CONTENT_URI,
-                                new ContentValues[]{value});
+                    if (ipAddress != null) {
+                        String result = UrlUtility.grabJson("http://"+ipAddress+":21121/music");
+                        List<SongInput> songs = g.fromJson(result, type);
+                        if (songs.size() > 0) {
+                            ContentValues value = new ContentValues();
+                            value.put(COLUMN_KEY, KEY_MUSIC);
+                            value.put(COLUMN_VALUE, result);
+                            resolver.bulkInsert(
+                                    MediaTable.CONTENT_URI,
+                                    new ContentValues[]{value});
+                        }
+                    } else {
+                        System.out.println(NO_IP);
                     }
                 }
             }.start();
@@ -261,15 +285,19 @@ public final class MediaModel {
             new Thread() {
                 @Override
                 public void run() {
-                    String result = UrlUtility.grabJson("http://192.168.100.50:21121/audio_book");
-                    List<SongInput> songs = g.fromJson(result, type);
-                    if (songs.size() > 0) {
-                        ContentValues value = new ContentValues();
-                        value.put(COLUMN_KEY, KEY_AUDIO_BOOK);
-                        value.put(COLUMN_VALUE, result);
-                        resolver.bulkInsert(
-                                MediaTable.CONTENT_URI,
-                                new ContentValues[]{value});
+                    if (ipAddress != null) {
+                        String result = UrlUtility.grabJson("http://"+ipAddress+":21121/audio_book");
+                        List<SongInput> songs = g.fromJson(result, type);
+                        if (songs.size() > 0) {
+                            ContentValues value = new ContentValues();
+                            value.put(COLUMN_KEY, KEY_AUDIO_BOOK);
+                            value.put(COLUMN_VALUE, result);
+                            resolver.bulkInsert(
+                                    MediaTable.CONTENT_URI,
+                                    new ContentValues[]{value});
+                        }
+                    } else {
+                        System.out.println(NO_IP);
                     }
                 }
             }.start();
@@ -359,4 +387,16 @@ public final class MediaModel {
         return activeEpisode;
     }
 
+    public String getIpAddress() {
+        if (ipAddress != null) {
+            return ipAddress;
+        } else {
+            System.err.println(NO_IP);
+            return "host";
+        }
+    }
+
+    public void setIpAddress(String ipAddress) {
+        this.ipAddress = ipAddress;
+    }
 }

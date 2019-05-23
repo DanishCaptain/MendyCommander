@@ -20,15 +20,15 @@
             android:id="@+id/send-video-commands"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="128dp"
-            android:text="Video Commands" />
+            android:layout_marginStart="128dp"
+            android:text="@string/title_activity_video_commands" />
 
         <Button
             android:id="@+id/send-audio-commands"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="128dp"
-            android:text="Audio Commands" />
+            android:layout_marginStart="128dp"
+            android:text="@string/title_activity_audio_commands" />
 
         <Button
             android:id="@+id/schedule-movies"
@@ -42,22 +42,22 @@
             android:id="@+id/schedule-tv-shows"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="128dp"
-            android:text="Schedule TV Shows" />
+            android:layout_marginStart="128dp"
+            android:text="@string/title_activity_schedule_tv_shows" />
 
         <Button
             android:id="@+id/schedule-music"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="128dp"
-            android:text="Schedule Music" />
+            android:layout_marginStart="128dp"
+            android:text="@string/title_activity_schedule_music" />
 
         <Button
             android:id="@+id/schedule-audio-book"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="128dp"
-            android:text="Schedule Audio Book" />
+            android:layout_marginStart="128dp"
+            android:text="@string/title_activity_schedule_audio_book" />
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/fab"

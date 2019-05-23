@@ -81,7 +81,7 @@ public class ScheduleMoviesActivity extends AppCompatActivity {
             new Thread() {
                 @Override
                 public void run() {
-                    String rr = UrlUtility.exchangeJson("http://192.168.100.50:21122/video", request);
+                    String rr = UrlUtility.exchangeJson("http://"+MediaModel.getInstance().getIpAddress()+":21122/video", request);
                     Log.d(TAG, "result: "+rr);
                 }
             }.start();

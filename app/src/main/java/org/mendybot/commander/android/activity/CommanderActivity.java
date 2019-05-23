@@ -4,6 +4,9 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
+import android.view.KeyEvent;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 
 import org.mendybot.commander.android.R;
@@ -76,6 +79,22 @@ public class CommanderActivity extends AppCompatActivity implements View.OnClick
             Intent intent = new Intent(this, ScheduleAudioBookAlbumActivity.class);
             startActivity(intent);
         }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu, menu);
+        return super.onCreateOptionsMenu(menu);
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        int id = item.getItemId();
+        switch (id) {
+            case R.id.settings:
+                startActivity(new Intent(this, PreferencesActivity.class));
+        }
+        return super.onOptionsItemSelected(item);
     }
 
 }

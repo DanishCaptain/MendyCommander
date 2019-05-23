@@ -57,25 +57,24 @@ public class ScheduleAudioBookAlbumActivity extends AppCompatActivity {
         };
 
         private void select(SongAlbum item) {
-            MediaModel.getInstance().setActiveAbAlbum(item);
-
-            mParentActivity.getSupportActionBar().setTitle(mParentActivity.getResources().getString(R.string.title_activity_schedule_audio_book) + " - " + item.getTitle());
-
-            TextView mMusicSelectedArtistView = (TextView) mParentActivity.findViewById(R.id.music_selected_albumn_artist);
-            mMusicSelectedArtistView.setText(item.getArtist().getName());
-            TextView mMusicSelectedAlbumnView = (TextView) mParentActivity.findViewById(R.id.music_selected_albumn_name);
-            mMusicSelectedAlbumnView.setText(item.getTitle());
-            Button mMusicSelectedAlbumnButton = (Button) mParentActivity.findViewById(R.id.music_selected_albumn_button);
-            if (mMusicSelectedAlbumnButton.getVisibility() == Button.INVISIBLE) {
-                mMusicSelectedAlbumnButton.setVisibility(Button.VISIBLE);
+            if (mParentActivity.getSupportActionBar() != null && item != null) {
+                MediaModel.getInstance().setActiveAbAlbum(item);
+                mParentActivity.getSupportActionBar().setTitle(mParentActivity.getResources().getString(R.string.title_activity_schedule_audio_book) + " - " + item.getTitle());
+                TextView mMusicSelectedArtistView = mParentActivity.findViewById(R.id.music_selected_albumn_artist);
+                mMusicSelectedArtistView.setText(item.getArtist().getName());
+                TextView mMusicSelectedAlbumnView = mParentActivity.findViewById(R.id.music_selected_albumn_name);
+                mMusicSelectedAlbumnView.setText(item.getTitle());
+                Button mMusicSelectedAlbumnButton = mParentActivity.findViewById(R.id.music_selected_albumn_button);
+                if (mMusicSelectedAlbumnButton.getVisibility() == Button.INVISIBLE) {
+                    mMusicSelectedAlbumnButton.setVisibility(Button.VISIBLE);
+                }
+                mMusicSelectedAlbumnButton.setOnClickListener(this);
+                Button mMusicSubmitAllAlbumnButton = mParentActivity.findViewById(R.id.music_submit_all_albumn_button);
+                if (mMusicSubmitAllAlbumnButton.getVisibility() == Button.INVISIBLE) {
+                    mMusicSubmitAllAlbumnButton.setVisibility(Button.VISIBLE);
+                }
+                mMusicSubmitAllAlbumnButton.setOnClickListener(this);
             }
-            mMusicSelectedAlbumnButton.setOnClickListener(this);
-            Button mMusicSubmitAllAlbumnButton = (Button) mParentActivity.findViewById(R.id.music_submit_all_albumn_button);
-            if (mMusicSubmitAllAlbumnButton.getVisibility() == Button.INVISIBLE) {
-                mMusicSubmitAllAlbumnButton.setVisibility(Button.VISIBLE);
-            }
-            mMusicSubmitAllAlbumnButton.setOnClickListener(this);
-
         }
 
         SimpleItemRecyclerViewAdapter(ScheduleAudioBookAlbumActivity parent,
@@ -86,15 +85,18 @@ public class ScheduleAudioBookAlbumActivity extends AppCompatActivity {
         }
 
         @Override
-        public MusicViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        @NonNull
+        public MusicViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
             View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.music_albumn_item_content, parent, false);
             return new MusicViewHolder(view);
         }
 
         @Override
-        public void onBindViewHolder(final MusicViewHolder holder, int position) {
+        public void onBindViewHolder(@NonNull final MusicViewHolder holder, int position) {
             SongAlbum current = mValues.get(position);
-            holder.mMusicArtistView.setText("[" + current.getArtist().getName() + "]");
+
+            String txt = "[" + current.getArtist().getName() + "]";
+            holder.mMusicArtistView.setText(txt);
             holder.mMusicAlbumnView.setText(current.getTitle());
 
             holder.itemView.setTag(current);
@@ -127,8 +129,8 @@ public class ScheduleAudioBookAlbumActivity extends AppCompatActivity {
 
             MusicViewHolder(View view) {
                 super(view);
-                mMusicArtistView = (TextView) view.findViewById(R.id.music_artist_name);
-                mMusicAlbumnView = (TextView) view.findViewById(R.id.music_albumn_name);
+                mMusicArtistView = view.findViewById(R.id.music_artist_name);
+                mMusicAlbumnView = view.findViewById(R.id.music_albumn_name);
             }
         }
     }
