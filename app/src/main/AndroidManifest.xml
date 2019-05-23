@@ -32,6 +32,12 @@
         <activity android:name=".activity.command.AudioCommandsActivity"
             android:label="@string/title_activity_audio_commands"
             />
+        <activity android:name=".activity.audioBook.ScheduleAudioBookAlbumActivity"
+            android:label="@string/title_activity_schedule_audio_book"
+            />
+        <activity android:name=".activity.audioBook.ScheduleAudioBookTrackActivity"
+            android:label="@string/title_activity_schedule_audio_book"
+            />
         <activity
             android:name=".activity.CommanderActivity"
             android:label="@string/title_activity_commander"

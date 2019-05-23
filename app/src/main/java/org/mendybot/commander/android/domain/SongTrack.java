@@ -37,13 +37,27 @@ public class SongTrack implements Comparable<SongTrack> {
         fileL.add(f);
     }
 
+    public List<MediaFile> getFiles() {
+        return fileL;
+    }
+
+    @Override
+    public int hashCode() {
+        return uuid.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o instanceof SongTrack) {
+            return uuid.equals(((SongTrack)o).uuid);
+        } else {
+            return false;
+        }
+    }
+
     @Override
     public int compareTo(@NonNull SongTrack songTrack) {
         return title.compareTo(songTrack.title);
-    }
-
-    public List<MediaFile> getFiles() {
-        return fileL;
     }
 
 }

@@ -7,6 +7,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import org.mendybot.commander.android.R;
+import org.mendybot.commander.android.activity.audioBook.ScheduleAudioBookAlbumActivity;
 import org.mendybot.commander.android.activity.command.AudioCommandsActivity;
 import org.mendybot.commander.android.activity.command.VideoCommandsActivity;
 import org.mendybot.commander.android.activity.movie.ScheduleMoviesActivity;
@@ -21,6 +22,7 @@ public class CommanderActivity extends AppCompatActivity implements View.OnClick
     private View bScheduleMovies;
     private View bScheduleTvShows;
     private View bScheduleMusic;
+    private View bScheduleAudioBook;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +44,8 @@ public class CommanderActivity extends AppCompatActivity implements View.OnClick
         bScheduleTvShows.setOnClickListener(this);
         bScheduleMusic = findViewById(R.id.schedule_music);
         bScheduleMusic.setOnClickListener(this);
+        bScheduleAudioBook = findViewById(R.id.schedule_audio_book);
+        bScheduleAudioBook.setOnClickListener(this);
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -67,6 +71,9 @@ public class CommanderActivity extends AppCompatActivity implements View.OnClick
             startActivity(intent);
         } else if (view == bScheduleMusic) {
             Intent intent = new Intent(this, ScheduleMusicAlbumActivity.class);
+            startActivity(intent);
+        } else if (view == bScheduleAudioBook) {
+            Intent intent = new Intent(this, ScheduleAudioBookAlbumActivity.class);
             startActivity(intent);
         }
     }

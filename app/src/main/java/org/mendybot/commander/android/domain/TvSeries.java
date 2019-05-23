@@ -1,9 +1,11 @@
 package org.mendybot.commander.android.domain;
 
+import android.support.annotation.NonNull;
+
 import java.util.HashMap;
 import java.util.UUID;
 
-public class TvSeries {
+public class TvSeries implements Comparable<TvSeries> {
     private HashMap<UUID, TvSeason> seasonM = new HashMap<>();
     private final String title;
 
@@ -22,6 +24,25 @@ public class TvSeries {
             seasonM.put(uuid, a);
         }
         return a;
+    }
+
+    @Override
+    public int hashCode() {
+        return title.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o instanceof TvSeries) {
+            return title.equals(((TvSeries)o).title);
+        } else {
+            return false;
+        }
+    }
+
+    @Override
+    public int compareTo(@NonNull TvSeries series) {
+        return title.compareTo(series.title);
     }
 
 }

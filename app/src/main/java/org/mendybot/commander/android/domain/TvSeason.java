@@ -54,8 +54,22 @@ public class TvSeason implements Comparable<TvSeason> {
     }
 
     @Override
-    public int compareTo(@NonNull TvSeason albumn) {
-        return getLongTitle().compareTo(albumn.getLongTitle());
+    public int hashCode() {
+        return uuid.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o instanceof TvSeason) {
+            return uuid.equals(((TvSeason)o).uuid);
+        } else {
+            return false;
+        }
+    }
+
+    @Override
+    public int compareTo(@NonNull TvSeason season) {
+        return getLongTitle().compareTo(season.getLongTitle());
     }
 
 }

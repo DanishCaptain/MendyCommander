@@ -13,6 +13,7 @@
     <string name="title_activity_schedule_movies">Schedule Movies</string>
     <string name="title_activity_schedule_tv_shows">Schedule TV</string>
     <string name="title_activity_schedule_music">Schedule Music</string>
+    <string name="title_activity_schedule_audio_book">Schedule Audio Book</string>
     <string name="content_authority_media_locker">org.mendybot.commander.android.media_locker</string>
 
 

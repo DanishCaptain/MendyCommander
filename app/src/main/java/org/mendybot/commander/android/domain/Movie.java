@@ -37,6 +37,20 @@ public class Movie implements Comparable<Movie> {
     }
 
     @Override
+    public int hashCode() {
+        return uuid.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o instanceof Movie) {
+            return uuid.equals(((Movie)o).uuid);
+        } else {
+            return false;
+        }
+    }
+
+    @Override
     public int compareTo(@NonNull Movie movie) {
         return title.compareTo(movie.title);
     }

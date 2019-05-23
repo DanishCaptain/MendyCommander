@@ -1,6 +1,8 @@
 package org.mendybot.commander.android.domain;
 
-public class MediaFile {
+import android.support.annotation.NonNull;
+
+public class MediaFile implements Comparable<MediaFile> {
     private String uuid;
     private String title;
     private String fileName;
@@ -25,6 +27,25 @@ public class MediaFile {
 
     public void setAnnounce(boolean announce) {
         this.announce = announce;
+    }
+
+    @Override
+    public int hashCode() {
+        return uuid.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o instanceof MediaFile) {
+            return uuid.equals(((MediaFile)o).uuid);
+        } else {
+            return false;
+        }
+    }
+
+    @Override
+    public int compareTo(@NonNull MediaFile file) {
+        return title.compareTo(file.title);
     }
 
 }

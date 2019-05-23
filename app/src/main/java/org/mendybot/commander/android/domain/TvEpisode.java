@@ -37,13 +37,27 @@ public class TvEpisode implements Comparable<TvEpisode> {
         fileL.add(f);
     }
 
+    public List<MediaFile> getFiles() {
+        return fileL;
+    }
+
+    @Override
+    public int hashCode() {
+        return uuid.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o instanceof TvEpisode) {
+            return uuid.equals(((TvEpisode)o).uuid);
+        } else {
+            return false;
+        }
+    }
+
     @Override
     public int compareTo(@NonNull TvEpisode e) {
         return title.compareTo(e.title);
-    }
-
-    public List<MediaFile> getFiles() {
-        return fileL;
     }
 
 }

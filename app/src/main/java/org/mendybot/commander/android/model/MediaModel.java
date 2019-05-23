@@ -38,19 +38,25 @@ public final class MediaModel {
     private static final String KEY_MOVIE = "MOVIE";
     private static final String KEY_TV_SHOW = "TV_SHOW";
     private static final String KEY_MUSIC = "MUSIC";
+    private static final String KEY_AUDIO_BOOK = "AUDIO_BOOK";
     private static MediaModel singleton;
     private List<Movie> movieL = new ArrayList<>();
     private Map<String, TvSeries> seriesM = new HashMap<>();
     private List<TvSeason> seasonL = new ArrayList<>();
+
     private Map<String, SongArtist> artistM = new HashMap<>();
     private List<SongAlbum> albumL = new ArrayList<>();
+    private Map<String, SongArtist> abArtistM = new HashMap<>();
+    private List<SongAlbum> abAlbumL = new ArrayList<>();
 
     private boolean initialized;
+    private ContentResolver resolver;
     private SongAlbum activeAlbum;
     private SongTrack activeTrack;
+    private SongAlbum abActiveAlbum;
+    private SongTrack abActiveTrack;
     private TvSeason activeSeason;
     private TvEpisode activeEpisode;
-    private ContentResolver resolver;
 
     private MediaModel() {
     }
@@ -132,6 +138,31 @@ public final class MediaModel {
                             track.add(file);
                         }
                     }
+                } else if (KEY_AUDIO_BOOK.equals(key)) {
+                    Type type = new TypeToken<List<SongInput>>(){}.getType();
+                    List<SongInput> songs = g.fromJson(json, type);
+                    for (SongInput song : songs) {
+                        String artistName = song.getArtist();
+                        SongArtist artist = abArtistM.get(artistName);
+                        if (artist == null) {
+                            artist = new SongArtist(artistName);
+                            abArtistM.put(artistName, artist);
+                        }
+                        UUID albumUuid = UUID.fromString(song.getUuid());
+                        SongAlbum album = artist.lookupAlbum(albumUuid);
+                        album.setTitle(song.getAlbum());
+                        if (!abAlbumL.contains(album)) {
+                            abAlbumL.add(album);
+                        }
+
+                        List<MediaFile> files = song.getFiles();
+                        for (MediaFile file : files) {
+                            UUID trackUuid = UUID.fromString(file.getUuid());
+                            SongTrack track = album.lookup(trackUuid);
+                            track.setTitle(file.getTitle());
+                            track.add(file);
+                        }
+                    }
                 }
             }
             c.close();
@@ -152,6 +183,7 @@ public final class MediaModel {
         initMovies(g);
         initTvShows(g);
         initMusic(g);
+        initAudioBook(g);
     }
 
     private void initMovies(final Gson g) {
@@ -223,6 +255,29 @@ public final class MediaModel {
         }
     }
 
+    private void initAudioBook(final Gson g) {
+        final Type type = new TypeToken<List<SongInput>>(){}.getType();
+        try {
+            new Thread() {
+                @Override
+                public void run() {
+                    String result = UrlUtility.grabJson("http://192.168.100.50:21121/audio_book");
+                    List<SongInput> songs = g.fromJson(result, type);
+                    if (songs.size() > 0) {
+                        ContentValues value = new ContentValues();
+                        value.put(COLUMN_KEY, KEY_AUDIO_BOOK);
+                        value.put(COLUMN_VALUE, result);
+                        resolver.bulkInsert(
+                                MediaTable.CONTENT_URI,
+                                new ContentValues[]{value});
+                    }
+                }
+            }.start();
+        } catch (Exception e) {
+            Log.w(TAG, e);
+        }
+    }
+
     private String fillSeason(int season) {
         if (season < 10) {
             return "00"+season;
@@ -243,6 +298,10 @@ public final class MediaModel {
 
     public List<SongAlbum> getAlbums() {
         return albumL;
+    }
+
+    public List<SongAlbum> getAbAlbums() {
+        return abAlbumL;
     }
 
     public synchronized static MediaModel getInstance() {
@@ -266,6 +325,22 @@ public final class MediaModel {
 
     public SongTrack getActiveTrack() {
         return activeTrack;
+    }
+
+    public void setActiveAbAlbum(SongAlbum album) {
+        this.abActiveAlbum = album;
+    }
+
+    public SongAlbum getActiveAbAlbum() {
+        return abActiveAlbum;
+    }
+
+    public void setActiveAbTrack(SongTrack track) {
+        this.abActiveTrack = track;
+    }
+
+    public SongTrack getActiveAbTrack() {
+        return abActiveTrack;
     }
 
     public void setActiveSeason(TvSeason season) {

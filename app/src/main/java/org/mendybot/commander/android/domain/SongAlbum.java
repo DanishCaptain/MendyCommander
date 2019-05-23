@@ -54,6 +54,20 @@ public class SongAlbum implements Comparable<SongAlbum> {
     }
 
     @Override
+    public int hashCode() {
+        return title.hashCode();
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (o instanceof SongAlbum) {
+            return title.equals(((SongAlbum)o).title);
+        } else {
+            return false;
+        }
+    }
+
+    @Override
     public int compareTo(@NonNull SongAlbum albumn) {
         return getLongName().compareTo(albumn.getLongName());
     }
