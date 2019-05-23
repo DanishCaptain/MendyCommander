@@ -5,6 +5,7 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -27,6 +28,7 @@ import java.util.Collections;
 import java.util.List;
 
 public class ScheduleMusicTrackActivity extends AppCompatActivity {
+    private static final String TAG = ScheduleMusicTrackActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,11 +36,13 @@ public class ScheduleMusicTrackActivity extends AppCompatActivity {
         setContentView(R.layout.activity_schedule_music_track);
 
         SongAlbum item = MediaModel.getInstance().getActiveAlbum();
-        getSupportActionBar().setTitle(getResources().getString(R.string.title_activity_schedule_music)+" - "+item.getTitle());
+        if (getSupportActionBar() != null && item != null) {
+            getSupportActionBar().setTitle(getResources().getString(R.string.title_activity_schedule_music)+" - "+item.getTitle());
+        }
 
         RecyclerView recyclerView = findViewById(R.id.music_track_list);
         assert recyclerView != null;
-        setupRecyclerView((RecyclerView) recyclerView);
+        setupRecyclerView(recyclerView);
 
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
@@ -75,12 +79,12 @@ public class ScheduleMusicTrackActivity extends AppCompatActivity {
             }
         }
         final String request = g.toJson(vv);
-        System.out.println(request);
+        Log.d(TAG, "request: "+request);
         new Thread() {
             @Override
             public void run() {
                 String rr = UrlUtility.exchangeJson("http://192.168.100.50:21121/audio", request);
-                System.out.println(rr);
+                Log.d(TAG, "result: "+rr);
             }
         }.start();
     }
@@ -101,16 +105,16 @@ public class ScheduleMusicTrackActivity extends AppCompatActivity {
 
         private void select(SongTrack item) {
             MediaModel.getInstance().setActiveTrack(item);
-
-            mParentActivity.getSupportActionBar().setTitle(mParentActivity.getResources().getString(R.string.title_activity_schedule_music) + " - " + item.getAlbumn().getTitle()+" - "+item.getTitle());
-
-            TextView mMusicTrackArtist = (TextView) mParentActivity.findViewById(R.id.music_selected_track_artist_name);
-            mMusicTrackArtist.setText(item.getAlbumn().getArtist().getName());
-            TextView mMusicTrackAlbumn = (TextView) mParentActivity.findViewById(R.id.music_selected_track_albumn_name);
-            mMusicTrackAlbumn.setText(item.getAlbumn().getTitle());
-            TextView mMusicTrackName = (TextView) mParentActivity.findViewById(R.id.music_selected_track_name);
-            mMusicTrackName.setText(item.getTitle());
-            Button mMusicSubmitTrackButton = (Button) mParentActivity.findViewById(R.id.music_submit_track_button);
+            if (mParentActivity.getSupportActionBar() != null && item != null) {
+                mParentActivity.getSupportActionBar().setTitle(mParentActivity.getResources().getString(R.string.title_activity_schedule_music) + " - " + item.getAlbumn().getTitle()+" - "+item.getTitle());
+                TextView mMusicTrackArtist = mParentActivity.findViewById(R.id.music_selected_track_artist_name);
+                mMusicTrackArtist.setText(item.getAlbumn().getArtist().getName());
+                TextView mMusicTrackAlbumn = mParentActivity.findViewById(R.id.music_selected_track_albumn_name);
+                mMusicTrackAlbumn.setText(item.getAlbumn().getTitle());
+                TextView mMusicTrackName = mParentActivity.findViewById(R.id.music_selected_track_name);
+                mMusicTrackName.setText(item.getTitle());
+            }
+            Button mMusicSubmitTrackButton = mParentActivity.findViewById(R.id.music_submit_track_button);
             mMusicSubmitTrackButton.setVisibility(Button.VISIBLE);
             if (mMusicSubmitTrackButton.getVisibility() == Button.INVISIBLE) {
                 mMusicSubmitTrackButton.setVisibility(Button.VISIBLE);
@@ -127,13 +131,14 @@ public class ScheduleMusicTrackActivity extends AppCompatActivity {
         }
 
         @Override
-        public MusicViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        @NonNull
+        public MusicViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
             View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.music_track_item_content, parent, false);
             return new MusicViewHolder(view);
         }
 
         @Override
-        public void onBindViewHolder(final MusicViewHolder holder, int position) {
+        public void onBindViewHolder(@NonNull final MusicViewHolder holder, int position) {
             SongTrack current = mValues.get(position);
             holder.mMusicTrackNameView.setText(current.getTitle());
 
@@ -160,7 +165,7 @@ public class ScheduleMusicTrackActivity extends AppCompatActivity {
 
             MusicViewHolder(View view) {
                 super(view);
-                mMusicTrackNameView = (TextView) view.findViewById(R.id.track_title);
+                mMusicTrackNameView = view.findViewById(R.id.track_title);
             }
         }
     }

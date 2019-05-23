@@ -9,14 +9,10 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 
 import org.mendybot.commander.android.model.store.MediaDbHelper;
+import org.mendybot.commander.android.model.store.MediaTable;
 
-public abstract class MediaProvider extends ContentProvider {
-    private final String tableName;
+public final class MediaProvider extends ContentProvider {
     private MediaDbHelper helper;
-
-    public MediaProvider(String tableName) {
-        this.tableName = tableName;
-    }
 
     @Override
     public final boolean onCreate() {
@@ -28,7 +24,7 @@ public abstract class MediaProvider extends ContentProvider {
     @Override
     public final Cursor query(@NonNull Uri uri, @Nullable String[] projection, @Nullable String selection, @Nullable String[] selectionArgs, @Nullable String sortOrder) {
         Cursor cursor = helper.getReadableDatabase().query(
-                tableName,
+                MediaTable.TABLE_NAME,
                 projection,
                 selection,
                 selectionArgs,
@@ -42,19 +38,18 @@ public abstract class MediaProvider extends ContentProvider {
 
     public final Cursor query() {
         Cursor cursor = helper.getReadableDatabase().query(
-                tableName,
+                MediaTable.TABLE_NAME,
                 null,
                 null,
                 null,
                 null,
                 null,
-                getOrderBy());
+                "order by "+ MediaTable.COLUMN_KEY+" DESC");
 
 //        cursor.setNotificationUri(getContext().getContentResolver(), uri);
         return cursor;
     }
 
-    protected abstract String getOrderBy();
 
     @Nullable
     @Override
@@ -88,7 +83,7 @@ public abstract class MediaProvider extends ContentProvider {
                 }
                 */
 
-                long _id = db.insert(tableName, null, value);
+                long _id = db.insert(MediaTable.TABLE_NAME, null, value);
                 if (_id != -1) {
                     rowsInserted++;
                 }
@@ -121,7 +116,7 @@ public abstract class MediaProvider extends ContentProvider {
         if (null == selection) selection = "1";
 
         numRowsDeleted = helper.getWritableDatabase().delete(
-                tableName,
+                MediaTable.TABLE_NAME,
                 selection,
                 selectionArgs);
 

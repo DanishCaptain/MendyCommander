@@ -4,15 +4,14 @@ import android.content.ContentResolver;
 import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
+import android.util.Log;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
-import org.json.JSONException;
-import org.json.JSONObject;
-import org.mendybot.commander.android.domain.SongAlbum;
 import org.mendybot.commander.android.domain.MediaFile;
+import org.mendybot.commander.android.domain.SongAlbum;
 import org.mendybot.commander.android.domain.Movie;
 import org.mendybot.commander.android.domain.SongArtist;
 import org.mendybot.commander.android.domain.SongInput;
@@ -21,31 +20,29 @@ import org.mendybot.commander.android.domain.TvEpisode;
 import org.mendybot.commander.android.domain.TvSeason;
 import org.mendybot.commander.android.domain.TvSeries;
 import org.mendybot.commander.android.domain.TvShowInput;
-import org.mendybot.commander.android.model.store.MovieTable;
-import org.mendybot.commander.android.model.store.SongAlbumTable;
-import org.mendybot.commander.android.model.store.SongArtistTable;
-import org.mendybot.commander.android.model.store.SongTrackTable;
-import org.mendybot.commander.android.model.store.TvEpisodeTable;
-import org.mendybot.commander.android.model.store.TvSeasonTable;
-import org.mendybot.commander.android.model.store.TvSeriesTable;
+import org.mendybot.commander.android.model.store.MediaTable;
 import org.mendybot.commander.android.tools.UrlUtility;
 
 import java.lang.reflect.Type;
-import java.net.URL;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
+import static org.mendybot.commander.android.model.store.MediaTable.COLUMN_KEY;
+import static org.mendybot.commander.android.model.store.MediaTable.COLUMN_VALUE;
+
 public final class MediaModel {
+    private static final String TAG = MediaModel.class.getSimpleName();
+    private static final String KEY_MOVIE = "MOVIE";
+    private static final String KEY_TV_SHOW = "TV_SHOW";
+    private static final String KEY_MUSIC = "MUSIC";
     private static MediaModel singleton;
     private List<Movie> movieL = new ArrayList<>();
     private Map<String, TvSeries> seriesM = new HashMap<>();
-    private Map<UUID, TvSeason> seasonM = new HashMap<>();
     private List<TvSeason> seasonL = new ArrayList<>();
     private Map<String, SongArtist> artistM = new HashMap<>();
-    private Map<String, SongAlbum> albumM = new HashMap<>();
     private List<SongAlbum> albumL = new ArrayList<>();
 
     private boolean initialized;
@@ -64,153 +61,100 @@ public final class MediaModel {
         }
         resolver = context.getContentResolver();
 
-        initMovies(resolver);
-        initTvShows(resolver);
-        initMusic(resolver);
+        initMedia(resolver);
     }
 
-    private void initMovies(ContentResolver resolver) {
-        Cursor c = resolver.query(MovieTable.CONTENT_URI, null, null, null, null);
-        int count = c.getCount();
-        for (int i=-0; i<count; i++) {
-            c.moveToPosition(i);
-            Movie m = new Movie(
-                    UUID.fromString(c.getString(c.getColumnIndex(MovieTable.COLUMN_UUID))),
-                    c.getString(c.getColumnIndex(MovieTable.COLUMN_TITLE))
-            );
-            movieL.add(m);
-        }
-    }
+    private void initMedia(ContentResolver resolver) {
+        Cursor c = resolver.query(MediaTable.CONTENT_URI, null, null, null, null);
+        if (c != null) {
+            int count = c.getCount();
+            for (int i=-0; i<count; i++) {
+                c.moveToPosition(i);
 
-    private void initTvShows(ContentResolver resolver) {
-        Cursor c = resolver.query(TvSeriesTable.CONTENT_URI, null, null, null, null);
-        int count = c.getCount();
-        for (int i=-0; i<count; i++) {
-            c.moveToPosition(i);
-            TvSeries s = new TvSeries(
-                    c.getString(c.getColumnIndex(TvSeriesTable.COLUMN_TITLE))
-            );
-            seriesM.put(s.getTitle(), s);
-        }
-        c = resolver.query(TvSeasonTable.CONTENT_URI, null, null, null, null);
-        count = c.getCount();
-        for (int i=-0; i<count; i++) {
-            c.moveToPosition(i);
-            String seriesName = c.getString(c.getColumnIndex(TvSeasonTable.COLUMN_SERIES_TITLE));
-            if (seriesName == null) {
-                seriesName = "nomine";
-            }
-            TvSeries s = seriesM.get(seriesName);
-            if (s == null) {
-                s = new TvSeries(seriesName);
-                seriesM.put(s.getTitle(), s);
-            }
-            TvSeason season = s.lookupSeason(UUID.fromString(c.getString(c.getColumnIndex(TvSeasonTable.COLUMN_UUID))));
-            season.setTitle(c.getString(c.getColumnIndex(TvSeasonTable.COLUMN_TITLE)));
-            seasonM.put(season.getUuid(), season);
-            seasonL.add(season);
-        }
-        c = resolver.query(TvEpisodeTable.CONTENT_URI, null, null, null, null);
-        count = c.getCount();
-        for (int i=-0; i<count; i++) {
-            c.moveToPosition(i);
-            UUID seasonId = UUID.fromString(c.getString(c.getColumnIndex(TvEpisodeTable.COLUMN_SEASON_UUID)));
-            TvSeason season = seasonM.get(seasonId);
-            TvEpisode episode = season.lookup(UUID.fromString(c.getString(c.getColumnIndex(TvEpisodeTable.COLUMN_UUID))));
-            episode.setTitle(c.getString(c.getColumnIndex(TvEpisodeTable.COLUMN_TITLE)));
-        }
-    }
+                String key = c.getString(c.getColumnIndex(COLUMN_KEY));
+                String json = c.getString(c.getColumnIndex(COLUMN_VALUE));
 
-    private void initMusic(ContentResolver resolver) {
-        Cursor c = resolver.query(SongArtistTable.CONTENT_URI, null, null, null, null);
-        int count = c.getCount();
-        for (int i=-0; i<count; i++) {
-            c.moveToPosition(i);
-            SongArtist s = new SongArtist(c.getString(c.getColumnIndex(SongArtistTable.COLUMN_NAME))
-            );
-            artistM.put(s.getName(), s);
-        }
-        c = resolver.query(SongAlbumTable.CONTENT_URI, null, null, null, null);
-        count = c.getCount();
-        for (int i=-0; i<count; i++) {
-            c.moveToPosition(i);
-            String artistName = c.getString(c.getColumnIndex(SongAlbumTable.COLUMN_ARTIST_NAME));
-            if (artistName == null) {
-                artistName = "nomine";
+                GsonBuilder b = new GsonBuilder();
+                final Gson g = b.create();
+                if (KEY_MOVIE.equals(key)) {
+                    Type type = new TypeToken<List<Movie>>(){}.getType();
+                    List<Movie> f = g.fromJson(json, type);
+                    movieL.addAll(f);
+
+                } else if (KEY_TV_SHOW.equals(key)) {
+                    Type type = new TypeToken<List<TvShowInput>>(){}.getType();
+                    List<TvShowInput> shows = g.fromJson(json, type);
+                    for (TvShowInput tv : shows) {
+                        String seriesTitle = tv.getTitle();
+                        TvSeries series = seriesM.get(seriesTitle);
+                        if (series == null) {
+                            series = new TvSeries(seriesTitle);
+                            seriesM.put(seriesTitle, series);
+                        }
+                        UUID seasonUuid = UUID.fromString(tv.getUuid());
+                        TvSeason season = series.lookupSeason(seasonUuid);
+                        String seasonTitle = "Season "+fillSeason(tv.getSeason());
+                        season.setTitle(seasonTitle);
+                        if (!seasonL.contains(season)) {
+                            seasonL.add(season);
+                        }
+
+                        List<MediaFile> files = tv.getFiles();
+                        for (MediaFile file : files) {
+                            UUID episodeUuid = UUID.fromString(file.getUuid());
+                            TvEpisode episode = season.lookup(episodeUuid);
+                            episode.setTitle(file.getTitle());
+                            episode.add(file);
+                        }
+                    }
+                } else if (KEY_MUSIC.equals(key)) {
+                    Type type = new TypeToken<List<SongInput>>(){}.getType();
+                    List<SongInput> songs = g.fromJson(json, type);
+                    for (SongInput song : songs) {
+                        String artistName = song.getArtist();
+                        SongArtist artist = artistM.get(artistName);
+                        if (artist == null) {
+                            artist = new SongArtist(artistName);
+                            artistM.put(artistName, artist);
+                        }
+                        UUID albumUuid = UUID.fromString(song.getUuid());
+                        SongAlbum album = artist.lookupAlbum(albumUuid);
+                        album.setTitle(song.getAlbum());
+                        if (!albumL.contains(album)) {
+                            albumL.add(album);
+                        }
+
+                        List<MediaFile> files = song.getFiles();
+                        for (MediaFile file : files) {
+                            UUID trackUuid = UUID.fromString(file.getUuid());
+                            SongTrack track = album.lookup(trackUuid);
+                            track.setTitle(file.getTitle());
+                            track.add(file);
+                        }
+                    }
+                }
             }
-            SongArtist s = artistM.get(artistName);
-            if (s == null) {
-                s = new SongArtist(artistName);
-                artistM.put(s.getName(), s);
-            }
-            SongAlbum album = s.lookupAlbum(c.getString(c.getColumnIndex(SongAlbumTable.COLUMN_TITLE)));
-            albumM.put(album.getTitle(), album);
-            albumL.add(album);
-        }
-        c = resolver.query(SongTrackTable.CONTENT_URI, null, null, null, null);
-        count = c.getCount();
-        for (int i=-0; i<count; i++) {
-            c.moveToPosition(i);
-            UUID seasonId = UUID.fromString(c.getString(c.getColumnIndex(TvEpisodeTable.COLUMN_SEASON_UUID)));
-            TvSeason season = seasonM.get(seasonId);
-            TvEpisode episode = season.lookup(UUID.fromString(c.getString(c.getColumnIndex(TvEpisodeTable.COLUMN_UUID))));
-            episode.setTitle(c.getString(c.getColumnIndex(TvEpisodeTable.COLUMN_TITLE)));
+            c.close();
         }
     }
 
     public void reloadData() {
         try {
             resolver.delete(
-                    MovieTable.CONTENT_URI,
+                    MediaTable.CONTENT_URI,
                     null,
                     null);
-            resolver.delete(
-                    SongAlbumTable.CONTENT_URI,
-                    null,
-                    null);
-            resolver.delete(
-                    SongArtistTable.CONTENT_URI,
-                    null,
-                    null);
-            resolver.delete(
-                    SongTrackTable.CONTENT_URI,
-                    null,
-                    null);
-            resolver.delete(
-                    TvEpisodeTable.CONTENT_URI,
-                    null,
-                    null);
-            resolver.delete(
-                    TvSeasonTable.CONTENT_URI,
-                    null,
-                    null);
-            resolver.delete(
-                    TvSeriesTable.CONTENT_URI,
-                    null,
-                    null);
-
-            /*
-            Movie m = new Movie(UUID.randomUUID(), "Star Wars");
-            List<Movie> movies = new ArrayList();
-            movies.add(m);
-
-            resolver.bulkInsert(
-                    MovieTable.CONTENT_URI,
-                    MovieTable.grabContentValues(movies));
-                    */
         } catch (Exception e) {
-            e.printStackTrace();
+            Log.w(TAG, e);
         }
         GsonBuilder b = new GsonBuilder();
         final Gson g = b.create();
         initMovies(g);
         initTvShows(g);
         initMusic(g);
-
     }
 
     private void initMovies(final Gson g) {
-        final List<Movie> list = new ArrayList<>();
         final Type type = new TypeToken<List<Movie>>(){}.getType();
         try {
             new Thread() {
@@ -218,23 +162,22 @@ public final class MediaModel {
                 public void run() {
                     String result = UrlUtility.grabJson("http://192.168.100.50:21122/movies");
                     List<Movie> f = g.fromJson(result, type);
-                    list.addAll(f);
+                    if (f.size() > 0) {
+                        ContentValues value = new ContentValues();
+                        value.put(COLUMN_KEY, KEY_MOVIE);
+                        value.put(COLUMN_VALUE, result);
+                        resolver.bulkInsert(
+                                MediaTable.CONTENT_URI,
+                                new ContentValues[]{value});
+                    }
                 }
             }.start();
         } catch (Exception e) {
-            e.printStackTrace();
+            Log.w(TAG, e);
         }
-        resolver.bulkInsert(
-                MovieTable.CONTENT_URI,
-                MovieTable.grabContentValues(list));
-
     }
 
     private void initTvShows(final Gson g) {
-        final List<TvEpisode> episodesL = new ArrayList<>();
-        final List<TvSeason> seasonL = new ArrayList<>();
-        final List<TvSeries> seriesL = new ArrayList<>();
-        final Map<String, TvSeries> seriesM = new HashMap<>();
         final Type type = new TypeToken<List<TvShowInput>>(){}.getType();
         try {
             new Thread() {
@@ -242,53 +185,22 @@ public final class MediaModel {
                 public void run() {
                     String result = UrlUtility.grabJson("http://192.168.100.50:21122/tv_shows");
                     List<TvShowInput> shows = g.fromJson(result, type);
-                    for (TvShowInput show : shows) {
-                        UUID uuid = UUID.fromString(show.getUuid());
-                        String title = show.getTitle();
-                        String seasonTitle = "Season "+fillSeason(show.getSeason());
-                        TvSeries series = seriesM.get(title);
-                        if (series == null) {
-                            series = new TvSeries(title);
-                            seriesM.put(title, series);
-                            seriesL.add(series);
-                        }
-                        TvSeason season = series.lookupSeason(uuid);
-                        if (!seasonL.contains(season)) {
-                            seasonL.add(season);
-                        }
-                        season.setTitle(seasonTitle);
-                        List<MediaFile> files = show.getFiles();
-                        for (MediaFile f : files) {
-                            UUID trackId = UUID.fromString(f.getUuid());
-                            String episodeTitle = f.getTitle();
-                            TvEpisode episode = season.lookup(trackId);
-                            episode.setTitle(episodeTitle);
-                            episode.add(f);
-                            episodesL.add(episode);
-                        }
+                    if (shows.size() > 0) {
+                        ContentValues value = new ContentValues();
+                        value.put(COLUMN_KEY, KEY_TV_SHOW);
+                        value.put(COLUMN_VALUE, result);
+                        resolver.bulkInsert(
+                                MediaTable.CONTENT_URI,
+                                new ContentValues[]{value});
                     }
                 }
             }.start();
         } catch (Exception e) {
-            e.printStackTrace();
+            Log.w(TAG, e);
         }
-        resolver.bulkInsert(
-                TvEpisodeTable.CONTENT_URI,
-                TvEpisodeTable.grabContentValues(episodesL));
-        resolver.bulkInsert(
-                TvSeasonTable.CONTENT_URI,
-                TvSeasonTable.grabContentValues(seasonL));
-        resolver.bulkInsert(
-                TvSeriesTable.CONTENT_URI,
-                TvSeriesTable.grabContentValues(seriesL));
     }
 
     private void initMusic(final Gson g) {
-        final Map<String, SongArtist> artistM = new HashMap<>();
-        final List<SongArtist> artistL = new ArrayList<>();
-        final Map<String, SongAlbum> albumM = new HashMap<>();
-        final List<SongAlbum> albumL = new ArrayList<>();
-        final List<SongTrack> trackL = new ArrayList<>();
         final Type type = new TypeToken<List<SongInput>>(){}.getType();
         try {
             new Thread() {
@@ -296,44 +208,19 @@ public final class MediaModel {
                 public void run() {
                     String result = UrlUtility.grabJson("http://192.168.100.50:21121/music");
                     List<SongInput> songs = g.fromJson(result, type);
-                    for (SongInput song : songs) {
-                        String artistName = song.getArtist();
-                        SongArtist artist = artistM.get(artistName);
-                        if (artist == null) {
-                            artist = new SongArtist(artistName);
-                            artistM.put(artistName, artist);
-                            artistL.add(artist);
-                        }
-                        String albumName = song.getAlbum();
-                        SongAlbum album = artist.lookupAlbum(albumName);
-                        if (!albumL.contains(album)) {
-                            albumM.put(album.getTitle(), album);
-                            albumL.add(album);
-                        }
-                        List<MediaFile> files = song.getFiles();
-                        for (MediaFile f : files) {
-                            UUID trackId = UUID.fromString(f.getUuid());
-                            String trackTitle = f.getTitle();
-                            SongTrack track = album.lookup(trackId);
-                            track.setTitle(trackTitle);
-                            track.add(f);
-                            trackL.add(track);
-                        }
+                    if (songs.size() > 0) {
+                        ContentValues value = new ContentValues();
+                        value.put(COLUMN_KEY, KEY_MUSIC);
+                        value.put(COLUMN_VALUE, result);
+                        resolver.bulkInsert(
+                                MediaTable.CONTENT_URI,
+                                new ContentValues[]{value});
                     }
                 }
             }.start();
         } catch (Exception e) {
-            e.printStackTrace();
+            Log.w(TAG, e);
         }
-        resolver.bulkInsert(
-                SongAlbumTable.CONTENT_URI,
-                SongAlbumTable.grabContentValues(albumL));
-        resolver.bulkInsert(
-                SongArtistTable.CONTENT_URI,
-                SongArtistTable.grabContentValues(artistL));
-        resolver.bulkInsert(
-                SongTrackTable.CONTENT_URI,
-                SongTrackTable.grabContentValues(trackL));
     }
 
     private String fillSeason(int season) {

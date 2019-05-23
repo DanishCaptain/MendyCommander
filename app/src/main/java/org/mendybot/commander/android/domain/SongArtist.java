@@ -1,9 +1,10 @@
 package org.mendybot.commander.android.domain;
 
 import java.util.HashMap;
+import java.util.UUID;
 
 public class SongArtist {
-    private HashMap<String, SongAlbum> albumM = new HashMap<>();
+    private HashMap<UUID, SongAlbum> albumM = new HashMap<>();
     private final String name;
 
     public SongArtist(String name) {
@@ -14,11 +15,11 @@ public class SongArtist {
         return name;
     }
 
-    public SongAlbum lookupAlbum(String name) {
-        SongAlbum a = albumM.get(name);
+    public SongAlbum lookupAlbum(UUID uuid) {
+        SongAlbum a = albumM.get(uuid);
         if (a == null) {
-            a = new SongAlbum(this, name);
-            albumM.put(name, a);
+            a = new SongAlbum(this, uuid);
+            albumM.put(uuid, a);
         }
         return a;
     }

@@ -1,7 +1,5 @@
 package org.mendybot.commander.android.domain;
 
-import java.util.UUID;
-
 public class MediaFile {
     private String uuid;
     private String title;

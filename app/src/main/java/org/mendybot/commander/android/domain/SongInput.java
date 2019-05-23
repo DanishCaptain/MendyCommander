@@ -5,10 +5,9 @@ import java.util.List;
 
 public class SongInput {
     private ArrayList<MediaFile> files = new ArrayList<>();
-    private String title;
     private String uuid;
     private String artist;
-    private String album;
+    private String albumn;
 
     public String getUuid() {
         return uuid;
@@ -19,11 +18,7 @@ public class SongInput {
     }
 
     public String getAlbum() {
-        return album;
-    }
-
-    public String getTitle() {
-        return title;
+        return albumn;
     }
 
     public List<MediaFile> getFiles() {

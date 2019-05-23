@@ -12,13 +12,7 @@
     <string name="title_activity_schedule_movies">Schedule Movies</string>
     <string name="title_activity_schedule_tv_shows">Schedule TV</string>
     <string name="title_activity_schedule_music">Schedule Music</string>
-    <string name="content_authority_movie">org.mendybot.commander.android.movie</string>
-    <string name="content_authority_music_album">org.mendybot.commander.android.music_album</string>
-    <string name="content_authority_music_artist">org.mendybot.commander.android.music_artist</string>
-    <string name="content_authority_music_track">org.mendybot.commander.android.music_track</string>
-    <string name="content_authority_tv_episode">org.mendybot.commander.android.tv_episode</string>
-    <string name="content_authority_tv_season">org.mendybot.commander.android.tv_season</string>
-    <string name="content_authority_tv_series">org.mendybot.commander.android.tv_series</string>
+    <string name="content_authority_media_locker">org.mendybot.commander.android.media_locker</string>
 
 
     <string name="menu_home">Home</string>

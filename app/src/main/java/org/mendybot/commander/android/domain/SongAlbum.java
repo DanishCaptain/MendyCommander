@@ -9,21 +9,30 @@ import java.util.UUID;
 
 public class SongAlbum implements Comparable<SongAlbum> {
     private final SongArtist artist;
-    private final String title;
+    private final UUID uuid;
+    private String title;
     private ArrayList<SongTrack> trackL = new ArrayList<>();
     private HashMap<UUID, SongTrack> trackM = new HashMap<>();
 
-    public SongAlbum(SongArtist artist, String title) {
+    public SongAlbum(SongArtist artist, UUID uuid) {
         this.artist = artist;
-        this.title = title;
+        this.uuid = uuid;
     }
 
     public SongArtist getArtist() {
         return artist;
     }
 
+    public UUID getUuid() {
+        return uuid;
+    }
+
     public String getTitle() {
         return title;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
     }
 
     public List<SongTrack> getTracks() {

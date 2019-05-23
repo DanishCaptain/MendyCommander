@@ -5,6 +5,7 @@ import android.support.annotation.NonNull;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -28,24 +29,26 @@ import java.util.List;
 
 public class ScheduleShowActivity extends AppCompatActivity {
 
+    private static final String TAG = ScheduleShowActivity.class.getSimpleName();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_schedule_tv_show);
 
         TvSeason item = MediaModel.getInstance().getActiveSeason();
-        getSupportActionBar().setTitle(getResources().getString(R.string.title_activity_schedule_tv_shows)+" - "+item.getTitle());
+        if (getSupportActionBar() != null && item != null) {
+            getSupportActionBar().setTitle(getResources().getString(R.string.title_activity_schedule_tv_shows) + " - " + item.getTitle());
+        }
 
         RecyclerView recyclerView = findViewById(R.id.show_list);
         assert recyclerView != null;
-        setupRecyclerView((RecyclerView) recyclerView);
+        setupRecyclerView(recyclerView);
 
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
-
-
     }
 
     private void setupRecyclerView(@NonNull RecyclerView recyclerView) {
@@ -75,12 +78,12 @@ public class ScheduleShowActivity extends AppCompatActivity {
             }
         }
         final String request = g.toJson(vv);
-        System.out.println(request);
+        Log.d(TAG, "request: "+request);
         new Thread() {
             @Override
             public void run() {
-                String rr = UrlUtility.exchangeJson("http://192.168.100.50:21121/audio", request);
-                System.out.println(rr);
+                String rr = UrlUtility.exchangeJson("http://192.168.100.50:21122/video", request);
+                Log.d(TAG, "response: "+rr);
             }
         }.start();
     }
@@ -102,15 +105,16 @@ public class ScheduleShowActivity extends AppCompatActivity {
         private void select(TvEpisode item) {
             MediaModel.getInstance().setActiveEpisode(item);
 
-            mParentActivity.getSupportActionBar().setTitle(mParentActivity.getResources().getString(R.string.title_activity_schedule_tv_shows) + " - " + item.getSeason().getTitle()+" - "+item.getTitle());
-
-            TextView mSeasonTitle = mParentActivity.findViewById(R.id.selected_season_title);
-            mSeasonTitle.setText(item.getSeason().getSeries().getTitle());
-            TextView mSeriesTitle = mParentActivity.findViewById(R.id.selected_series_title);
-            mSeriesTitle.setText(item.getSeason().getTitle());
-            TextView mEpisodeTitle = (TextView) mParentActivity.findViewById(R.id.selected_episode_title);
-            mEpisodeTitle.setText(item.getTitle());
-            Button mSubmitEpisideButton = (Button) mParentActivity.findViewById(R.id.submit_episode_button);
+            if (mParentActivity.getSupportActionBar() != null && item != null) {
+                mParentActivity.getSupportActionBar().setTitle(mParentActivity.getResources().getString(R.string.title_activity_schedule_tv_shows) + " - " + item.getSeason().getTitle() + " - " + item.getTitle());
+                TextView mSeasonTitle = mParentActivity.findViewById(R.id.selected_season_title);
+                mSeasonTitle.setText(item.getSeason().getSeries().getTitle());
+                TextView mSeriesTitle = mParentActivity.findViewById(R.id.selected_series_title);
+                mSeriesTitle.setText(item.getSeason().getTitle());
+                TextView mEpisodeTitle = mParentActivity.findViewById(R.id.selected_episode_title);
+                mEpisodeTitle.setText(item.getTitle());
+            }
+            Button mSubmitEpisideButton = mParentActivity.findViewById(R.id.submit_episode_button);
             mSubmitEpisideButton.setVisibility(Button.VISIBLE);
             if (mSubmitEpisideButton.getVisibility() == Button.INVISIBLE) {
                 mSubmitEpisideButton.setVisibility(Button.VISIBLE);
@@ -127,13 +131,14 @@ public class ScheduleShowActivity extends AppCompatActivity {
         }
 
         @Override
-        public ShowViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        @NonNull
+        public ShowViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
             View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.tv_show_item_content, parent, false);
             return new ShowViewHolder(view);
         }
 
         @Override
-        public void onBindViewHolder(final ShowViewHolder holder, int position) {
+        public void onBindViewHolder(@NonNull final ShowViewHolder holder, int position) {
             TvEpisode current = mValues.get(position);
             holder.mEpisodeTitle.setText(current.getTitle());
 
@@ -160,7 +165,7 @@ public class ScheduleShowActivity extends AppCompatActivity {
 
             ShowViewHolder(View view) {
                 super(view);
-                mEpisodeTitle = (TextView) view.findViewById(R.id.episode_title);
+                mEpisodeTitle = view.findViewById(R.id.episode_title);
             }
         }
     }

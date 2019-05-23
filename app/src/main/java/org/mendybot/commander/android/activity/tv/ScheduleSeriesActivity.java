@@ -62,12 +62,14 @@ public class ScheduleSeriesActivity extends AppCompatActivity {
         private void select(TvSeason item) {
             MediaModel.getInstance().setActiveSeason(item);
 
-            mParentActivity.getSupportActionBar().setTitle(mParentActivity.getResources().getString(R.string.title_activity_schedule_tv_shows) + " - " + item.getTitle());
+            if (mParentActivity.getSupportActionBar() != null && item != null) {
+                mParentActivity.getSupportActionBar().setTitle(mParentActivity.getResources().getString(R.string.title_activity_schedule_tv_shows) + " - " + item.getTitle());
+                TextView mSelectedSeason = mParentActivity.findViewById(R.id.selected_season_name);
+                mSelectedSeason.setText(item.getTitle());
+                TextView mSelectedSeries = mParentActivity.findViewById(R.id.selected_series_name);
+                mSelectedSeries.setText(item.getSeries().getTitle());
+            }
 
-            TextView mSelectedSeason = mParentActivity.findViewById(R.id.selected_season_name);
-            mSelectedSeason.setText(item.getTitle());
-            TextView mSelectedSeries = mParentActivity.findViewById(R.id.selected_series_name);
-            mSelectedSeries.setText(item.getSeries().getTitle());
             Button mSelectedSeriesButton = mParentActivity.findViewById(R.id.selected_series_button);
             if (mSelectedSeriesButton.getVisibility() == Button.INVISIBLE) {
                 mSelectedSeriesButton.setVisibility(Button.VISIBLE);
@@ -89,17 +91,18 @@ public class ScheduleSeriesActivity extends AppCompatActivity {
         }
 
         @Override
-        public SeriesViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        @NonNull
+        public SeriesViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
             View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.tv_series_item_content, parent, false);
             return new SeriesViewHolder(view);
         }
 
         @Override
-        public void onBindViewHolder(final SeriesViewHolder holder, int position) {
+        public void onBindViewHolder(@NonNull final SeriesViewHolder holder, int position) {
             TvSeason current = mValues.get(position);
-            holder.mSeasonName.setText("[" + current.getSeries().getTitle() + "]");
+            String sTitle = "["+current.getSeries().getTitle()+"]";
+            holder.mSeasonName.setText(sTitle);
             holder.mSeriesName.setText(current.getTitle());
-
             holder.itemView.setTag(current);
             holder.itemView.setOnClickListener(mOnClickListener);
         }

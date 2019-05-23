@@ -2,6 +2,7 @@ package org.mendybot.commander.android.activity.command;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 
 import org.mendybot.commander.android.R;
@@ -9,6 +10,7 @@ import org.mendybot.commander.android.tools.UrlUtility;
 
 public class VideoCommandsActivity extends AppCompatActivity implements View.OnClickListener {
 
+    private static final String TAG = VideoCommandsActivity.class.getSimpleName();
     private View bSendVideoEnd;
     private View bSendVideoPause;
     private View bSendVideoSubtitles;
@@ -91,8 +93,8 @@ public class VideoCommandsActivity extends AppCompatActivity implements View.OnC
         new Thread() {
             @Override
             public void run() {
-                String rr = UrlUtility.exchangeJson("http://192.168.100.50:21223/movies/cmd", request);
-                System.out.println(rr);
+                String rr = UrlUtility.exchangeJson("http://192.168.100.50:21122/movies/cmd", request);
+                Log.d(TAG, "result: "+rr);
             }
         }.start();
 

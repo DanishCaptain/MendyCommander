@@ -5,10 +5,8 @@ import android.util.Log;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
-import java.io.StringReader;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.NoRouteToHostException;
@@ -17,33 +15,9 @@ import java.net.URL;
 public final class UrlUtility {
 
     private static final int TIME_OUT = 2000;
+    private static final String TAG = UrlUtility.class.getSimpleName();
 
     private UrlUtility() {
-    }
-
-
-    public static void doIt() {
-        String urlString = "https://";
-        try {
-            URL url = new URL(urlString);
-            HttpURLConnection client = (HttpURLConnection) url.openConnection();
-            client.setConnectTimeout(TIME_OUT);
-            client.setDoInput(true);
-            client.setDoOutput(true);
-            client.setInstanceFollowRedirects(false);
-            client.setRequestMethod("POST");
-            client.setRequestProperty("Content-Type", "text/json");
-            client.setRequestProperty("charset", "utf-8");
-            client.connect();
-
-
-            client.disconnect();
-        } catch (MalformedURLException e) {
-            e.printStackTrace();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
     }
 
     public static String exchangeJson(String urlString, String json) {
@@ -74,20 +48,20 @@ public final class UrlUtility {
                 }
                 br.close();
             } else {
-                System.out.println(client.getResponseCode());
+                Log.d(TAG, "response code: "+client.getResponseCode());
             }
 
             client.disconnect();
         } catch (MalformedURLException e) {
-            e.printStackTrace();
+            Log.w(TAG, e);
         } catch (IOException e) {
-            e.printStackTrace();
+            Log.w(TAG, e);
         } finally {
             if (client != null) {
                 try {
                     client.connect();
                 } catch (IOException e) {
-                    e.printStackTrace();
+                    Log.w(TAG, e);
                 }
             }
         }
@@ -117,18 +91,18 @@ public final class UrlUtility {
                 }
                 br.close();
             } else {
-                System.out.println(client.getResponseCode());
+                Log.d(TAG, "response code: "+client.getResponseCode());
             }
 
             client.disconnect();
         } catch (MalformedURLException e) {
-            System.err.println(e.getMessage());
+            Log.w(TAG, e);
             result.append("[]");
         } catch (NoRouteToHostException e) {
-            System.err.println(e.getMessage());
+            Log.w(TAG, e);
             result.append("[]");
         } catch (IOException e) {
-            System.err.println(e.getMessage());
+            Log.w(TAG, e);
             result.append("[]");
         } finally {
             if (client != null) {
@@ -157,22 +131,22 @@ public final class UrlUtility {
             pw.close();
 
             if (client.getResponseCode() == 200) {
-                System.out.println(client.getResponseCode());
+                Log.d(TAG, "response code: "+client.getResponseCode());
             } else {
-                System.out.println(client.getResponseCode());
+                Log.d(TAG, "response code: "+client.getResponseCode());
             }
 
             client.disconnect();
         } catch (MalformedURLException e) {
-            e.printStackTrace();
+            Log.w(TAG, e);
         } catch (IOException e) {
-            e.printStackTrace();
+            Log.w(TAG, e);
         } finally {
             if (client != null) {
                 try {
                     client.connect();
                 } catch (IOException e) {
-                    e.printStackTrace();
+                    Log.w(TAG, e);
                 }
             }
         }

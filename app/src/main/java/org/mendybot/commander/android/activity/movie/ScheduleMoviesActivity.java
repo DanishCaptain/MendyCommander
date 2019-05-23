@@ -5,6 +5,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -31,7 +32,6 @@ public class ScheduleMoviesActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_schedule_movies);
 
-
         View recyclerView = findViewById(R.id.movie_list);
         assert recyclerView != null;
         setupRecyclerView((RecyclerView) recyclerView);
@@ -40,18 +40,16 @@ public class ScheduleMoviesActivity extends AppCompatActivity {
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
-
-
     }
 
     private void setupRecyclerView(@NonNull RecyclerView recyclerView) {
-        recyclerView.setAdapter(new SimpleItemRecyclerViewAdapter(this, MediaModel.getInstance().getMovies()));
+        recyclerView.setAdapter(new SimpleItemRecyclerViewAdapter(MediaModel.getInstance().getMovies()));
     }
 
     public static class SimpleItemRecyclerViewAdapter
             extends RecyclerView.Adapter<SimpleItemRecyclerViewAdapter.MovieViewHolder> {
 
-        private final ScheduleMoviesActivity mParentActivity;
+        private static final String TAG = SimpleItemRecyclerViewAdapter.class.getSimpleName();
         private final List<Movie> mValues;
         private final View.OnClickListener mOnClickListener = new View.OnClickListener() {
             @Override
@@ -64,8 +62,7 @@ public class ScheduleMoviesActivity extends AppCompatActivity {
         private void schedule(Movie item) {
             GsonBuilder b = new GsonBuilder();
             Gson g = b.create();
-            ArrayList<MediaFile> vv = new ArrayList<>();
-            vv.addAll(item.getFiles());
+            ArrayList<MediaFile> vv = new ArrayList<>(item.getFiles());
 
             if (vv.size() == 1) {
                 MediaFile ff = vv.get(0);
@@ -79,31 +76,30 @@ public class ScheduleMoviesActivity extends AppCompatActivity {
                 }
             }
             final String request = g.toJson(vv);
-            System.out.println(request);
+            Log.d(TAG, "result: "+request);
             new Thread() {
                 @Override
                 public void run() {
                     String rr = UrlUtility.exchangeJson("http://192.168.100.50:21122/video", request);
-                    System.out.println(rr);
+                    Log.d(TAG, "result: "+rr);
                 }
             }.start();
         }
 
-        SimpleItemRecyclerViewAdapter(ScheduleMoviesActivity parent,
-                                      List<Movie> items) {
+        SimpleItemRecyclerViewAdapter(List<Movie> items) {
             Collections.sort(items);
             mValues = items;
-            mParentActivity = parent;
         }
 
         @Override
-        public MovieViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        @NonNull
+        public MovieViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
             View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.movie_item_content, parent, false);
             return new MovieViewHolder(view);
         }
 
         @Override
-        public void onBindViewHolder(final MovieViewHolder holder, int position) {
+        public void onBindViewHolder(@NonNull final MovieViewHolder holder, int position) {
             Movie current = mValues.get(position);
             holder.mMovieTitleView.setText(current.getTitle());
 
@@ -121,7 +117,7 @@ public class ScheduleMoviesActivity extends AppCompatActivity {
 
             MovieViewHolder(View view) {
                 super(view);
-                mMovieTitleView = (TextView) view.findViewById(R.id.movie_title);
+                mMovieTitleView = view.findViewById(R.id.movie_title);
             }
         }
     }
