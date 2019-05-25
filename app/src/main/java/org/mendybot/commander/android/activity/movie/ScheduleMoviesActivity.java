@@ -1,5 +1,7 @@
 package org.mendybot.commander.android.activity.movie;
 
+import android.os.Handler;
+import android.os.Looper;
 import android.support.annotation.NonNull;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -19,11 +21,10 @@ import org.mendybot.commander.android.R;
 import org.mendybot.commander.android.domain.MediaFile;
 import org.mendybot.commander.android.domain.Movie;
 import org.mendybot.commander.android.model.MediaModel;
+import org.mendybot.commander.android.model.list.MovieListListener;
 import org.mendybot.commander.android.tools.UrlUtility;
 
 import java.util.ArrayList;
-import java.util.Collections;
-import java.util.List;
 
 public class ScheduleMoviesActivity extends AppCompatActivity {
     private static final String TAG = ScheduleMoviesActivity.class.getSimpleName();
@@ -36,6 +37,8 @@ public class ScheduleMoviesActivity extends AppCompatActivity {
         RecyclerView recyclerView = findViewById(R.id.movie_list);
         assert recyclerView != null;
         setupRecyclerView(recyclerView);
+        SimpleItemRecyclerViewAdapter adapter = (SimpleItemRecyclerViewAdapter) recyclerView.getAdapter();
+        MediaModel.getInstance().addMovieListListener(adapter);
 
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
@@ -43,15 +46,24 @@ public class ScheduleMoviesActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    protected void onDestroy() {
+        RecyclerView recyclerView = findViewById(R.id.movie_list);
+        SimpleItemRecyclerViewAdapter adapter = (SimpleItemRecyclerViewAdapter) recyclerView.getAdapter();
+        MediaModel.getInstance().removeMovieListListener(adapter);
+        super.onDestroy();
+        System.gc();
+    }
+
     private void setupRecyclerView(@NonNull RecyclerView recyclerView) {
-        recyclerView.setAdapter(new SimpleItemRecyclerViewAdapter(MediaModel.getInstance().getMovies()));
+        recyclerView.setAdapter(new SimpleItemRecyclerViewAdapter());
     }
 
     public static class SimpleItemRecyclerViewAdapter
-            extends RecyclerView.Adapter<SimpleItemRecyclerViewAdapter.MovieViewHolder> {
-
+            extends RecyclerView.Adapter<SimpleItemRecyclerViewAdapter.MovieViewHolder>
+            implements MovieListListener
+    {
         private static final String TAG = SimpleItemRecyclerViewAdapter.class.getSimpleName();
-        private final List<Movie> mValues;
         private final View.OnClickListener mOnClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -87,11 +99,6 @@ public class ScheduleMoviesActivity extends AppCompatActivity {
             }.start();
         }
 
-        SimpleItemRecyclerViewAdapter(List<Movie> items) {
-            Collections.sort(items);
-            mValues = items;
-        }
-
         @Override
         @NonNull
         public MovieViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -101,7 +108,7 @@ public class ScheduleMoviesActivity extends AppCompatActivity {
 
         @Override
         public void onBindViewHolder(@NonNull final MovieViewHolder holder, int position) {
-            Movie current = mValues.get(position);
+            Movie current = MediaModel.getInstance().getMovies().get(position);
             holder.mMovieTitleView.setText(current.getTitle());
 
             holder.itemView.setTag(current);
@@ -110,7 +117,17 @@ public class ScheduleMoviesActivity extends AppCompatActivity {
 
         @Override
         public int getItemCount() {
-            return mValues.size();
+            return MediaModel.getInstance().getMovies().size();
+        }
+
+        @Override
+        public void listChanged() {
+            new Handler(Looper.getMainLooper()).post(new Runnable(){
+                @Override
+                public void run() {
+                    notifyDataSetChanged();
+                }
+            });
         }
 
         class MovieViewHolder extends RecyclerView.ViewHolder {

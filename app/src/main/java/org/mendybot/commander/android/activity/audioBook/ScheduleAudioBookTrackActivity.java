@@ -1,6 +1,8 @@
 package org.mendybot.commander.android.activity.audioBook;
 
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.support.annotation.NonNull;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -21,10 +23,9 @@ import org.mendybot.commander.android.domain.MediaFile;
 import org.mendybot.commander.android.domain.SongAlbum;
 import org.mendybot.commander.android.domain.SongTrack;
 import org.mendybot.commander.android.model.MediaModel;
+import org.mendybot.commander.android.model.list.TrackListListener;
 import org.mendybot.commander.android.tools.UrlUtility;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class ScheduleAudioBookTrackActivity extends AppCompatActivity {
@@ -37,30 +38,32 @@ public class ScheduleAudioBookTrackActivity extends AppCompatActivity {
 
         SongAlbum item = MediaModel.getInstance().getActiveAbAlbum();
         if (getSupportActionBar() != null && item != null) {
-            getSupportActionBar().setTitle(getResources().getString(R.string.title_activity_schedule_audio_book)+" - "+item.getTitle());
+            getSupportActionBar().setTitle(getResources().getString(R.string.title_activity_schedule_audio_book) + " - " + item.getTitle());
         }
 
         RecyclerView recyclerView = findViewById(R.id.music_track_list);
         assert recyclerView != null;
         setupRecyclerView(recyclerView);
+        SimpleItemRecyclerViewAdapter adapter = (SimpleItemRecyclerViewAdapter) recyclerView.getAdapter();
+        MediaModel.getInstance().addAbTrackListListener(adapter);
 
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
+    }
 
-
+    @Override
+    protected void onDestroy() {
+        RecyclerView recyclerView = findViewById(R.id.music_track_list);
+        SimpleItemRecyclerViewAdapter adapter = (SimpleItemRecyclerViewAdapter) recyclerView.getAdapter();
+        MediaModel.getInstance().removeAbTrackListListener(adapter);
+        super.onDestroy();
+        System.gc();
     }
 
     private void setupRecyclerView(@NonNull RecyclerView recyclerView) {
-        SongAlbum albumn = MediaModel.getInstance().getActiveAbAlbum();
-        List<SongTrack> list;
-        if (albumn == null) {
-            list = new ArrayList<>();
-        } else {
-            list = albumn.getTracks();
-        }
-        recyclerView.setAdapter(new SimpleItemRecyclerViewAdapter(this, list));
+        recyclerView.setAdapter(new SimpleItemRecyclerViewAdapter(this));
     }
 
     public static void schedule(String name, List<MediaFile> vv) {
@@ -74,27 +77,27 @@ public class ScheduleAudioBookTrackActivity extends AppCompatActivity {
         } else {
             int counter = 1;
             for (MediaFile ff : vv) {
-                ff.setTitle(name+" part "+(counter++));
+                ff.setTitle(name + " part " + (counter++));
                 ff.setAnnounce(false);
             }
         }
         final String request = g.toJson(vv);
-        Log.d(TAG, "request: "+request);
+        Log.d(TAG, "request: " + request);
         new Thread() {
             @Override
             public void run() {
                 String rr = UrlUtility.exchangeJson("http://192.168.100.50:21121/audio", request);
-                Log.d(TAG, "result: "+rr);
+                Log.d(TAG, "result: " + rr);
             }
         }.start();
     }
 
 
     public static class SimpleItemRecyclerViewAdapter
-            extends RecyclerView.Adapter<SimpleItemRecyclerViewAdapter.AudioBookViewHolder> implements View.OnClickListener {
+            extends RecyclerView.Adapter<SimpleItemRecyclerViewAdapter.AudioBookViewHolder>
+            implements TrackListListener, View.OnClickListener {
 
         private final ScheduleAudioBookTrackActivity mParentActivity;
-        private final List<SongTrack> mValues;
         private final View.OnClickListener mOnClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -106,7 +109,7 @@ public class ScheduleAudioBookTrackActivity extends AppCompatActivity {
         private void select(SongTrack item) {
             MediaModel.getInstance().setActiveAbTrack(item);
             if (mParentActivity.getSupportActionBar() != null && item != null) {
-                mParentActivity.getSupportActionBar().setTitle(mParentActivity.getResources().getString(R.string.title_activity_schedule_audio_book) + " - " + item.getAlbumn().getTitle()+" - "+item.getTitle());
+                mParentActivity.getSupportActionBar().setTitle(mParentActivity.getResources().getString(R.string.title_activity_schedule_audio_book) + " - " + item.getAlbumn().getTitle() + " - " + item.getTitle());
                 TextView mAudioBookTrackArtist = mParentActivity.findViewById(R.id.music_selected_track_artist_name);
                 mAudioBookTrackArtist.setText(item.getAlbumn().getArtist().getName());
                 TextView mAudioBookTrackAlbumn = mParentActivity.findViewById(R.id.music_selected_track_albumn_name);
@@ -123,10 +126,7 @@ public class ScheduleAudioBookTrackActivity extends AppCompatActivity {
 
         }
 
-        SimpleItemRecyclerViewAdapter(ScheduleAudioBookTrackActivity parent,
-                                      List<SongTrack> items) {
-            Collections.sort(items);
-            mValues = items;
+        SimpleItemRecyclerViewAdapter(ScheduleAudioBookTrackActivity parent) {
             mParentActivity = parent;
         }
 
@@ -139,16 +139,25 @@ public class ScheduleAudioBookTrackActivity extends AppCompatActivity {
 
         @Override
         public void onBindViewHolder(@NonNull final AudioBookViewHolder holder, int position) {
-            SongTrack current = mValues.get(position);
+            SongTrack current = MediaModel.getInstance().getActiveAbAlbum().getTracks().get(position);
             holder.mAudioBookTrackNameView.setText(current.getTitle());
-
             holder.itemView.setTag(current);
             holder.itemView.setOnClickListener(mOnClickListener);
         }
 
         @Override
         public int getItemCount() {
-            return mValues.size();
+            return MediaModel.getInstance().getActiveAbAlbum().getTracks().size();
+        }
+
+        @Override
+        public void listChanged() {
+            new Handler(Looper.getMainLooper()).post(new Runnable() {
+                @Override
+                public void run() {
+                    notifyDataSetChanged();
+                }
+            });
         }
 
         @Override

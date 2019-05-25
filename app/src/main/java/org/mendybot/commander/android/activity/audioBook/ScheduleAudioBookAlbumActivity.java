@@ -2,6 +2,8 @@ package org.mendybot.commander.android.activity.audioBook;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.support.annotation.NonNull;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -18,8 +20,8 @@ import org.mendybot.commander.android.domain.MediaFile;
 import org.mendybot.commander.android.domain.SongAlbum;
 import org.mendybot.commander.android.domain.SongTrack;
 import org.mendybot.commander.android.model.MediaModel;
+import org.mendybot.commander.android.model.list.AlbumListListener;
 
-import java.util.Collections;
 import java.util.List;
 
 public class ScheduleAudioBookAlbumActivity extends AppCompatActivity {
@@ -32,6 +34,8 @@ public class ScheduleAudioBookAlbumActivity extends AppCompatActivity {
         RecyclerView recyclerView = findViewById(R.id.albumn_list);
         assert recyclerView != null;
         setupRecyclerView(recyclerView);
+        SimpleItemRecyclerViewAdapter adapter = (SimpleItemRecyclerViewAdapter) recyclerView.getAdapter();
+        MediaModel.getInstance().addAbAlbumListListener(adapter);
 
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
@@ -39,15 +43,24 @@ public class ScheduleAudioBookAlbumActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    protected void onDestroy() {
+        RecyclerView recyclerView = findViewById(R.id.albumn_list);
+        SimpleItemRecyclerViewAdapter adapter = (SimpleItemRecyclerViewAdapter) recyclerView.getAdapter();
+        MediaModel.getInstance().removeAbAlbumListListener(adapter);
+        super.onDestroy();
+        System.gc();
+    }
+
     private void setupRecyclerView(@NonNull RecyclerView recyclerView) {
-        recyclerView.setAdapter(new SimpleItemRecyclerViewAdapter(this, MediaModel.getInstance().getAbAlbums()));
+        recyclerView.setAdapter(new SimpleItemRecyclerViewAdapter(this));
     }
 
     public static class SimpleItemRecyclerViewAdapter
-            extends RecyclerView.Adapter<SimpleItemRecyclerViewAdapter.MusicViewHolder> implements View.OnClickListener {
+            extends RecyclerView.Adapter<SimpleItemRecyclerViewAdapter.MusicViewHolder>
+            implements AlbumListListener, View.OnClickListener {
 
         private final ScheduleAudioBookAlbumActivity mParentActivity;
-        private final List<SongAlbum> mValues;
         private final View.OnClickListener mOnClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -57,44 +70,44 @@ public class ScheduleAudioBookAlbumActivity extends AppCompatActivity {
         };
 
         private void select(SongAlbum item) {
-            MediaModel.getInstance().setActiveAbAlbum(item);
+            if (mParentActivity.getSupportActionBar() != null && item != null) {
+                MediaModel.getInstance().setActiveAbAlbum(item);
 
-            mParentActivity.getSupportActionBar().setTitle(mParentActivity.getResources().getString(R.string.title_activity_schedule_audio_book) + " - " + item.getTitle());
+                mParentActivity.getSupportActionBar().setTitle(mParentActivity.getResources().getString(R.string.title_activity_schedule_audio_book) + " - " + item.getTitle());
 
-            TextView mMusicSelectedArtistView = (TextView) mParentActivity.findViewById(R.id.music_selected_albumn_artist);
-            mMusicSelectedArtistView.setText(item.getArtist().getName());
-            TextView mMusicSelectedAlbumnView = (TextView) mParentActivity.findViewById(R.id.music_selected_albumn_name);
-            mMusicSelectedAlbumnView.setText(item.getTitle());
-            Button mMusicSelectedAlbumnButton = (Button) mParentActivity.findViewById(R.id.music_selected_albumn_button);
-            if (mMusicSelectedAlbumnButton.getVisibility() == Button.INVISIBLE) {
-                mMusicSelectedAlbumnButton.setVisibility(Button.VISIBLE);
+                TextView mMusicSelectedArtistView = mParentActivity.findViewById(R.id.music_selected_albumn_artist);
+                mMusicSelectedArtistView.setText(item.getArtist().getName());
+                TextView mMusicSelectedAlbumnView = mParentActivity.findViewById(R.id.music_selected_albumn_name);
+                mMusicSelectedAlbumnView.setText(item.getTitle());
+                Button mMusicSelectedAlbumnButton = mParentActivity.findViewById(R.id.music_selected_albumn_button);
+                if (mMusicSelectedAlbumnButton.getVisibility() == Button.INVISIBLE) {
+                    mMusicSelectedAlbumnButton.setVisibility(Button.VISIBLE);
+                }
+                mMusicSelectedAlbumnButton.setOnClickListener(this);
+                Button mMusicSubmitAllAlbumnButton = mParentActivity.findViewById(R.id.music_submit_all_albumn_button);
+                if (mMusicSubmitAllAlbumnButton.getVisibility() == Button.INVISIBLE) {
+                    mMusicSubmitAllAlbumnButton.setVisibility(Button.VISIBLE);
+                }
+                mMusicSubmitAllAlbumnButton.setOnClickListener(this);
             }
-            mMusicSelectedAlbumnButton.setOnClickListener(this);
-            Button mMusicSubmitAllAlbumnButton = (Button) mParentActivity.findViewById(R.id.music_submit_all_albumn_button);
-            if (mMusicSubmitAllAlbumnButton.getVisibility() == Button.INVISIBLE) {
-                mMusicSubmitAllAlbumnButton.setVisibility(Button.VISIBLE);
-            }
-            mMusicSubmitAllAlbumnButton.setOnClickListener(this);
-
         }
 
-        SimpleItemRecyclerViewAdapter(ScheduleAudioBookAlbumActivity parent,
-                                      List<SongAlbum> items) {
-            Collections.sort(items);
-            mValues = items;
+        SimpleItemRecyclerViewAdapter(ScheduleAudioBookAlbumActivity parent) {
             mParentActivity = parent;
         }
 
         @Override
-        public MusicViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        @NonNull
+        public MusicViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
             View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.music_albumn_item_content, parent, false);
             return new MusicViewHolder(view);
         }
 
         @Override
-        public void onBindViewHolder(final MusicViewHolder holder, int position) {
-            SongAlbum current = mValues.get(position);
-            holder.mMusicArtistView.setText("[" + current.getArtist().getName() + "]");
+        public void onBindViewHolder(@NonNull final MusicViewHolder holder, int position) {
+            SongAlbum current = MediaModel.getInstance().getAbAlbums().get(position);
+            String line = "[" + current.getArtist().getName() + "]";
+            holder.mMusicArtistView.setText(line);
             holder.mMusicAlbumnView.setText(current.getTitle());
 
             holder.itemView.setTag(current);
@@ -103,7 +116,17 @@ public class ScheduleAudioBookAlbumActivity extends AppCompatActivity {
 
         @Override
         public int getItemCount() {
-            return mValues.size();
+            return MediaModel.getInstance().getAbAlbums().size();
+        }
+
+        @Override
+        public void listChanged() {
+            new Handler(Looper.getMainLooper()).post(new Runnable(){
+                @Override
+                public void run() {
+                    notifyDataSetChanged();
+                }
+            });
         }
 
         @Override
@@ -127,8 +150,8 @@ public class ScheduleAudioBookAlbumActivity extends AppCompatActivity {
 
             MusicViewHolder(View view) {
                 super(view);
-                mMusicArtistView = (TextView) view.findViewById(R.id.music_artist_name);
-                mMusicAlbumnView = (TextView) view.findViewById(R.id.music_albumn_name);
+                mMusicArtistView = view.findViewById(R.id.music_artist_name);
+                mMusicAlbumnView = view.findViewById(R.id.music_albumn_name);
             }
         }
     }

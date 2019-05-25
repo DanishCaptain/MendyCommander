@@ -1,6 +1,8 @@
 package org.mendybot.commander.android.activity.tv;
 
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.support.annotation.NonNull;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -21,10 +23,10 @@ import org.mendybot.commander.android.domain.MediaFile;
 import org.mendybot.commander.android.domain.TvEpisode;
 import org.mendybot.commander.android.domain.TvSeason;
 import org.mendybot.commander.android.model.MediaModel;
+import org.mendybot.commander.android.model.list.TvEpisodeListListener;
 import org.mendybot.commander.android.tools.UrlUtility;
+import org.mendybot.commander.android.model.list.TrackListListener;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class ScheduleShowActivity extends AppCompatActivity {
@@ -43,6 +45,8 @@ public class ScheduleShowActivity extends AppCompatActivity {
         RecyclerView recyclerView = findViewById(R.id.show_list);
         assert recyclerView != null;
         setupRecyclerView(recyclerView);
+        SimpleItemRecyclerViewAdapter adapter = (SimpleItemRecyclerViewAdapter) recyclerView.getAdapter();
+        MediaModel.getInstance().addTvEpisodeListListener(adapter);
 
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
@@ -50,15 +54,17 @@ public class ScheduleShowActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    protected void onDestroy() {
+        RecyclerView recyclerView = findViewById(R.id.show_list);
+        SimpleItemRecyclerViewAdapter adapter = (SimpleItemRecyclerViewAdapter) recyclerView.getAdapter();
+        MediaModel.getInstance().removeTvEpisodeListListener(adapter);
+        super.onDestroy();
+        System.gc();
+    }
+
     private void setupRecyclerView(@NonNull RecyclerView recyclerView) {
-        TvSeason albumn = MediaModel.getInstance().getActiveSeason();
-        List<TvEpisode> list;
-        if (albumn == null) {
-            list = new ArrayList<>();
-        } else {
-            list = albumn.getEpisodes();
-        }
-        recyclerView.setAdapter(new SimpleItemRecyclerViewAdapter(this, list));
+        recyclerView.setAdapter(new SimpleItemRecyclerViewAdapter(this));
     }
 
     public static void schedule(String name, List<MediaFile> vv) {
@@ -89,10 +95,10 @@ public class ScheduleShowActivity extends AppCompatActivity {
 
 
     public static class SimpleItemRecyclerViewAdapter
-            extends RecyclerView.Adapter<SimpleItemRecyclerViewAdapter.ShowViewHolder> implements View.OnClickListener {
+            extends RecyclerView.Adapter<SimpleItemRecyclerViewAdapter.ShowViewHolder>
+            implements TvEpisodeListListener, View.OnClickListener {
 
         private final ScheduleShowActivity mParentActivity;
-        private final List<TvEpisode> mValues;
         private final View.OnClickListener mOnClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -103,7 +109,6 @@ public class ScheduleShowActivity extends AppCompatActivity {
 
         private void select(TvEpisode item) {
             MediaModel.getInstance().setActiveEpisode(item);
-
             if (mParentActivity.getSupportActionBar() != null && item != null) {
                 mParentActivity.getSupportActionBar().setTitle(mParentActivity.getResources().getString(R.string.title_activity_schedule_tv_shows) + " - " + item.getSeason().getTitle() + " - " + item.getTitle());
                 TextView mSeasonTitle = mParentActivity.findViewById(R.id.selected_season_title);
@@ -122,10 +127,7 @@ public class ScheduleShowActivity extends AppCompatActivity {
 
         }
 
-        SimpleItemRecyclerViewAdapter(ScheduleShowActivity parent,
-                                      List<TvEpisode> items) {
-            Collections.sort(items);
-            mValues = items;
+        SimpleItemRecyclerViewAdapter(ScheduleShowActivity parent) {
             mParentActivity = parent;
         }
 
@@ -138,7 +140,7 @@ public class ScheduleShowActivity extends AppCompatActivity {
 
         @Override
         public void onBindViewHolder(@NonNull final ShowViewHolder holder, int position) {
-            TvEpisode current = mValues.get(position);
+            TvEpisode current = MediaModel.getInstance().getActiveSeason().getEpisodes().get(position);
             holder.mEpisodeTitle.setText(current.getTitle());
 
             holder.itemView.setTag(current);
@@ -147,7 +149,17 @@ public class ScheduleShowActivity extends AppCompatActivity {
 
         @Override
         public int getItemCount() {
-            return mValues.size();
+            return MediaModel.getInstance().getActiveSeason().getEpisodes().size();
+        }
+
+        @Override
+        public void listChanged() {
+            new Handler(Looper.getMainLooper()).post(new Runnable(){
+                @Override
+                public void run() {
+                    notifyDataSetChanged();
+                }
+            });
         }
 
         @Override

@@ -2,6 +2,8 @@ package org.mendybot.commander.android.activity.tv;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.support.annotation.NonNull;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -18,11 +20,13 @@ import org.mendybot.commander.android.domain.MediaFile;
 import org.mendybot.commander.android.domain.TvEpisode;
 import org.mendybot.commander.android.domain.TvSeason;
 import org.mendybot.commander.android.model.MediaModel;
+import org.mendybot.commander.android.model.list.TvSeasonListListener;
 
 import java.util.Collections;
 import java.util.List;
 
 public class ScheduleSeriesActivity extends AppCompatActivity {
+    private static final String TAG = ScheduleSeriesActivity.class.getSimpleName();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +36,8 @@ public class ScheduleSeriesActivity extends AppCompatActivity {
         RecyclerView recyclerView = findViewById(R.id.series_list);
         assert recyclerView != null;
         setupRecyclerView(recyclerView);
+        SimpleItemRecyclerViewAdapter adapter = (SimpleItemRecyclerViewAdapter) recyclerView.getAdapter();
+        MediaModel.getInstance().addTvSeasonListListener(adapter);
 
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
@@ -39,15 +45,24 @@ public class ScheduleSeriesActivity extends AppCompatActivity {
         }
     }
 
+    @Override
+    protected void onDestroy() {
+        RecyclerView recyclerView = findViewById(R.id.series_list);
+        SimpleItemRecyclerViewAdapter adapter = (SimpleItemRecyclerViewAdapter) recyclerView.getAdapter();
+        MediaModel.getInstance().removeTvSeasonListListener(adapter);
+        super.onDestroy();
+        System.gc();
+    }
+
     private void setupRecyclerView(@NonNull RecyclerView recyclerView) {
-        recyclerView.setAdapter(new SimpleItemRecyclerViewAdapter(this, MediaModel.getInstance().getTvSeasons()));
+        recyclerView.setAdapter(new SimpleItemRecyclerViewAdapter(this));
     }
 
     public static class SimpleItemRecyclerViewAdapter
-            extends RecyclerView.Adapter<SimpleItemRecyclerViewAdapter.SeriesViewHolder> implements View.OnClickListener {
+            extends RecyclerView.Adapter<SimpleItemRecyclerViewAdapter.SeriesViewHolder>
+            implements TvSeasonListListener, View.OnClickListener {
 
         private final ScheduleSeriesActivity mParentActivity;
-        private final List<TvSeason> mValues;
         private final View.OnClickListener mOnClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -80,10 +95,7 @@ public class ScheduleSeriesActivity extends AppCompatActivity {
 
         }
 
-        SimpleItemRecyclerViewAdapter(ScheduleSeriesActivity parent,
-                                      List<TvSeason> items) {
-            Collections.sort(items);
-            mValues = items;
+        SimpleItemRecyclerViewAdapter(ScheduleSeriesActivity parent) {
             mParentActivity = parent;
         }
 
@@ -96,7 +108,7 @@ public class ScheduleSeriesActivity extends AppCompatActivity {
 
         @Override
         public void onBindViewHolder(@NonNull final SeriesViewHolder holder, int position) {
-            TvSeason current = mValues.get(position);
+            TvSeason current = MediaModel.getInstance().getTvSeasons().get(position);
             String sTitle = "["+current.getSeries().getTitle()+"]";
             holder.mSeasonName.setText(sTitle);
             holder.mSeriesName.setText(current.getTitle());
@@ -106,7 +118,17 @@ public class ScheduleSeriesActivity extends AppCompatActivity {
 
         @Override
         public int getItemCount() {
-            return mValues.size();
+            return MediaModel.getInstance().getTvSeasons().size();
+        }
+
+        @Override
+        public void listChanged() {
+            new Handler(Looper.getMainLooper()).post(new Runnable(){
+                @Override
+                public void run() {
+                    notifyDataSetChanged();
+                }
+            });
         }
 
         @Override

@@ -10,6 +10,7 @@ public class Movie implements Comparable<Movie> {
     private ArrayList<MediaFile> files = new ArrayList<>();
     private UUID uuid;
     private String title;
+    private String sortTitle;
 
     public Movie(UUID uuid, String title) {
         this.uuid = uuid;
@@ -52,7 +53,19 @@ public class Movie implements Comparable<Movie> {
 
     @Override
     public int compareTo(@NonNull Movie movie) {
-        return title.compareTo(movie.title);
+        String check1;
+        String check2;
+        if (sortTitle != null) {
+            check1 = sortTitle;
+        } else {
+            check1 = title;
+        }
+        if (movie.sortTitle != null) {
+            check2 = movie.sortTitle;
+        } else {
+            check2 = movie.title;
+        }
+        return check1.compareTo(check2);
     }
 
 }

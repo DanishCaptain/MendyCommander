@@ -1,6 +1,8 @@
 package org.mendybot.commander.android.activity.music;
 
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.support.annotation.NonNull;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -17,14 +19,13 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
 import org.mendybot.commander.android.R;
-import org.mendybot.commander.android.domain.SongAlbum;
 import org.mendybot.commander.android.domain.MediaFile;
+import org.mendybot.commander.android.domain.SongAlbum;
 import org.mendybot.commander.android.domain.SongTrack;
 import org.mendybot.commander.android.model.MediaModel;
+import org.mendybot.commander.android.model.list.TrackListListener;
 import org.mendybot.commander.android.tools.UrlUtility;
 
-import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 
 public class ScheduleMusicTrackActivity extends AppCompatActivity {
@@ -37,30 +38,32 @@ public class ScheduleMusicTrackActivity extends AppCompatActivity {
 
         SongAlbum item = MediaModel.getInstance().getActiveAlbum();
         if (getSupportActionBar() != null && item != null) {
-            getSupportActionBar().setTitle(getResources().getString(R.string.title_activity_schedule_music)+" - "+item.getTitle());
+            getSupportActionBar().setTitle(getResources().getString(R.string.title_activity_schedule_music) + " - " + item.getTitle());
         }
 
         RecyclerView recyclerView = findViewById(R.id.music_track_list);
         assert recyclerView != null;
         setupRecyclerView(recyclerView);
+        SimpleItemRecyclerViewAdapter adapter = (SimpleItemRecyclerViewAdapter) recyclerView.getAdapter();
+        MediaModel.getInstance().addTrackListListener(adapter);
 
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
+    }
 
-
+    @Override
+    protected void onDestroy() {
+        RecyclerView recyclerView = findViewById(R.id.music_track_list);
+        SimpleItemRecyclerViewAdapter adapter = (SimpleItemRecyclerViewAdapter) recyclerView.getAdapter();
+        MediaModel.getInstance().removeTrackListListener(adapter);
+        super.onDestroy();
+        System.gc();
     }
 
     private void setupRecyclerView(@NonNull RecyclerView recyclerView) {
-        SongAlbum albumn = MediaModel.getInstance().getActiveAlbum();
-        List<SongTrack> list;
-        if (albumn == null) {
-            list = new ArrayList<>();
-        } else {
-            list = albumn.getTracks();
-        }
-        recyclerView.setAdapter(new SimpleItemRecyclerViewAdapter(this, list));
+        recyclerView.setAdapter(new SimpleItemRecyclerViewAdapter(this));
     }
 
     public static void schedule(String name, List<MediaFile> vv) {
@@ -74,27 +77,27 @@ public class ScheduleMusicTrackActivity extends AppCompatActivity {
         } else {
             int counter = 1;
             for (MediaFile ff : vv) {
-                ff.setTitle(name+" part "+(counter++));
+                ff.setTitle(name + " part " + (counter++));
                 ff.setAnnounce(false);
             }
         }
         final String request = g.toJson(vv);
-        Log.d(TAG, "request: "+request);
+        Log.d(TAG, "request: " + request);
         new Thread() {
             @Override
             public void run() {
                 String rr = UrlUtility.exchangeJson("http://192.168.100.50:21121/audio", request);
-                Log.d(TAG, "result: "+rr);
+                Log.d(TAG, "result: " + rr);
             }
         }.start();
     }
 
 
     public static class SimpleItemRecyclerViewAdapter
-            extends RecyclerView.Adapter<SimpleItemRecyclerViewAdapter.MusicViewHolder> implements View.OnClickListener {
+            extends RecyclerView.Adapter<SimpleItemRecyclerViewAdapter.MusicViewHolder>
+            implements TrackListListener, View.OnClickListener {
 
         private final ScheduleMusicTrackActivity mParentActivity;
-        private final List<SongTrack> mValues;
         private final View.OnClickListener mOnClickListener = new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -106,7 +109,7 @@ public class ScheduleMusicTrackActivity extends AppCompatActivity {
         private void select(SongTrack item) {
             MediaModel.getInstance().setActiveTrack(item);
             if (mParentActivity.getSupportActionBar() != null && item != null) {
-                mParentActivity.getSupportActionBar().setTitle(mParentActivity.getResources().getString(R.string.title_activity_schedule_music) + " - " + item.getAlbumn().getTitle()+" - "+item.getTitle());
+                mParentActivity.getSupportActionBar().setTitle(mParentActivity.getResources().getString(R.string.title_activity_schedule_music) + " - " + item.getAlbumn().getTitle() + " - " + item.getTitle());
                 TextView mMusicTrackArtist = mParentActivity.findViewById(R.id.music_selected_track_artist_name);
                 mMusicTrackArtist.setText(item.getAlbumn().getArtist().getName());
                 TextView mMusicTrackAlbumn = mParentActivity.findViewById(R.id.music_selected_track_albumn_name);
@@ -123,10 +126,7 @@ public class ScheduleMusicTrackActivity extends AppCompatActivity {
 
         }
 
-        SimpleItemRecyclerViewAdapter(ScheduleMusicTrackActivity parent,
-                                      List<SongTrack> items) {
-            Collections.sort(items);
-            mValues = items;
+        SimpleItemRecyclerViewAdapter(ScheduleMusicTrackActivity parent) {
             mParentActivity = parent;
         }
 
@@ -139,7 +139,7 @@ public class ScheduleMusicTrackActivity extends AppCompatActivity {
 
         @Override
         public void onBindViewHolder(@NonNull final MusicViewHolder holder, int position) {
-            SongTrack current = mValues.get(position);
+            SongTrack current = MediaModel.getInstance().getActiveAlbum().getTracks().get(position);
             holder.mMusicTrackNameView.setText(current.getTitle());
 
             holder.itemView.setTag(current);
@@ -148,7 +148,17 @@ public class ScheduleMusicTrackActivity extends AppCompatActivity {
 
         @Override
         public int getItemCount() {
-            return mValues.size();
+            return MediaModel.getInstance().getActiveAlbum().getTracks().size();
+        }
+
+        @Override
+        public void listChanged() {
+            new Handler(Looper.getMainLooper()).post(new Runnable() {
+                @Override
+                public void run() {
+                    notifyDataSetChanged();
+                }
+            });
         }
 
         @Override
