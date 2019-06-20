@@ -143,6 +143,7 @@ public class ScheduleSeriesActivity extends AppCompatActivity {
                 for (TvEpisode track : list) {
                     List<MediaFile> files = track.getFiles();
                     ScheduleShowActivity.schedule(track.getTitle(), files);
+                    System.out.println("-->"+files.get(0).getTitle());
                 }
             }
         }

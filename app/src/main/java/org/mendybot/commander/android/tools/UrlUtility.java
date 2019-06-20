@@ -152,4 +152,47 @@ public final class UrlUtility {
         }
     }
 
+    public static String grabHtml(String urlString) {
+        StringBuilder result = new StringBuilder();
+        HttpURLConnection client = null;
+        try {
+            URL url = new URL(urlString);
+            client = (HttpURLConnection) url.openConnection();
+            client.setConnectTimeout(TIME_OUT);
+            client.setDoInput(true);
+            client.setDoOutput(false);
+            client.setInstanceFollowRedirects(false);
+            client.setRequestMethod("POST");
+            client.setRequestProperty("Content-Type", "text/html");
+            client.setRequestProperty("charset", "utf-8");
+
+            if (client.getResponseCode() == 200) {
+                BufferedReader br = new BufferedReader(new InputStreamReader(client.getInputStream()));
+                String line;
+                while((line = br.readLine()) != null) {
+                    result.append(line);
+                    result.append("\n");
+                }
+                br.close();
+            } else {
+                Log.d(TAG, "response code: "+client.getResponseCode());
+            }
+
+            client.disconnect();
+        } catch (MalformedURLException e) {
+            Log.w(TAG, e);
+            result.append("[]");
+        } catch (NoRouteToHostException e) {
+            Log.w(TAG, e);
+            result.append("[]");
+        } catch (IOException e) {
+            Log.w(TAG, e);
+            result.append("[]");
+        } finally {
+            if (client != null) {
+                client.disconnect();
+            }
+        }
+        return result.toString();
+    }
 }

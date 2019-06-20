@@ -9,6 +9,7 @@ public class TvShowInput implements Comparable<TvShowInput> {
     private ArrayList<MediaFile> files = new ArrayList<>();
     private String uuid;
     private String title;
+    private String sortTitle;
     private int season;
 
     public String getUuid() {
@@ -17,6 +18,10 @@ public class TvShowInput implements Comparable<TvShowInput> {
 
     public String getTitle() {
         return title;
+    }
+
+    public String getSortTitle() {
+        return sortTitle;
     }
 
     public int getSeason() {

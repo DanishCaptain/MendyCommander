@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import org.mendybot.commander.android.R;
+import org.mendybot.commander.android.model.MediaModel;
 import org.mendybot.commander.android.tools.UrlUtility;
 
 public class VideoCommandsActivity extends AppCompatActivity implements View.OnClickListener {
@@ -20,6 +21,7 @@ public class VideoCommandsActivity extends AppCompatActivity implements View.OnC
     private View bSendVideoVolDown;
     private View bSendVideoPrevChapter;
     private View bSendVideoNextChapter;
+    private View bSendDumpQueue;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +42,9 @@ public class VideoCommandsActivity extends AppCompatActivity implements View.OnC
         bSendVideoPrevChapter.setOnClickListener(this);
         bSendVideoNextChapter = findViewById(R.id.send_video_chap_next);
         bSendVideoNextChapter.setOnClickListener(this);
+
+        bSendDumpQueue = findViewById(R.id.send_dump_video_queue);
+        bSendDumpQueue.setOnClickListener(this);
 
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
@@ -63,7 +68,13 @@ public class VideoCommandsActivity extends AppCompatActivity implements View.OnC
             sendVideoPrevChapter();
         } else if (view == bSendVideoNextChapter) {
             sendVideoNextChapter();
+        } else if (view == bSendDumpQueue) {
+            sendDumpQueue();
         }
+    }
+
+    private void sendDumpQueue() {
+        sendVideoEnd("{\"CMD\": \"DUMP_QUEUE\"}");
     }
 
     private void sendVideoEnd() {
@@ -99,7 +110,7 @@ public class VideoCommandsActivity extends AppCompatActivity implements View.OnC
         new Thread() {
             @Override
             public void run() {
-                String rr = UrlUtility.exchangeJson("http://192.168.100.50:21122/movies/cmd", request);
+                String rr = UrlUtility.exchangeJson("http://"+ MediaModel.getInstance().getHost()+":21122/videos/cmd", request);
                 Log.d(TAG, "result: "+rr);
             }
         }.start();

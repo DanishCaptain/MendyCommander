@@ -5,6 +5,9 @@ import android.content.ContentValues;
 import android.content.Context;
 import android.database.Cursor;
 import android.util.Log;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.Spinner;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -39,7 +42,7 @@ import java.util.UUID;
 import static org.mendybot.commander.android.model.store.MediaTable.COLUMN_KEY;
 import static org.mendybot.commander.android.model.store.MediaTable.COLUMN_VALUE;
 
-public final class MediaModel {
+public final class MediaModel implements AdapterView.OnItemSelectedListener {
     private static final String TAG = MediaModel.class.getSimpleName();
     private static final String KEY_MOVIE = "MOVIE";
     private static final String KEY_TV_SHOW = "TV_SHOW";
@@ -61,6 +64,7 @@ public final class MediaModel {
     private List<SongAlbum> albumL = new ArrayList<>();
     private Map<String, SongArtist> abArtistM = new HashMap<>();
     private List<SongAlbum> abAlbumL = new ArrayList<>();
+    private List<String> hostL = new ArrayList<>();
 
     private boolean initialized;
     private ContentResolver resolver;
@@ -70,8 +74,18 @@ public final class MediaModel {
     private SongTrack abActiveTrack;
     private TvSeason activeSeason;
     private TvEpisode activeEpisode;
+    private String host;
 
     private MediaModel() {
+        hostL.add("192.168.100.50");
+        hostL.add("192.168.100.51");
+        hostL.add("192.168.100.12");
+        hostL.add("192.168.100.50");
+        host = hostL.get(0);
+    }
+
+    public String getHost() {
+        return host;
     }
 
     public void init(Context context) {
@@ -113,9 +127,11 @@ public final class MediaModel {
                     seasonL.clear();
                     for (TvShowInput tv : shows) {
                         String seriesTitle = tv.getTitle();
+                        String seriesSortTitle = tv.getSortTitle();
                         TvSeries series = seriesM.get(seriesTitle);
                         if (series == null) {
                             series = new TvSeries(seriesTitle);
+                            series.setSortTitle(seriesSortTitle);
                             seriesM.put(seriesTitle, series);
                         }
                         UUID seasonUuid = UUID.fromString(tv.getUuid());
@@ -258,7 +274,7 @@ public final class MediaModel {
             Thread t = new Thread() {
                 @Override
                 public void run() {
-                    String result = UrlUtility.grabJson("http://192.168.100.50:21122/movies");
+                    String result = UrlUtility.grabJson("http://"+host+":21122/movies");
                     List<Movie> f = g.fromJson(result, type);
                     if (f.size() > 0) {
                         Log.d(TAG, "init movies db");
@@ -285,7 +301,7 @@ public final class MediaModel {
             Thread t = new Thread() {
                 @Override
                 public void run() {
-                    String result = UrlUtility.grabJson("http://192.168.100.50:21122/tv_shows");
+                    String result = UrlUtility.grabJson("http://"+host+":21122/tv_shows");
                     List<TvShowInput> shows = g.fromJson(result, type);
                     if (shows.size() > 0) {
                         Log.d(TAG, "init tv shows db");
@@ -312,7 +328,7 @@ public final class MediaModel {
             Thread t = new Thread() {
                 @Override
                 public void run() {
-                    String result = UrlUtility.grabJson("http://192.168.100.50:21121/music");
+                    String result = UrlUtility.grabJson("http://"+host+":21121/music");
                     List<SongInput> songs = g.fromJson(result, type);
                     if (songs.size() > 0) {
                         Log.d(TAG, "init music db");
@@ -339,7 +355,7 @@ public final class MediaModel {
             Thread t = new Thread() {
                 @Override
                 public void run() {
-                    String result = UrlUtility.grabJson("http://192.168.100.50:21121/audio_book");
+                    String result = UrlUtility.grabJson("http://"+host+":21121/audio_book");
                     List<SongInput> songs = g.fromJson(result, type);
                     if (songs.size() > 0) {
                         Log.d(TAG, "init audio books db");
@@ -497,4 +513,21 @@ public final class MediaModel {
         abTrackListManager.removeListener(listListener);
     }
 
+    public void register(Spinner spinner) {
+        spinner.setOnItemSelectedListener(this);
+    }
+
+    @Override
+    public void onItemSelected(AdapterView av, View view, int pos, long id) {
+            host = (String) av.getItemAtPosition(pos);
+    }
+
+    @Override
+    public void onNothingSelected(AdapterView<?> adapterView) {
+        System.out.println("bks");
+    }
+
+    public List<String> getHosts() {
+        return hostL;
+    }
 }

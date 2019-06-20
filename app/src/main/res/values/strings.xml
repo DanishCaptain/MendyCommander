@@ -1,6 +1,6 @@
 <resources>
-    <string name="app_name">MendyCommander</string>
-    <string name="title_activity_commander">CommanderActivity</string>
+    <string name="app_name">MendyBot</string>
+    <string name="title_activity_commander">MendyBot Commander</string>
     <string name="title_activity_nav">NavActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -10,6 +10,7 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_audio_commands">Audio Commands</string>
     <string name="title_activity_video_commands">Video Commands</string>
+    <string name="title_activity_media_status">Media Status</string>
     <string name="title_activity_schedule_movies">Schedule Movies</string>
     <string name="title_activity_schedule_tv_shows">Schedule TV</string>
     <string name="title_activity_schedule_music">Schedule Music</string>
@@ -25,5 +26,7 @@
     <string name="menu_send">Send</string>
     <string name="title_activity_command">CommandActivity</string>
     <string name="content_schedule_movies">Schedule Movies</string>
+
+    <string name="server_prompt">Choose a server</string>
 
 </resources>

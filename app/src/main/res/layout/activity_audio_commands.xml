@@ -11,44 +11,57 @@
         android:layout_height="match_parent"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent" >
+        app:layout_constraintLeft_toLeftOf="parent">
 
-    <Button
-        android:id="@+id/send-audio-quit"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="128dp"
-        android:text="Quit Audio" />
+        <Button
+            android:id="@+id/send-dump-audio-queue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="128dp"
+            android:text="Dump Audio Queue" />
+
+        <Button
+            android:id="@+id/send-audio-quit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="128dp"
+            android:text="Quit Audio" />
+
         <Button
             android:id="@+id/send-audio-pause"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="128dp"
             android:text="Pause Audio" />
+
         <Button
             android:id="@+id/send-audio-subtitles"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="128dp"
             android:text="Audio Subtitles" />
+
         <Button
             android:id="@+id/send-audio-vol-up"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="128dp"
             android:text="Audio vol UP" />
+
         <Button
             android:id="@+id/send-audio-vol-down"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="128dp"
             android:text="Audio vol DOWN" />
+
         <Button
             android:id="@+id/send-audio-chap-prev"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="128dp"
             android:text="Audio Prev Chapter" />
+
         <Button
             android:id="@+id/send-audio-chap-next"
             android:layout_width="wrap_content"

@@ -99,7 +99,7 @@ public class UrlUtilityTest {
     //@Test
     public void sendQuitJson() {
         String request = "{\"CMD\": \"QUIT\"}";
-        String rr = UrlUtility.exchangeJson("http://192.168.100.50:21222/movies/cmd", request);
+        String rr = UrlUtility.exchangeJson("http://192.168.100.50:21222/videos/cmd", request);
         System.out.println(rr);
     }
 }

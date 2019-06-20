@@ -76,7 +76,7 @@ public class ScheduleMoviesActivity extends AppCompatActivity {
             GsonBuilder b = new GsonBuilder();
             Gson g = b.create();
             ArrayList<MediaFile> vv = new ArrayList<>(item.getFiles());
-
+System.out.println("BKSBKS "+vv);
             if (vv.size() == 1) {
                 MediaFile ff = vv.get(0);
                 ff.setTitle(item.getTitle());
@@ -89,11 +89,11 @@ public class ScheduleMoviesActivity extends AppCompatActivity {
                 }
             }
             final String request = g.toJson(vv);
-            Log.d(TAG, "result: "+request);
+            Log.i(TAG, "result: "+request);
             new Thread() {
                 @Override
                 public void run() {
-                    String rr = UrlUtility.exchangeJson("http://192.168.100.50:21122/video", request);
+                    String rr = UrlUtility.exchangeJson("http://"+MediaModel.getInstance().getHost()+":21122/video", request);
                     Log.d(TAG, "result: "+rr);
                 }
             }.start();

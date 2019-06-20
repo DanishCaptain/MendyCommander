@@ -8,6 +8,7 @@ import java.util.UUID;
 public class TvSeries implements Comparable<TvSeries> {
     private HashMap<UUID, TvSeason> seasonM = new HashMap<>();
     private final String title;
+    private String sortTitle;
 
     public TvSeries(String title) {
         this.title = title;
@@ -15,6 +16,14 @@ public class TvSeries implements Comparable<TvSeries> {
 
     public String getTitle() {
         return title;
+    }
+
+    public String getSortTitle() {
+        return sortTitle;
+    }
+
+    public void setSortTitle(String sortTitle) {
+        this.sortTitle = sortTitle;
     }
 
     public TvSeason lookupSeason(UUID uuid) {

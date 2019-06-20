@@ -8,6 +8,7 @@ import android.view.MenuItem;
 import android.view.View;
 
 import org.mendybot.commander.android.R;
+import org.mendybot.commander.android.model.MediaModel;
 import org.mendybot.commander.android.tools.UrlUtility;
 
 public class AudioCommandsActivity extends AppCompatActivity implements View.OnClickListener {
@@ -20,6 +21,7 @@ public class AudioCommandsActivity extends AppCompatActivity implements View.OnC
     private View bSendAudioVolDown;
     private View bSendAudioPrevChapter;
     private View bSendAudioNextChapter;
+    private View bSendDumpQueue;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +42,9 @@ public class AudioCommandsActivity extends AppCompatActivity implements View.OnC
         bSendAudioPrevChapter.setOnClickListener(this);
         bSendAudioNextChapter = findViewById(R.id.send_audio_chap_next);
         bSendAudioNextChapter.setOnClickListener(this);
+
+        bSendDumpQueue = findViewById(R.id.send_dump_audio_queue);
+        bSendDumpQueue.setOnClickListener(this);
 
         ActionBar actionBar = getSupportActionBar();
         if (actionBar != null) {
@@ -63,7 +68,13 @@ public class AudioCommandsActivity extends AppCompatActivity implements View.OnC
             sendAudioPrevChapter();
         } else if (view == bSendAudioNextChapter) {
             sendAudioNextChapter();
+        } else if (view == bSendDumpQueue) {
+            sendDumpQueue();
         }
+    }
+
+    private void sendDumpQueue() {
+        sendAudioEnd("{\"CMD\": \"DUMP_QUEUE\"}");
     }
 
     private void sendAudioEnd() {
@@ -99,7 +110,7 @@ public class AudioCommandsActivity extends AppCompatActivity implements View.OnC
         new Thread() {
             @Override
             public void run() {
-                String rr = UrlUtility.exchangeJson("http://192.168.100.50:21121/music/cmd", request);
+                String rr = UrlUtility.exchangeJson("http://"+ MediaModel.getInstance().getHost()+":21121/audios/cmd", request);
                 Log.d(TAG, "result: "+rr);
             }
         }.start();

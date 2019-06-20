@@ -4,68 +4,103 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.CommanderActivity"
-    tools:showIn="@layout/activity_commander"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    >
+    tools:context=".activity.CommanderActivity"
+    tools:showIn="@layout/activity_commander">
 
     <LinearLayout
         android:id="@+id/schedule-movies_outer"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:layout_editor_absoluteX="0dp">
+        tools:layout_editor_absoluteX="0dp"
+        >
 
-        <Button
-            android:id="@+id/send-video-commands"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="128dp"
-            android:text="Video Commands" />
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="0dp"
+            >
+            <Button
+                android:id="@+id/media-status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Media Status" />
+        </LinearLayout>
 
-        <Button
-            android:id="@+id/send-audio-commands"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="128dp"
-            android:text="Audio Commands" />
+            android:orientation="horizontal"
+            tools:layout_editor_absoluteX="0dp"
+            >
+            <Button
+                android:id="@+id/send-system-commands"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="System Commands" />
 
+            <Button
+                android:id="@+id/send-video-commands"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Video Commands" />
+
+            <Button
+                android:id="@+id/send-audio-commands"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Audio Commands" />
+        </LinearLayout>
+
+
+        <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        >
         <Button
             android:id="@+id/schedule-movies"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="128dp"
             android:text="@string/content_schedule_movies"
-            app:layout_constraintBottom_toTopOf="@+id/schedule-movies_outer" />
-
+            />
         <Button
             android:id="@+id/schedule-tv-shows"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="128dp"
             android:text="Schedule TV Shows" />
-
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="0dp"
+        >
         <Button
             android:id="@+id/schedule-music"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="128dp"
             android:text="Schedule Music" />
 
         <Button
             android:id="@+id/schedule-audio-book"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="128dp"
             android:text="Schedule Audio Book" />
+    </LinearLayout>
+
+
 
         <android.support.design.widget.FloatingActionButton
             android:id="@+id/fab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="bottom|end"
+            android:layout_gravity="top|end"
             android:layout_margin="@dimen/fab_margin"
-            app:srcCompat="@android:drawable/ic_dialog_email" />
+            app:srcCompat="@android:drawable/ic_dialog_dialer" />
 
     </LinearLayout>
 

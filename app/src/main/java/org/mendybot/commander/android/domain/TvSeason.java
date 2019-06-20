@@ -53,6 +53,14 @@ public class TvSeason implements Comparable<TvSeason> {
         return series.getTitle()+"::"+title;
     }
 
+    private String getLongSortTitle() {
+        if (series.getSortTitle() == null) {
+            return title;
+        } else {
+            return series.getSortTitle() + "::" + title;
+        }
+    }
+
     @Override
     public int hashCode() {
         return uuid.hashCode();
@@ -69,7 +77,9 @@ public class TvSeason implements Comparable<TvSeason> {
 
     @Override
     public int compareTo(@NonNull TvSeason season) {
-        return getLongTitle().compareTo(season.getLongTitle());
+        String c1 = getLongSortTitle();
+        String c2 = season.getLongSortTitle();
+        return c1.compareTo(c2);
     }
 
 }
