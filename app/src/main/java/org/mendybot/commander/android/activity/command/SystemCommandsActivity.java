@@ -20,7 +20,7 @@ public class SystemCommandsActivity extends AppCompatActivity implements View.On
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_audio_commands);
+        setContentView(R.layout.activity_system_commands);
 
         bSendAppRestart = findViewById(R.id.send_app_restart_command);
         bSendAppRestart.setOnClickListener(this);

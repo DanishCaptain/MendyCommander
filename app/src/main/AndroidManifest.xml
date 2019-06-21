@@ -13,37 +13,52 @@
         android:theme="@style/AppTheme">
         <activity android:name=".activity.movie.ScheduleMoviesActivity"
             android:label="@string/title_activity_schedule_movies"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             />
         <activity android:name=".activity.tv.ScheduleSeriesActivity"
             android:label="@string/title_activity_schedule_tv_shows"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             />
         <activity android:name=".activity.tv.ScheduleShowActivity"
             android:label="@string/title_activity_schedule_tv_shows"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             />
         <activity android:name=".activity.music.ScheduleMusicAlbumActivity"
             android:label="@string/title_activity_schedule_music"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             />
         <activity android:name=".activity.music.ScheduleMusicTrackActivity"
             android:label="@string/title_activity_schedule_music"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             />
         <activity android:name=".activity.command.VideoCommandsActivity"
             android:label="@string/title_activity_video_commands"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             />
         <activity android:name=".activity.command.AudioCommandsActivity"
             android:label="@string/title_activity_audio_commands"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            />
+        <activity android:name=".activity.command.SystemCommandsActivity"
+            android:label="@string/title_activity_system_commands"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             />
         <activity android:name=".activity.command.MediaStatusActivity"
             android:label="@string/title_activity_media_status"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             />
         <activity android:name=".activity.audioBook.ScheduleAudioBookAlbumActivity"
             android:label="@string/title_activity_schedule_audio_book"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             />
         <activity android:name=".activity.audioBook.ScheduleAudioBookTrackActivity"
             android:label="@string/title_activity_schedule_audio_book"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             />
         <activity
             android:name=".activity.CommanderActivity"
             android:label="@string/title_activity_commander"
+            android:configChanges="keyboardHidden|orientation|screenSize"
             >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
