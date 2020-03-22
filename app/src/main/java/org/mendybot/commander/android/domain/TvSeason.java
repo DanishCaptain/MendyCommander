@@ -3,6 +3,7 @@ package org.mendybot.commander.android.domain;
 import android.support.annotation.NonNull;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.HashMap;
 import java.util.List;
 import java.util.UUID;
@@ -36,6 +37,7 @@ public class TvSeason implements Comparable<TvSeason> {
     }
 
     public List<TvEpisode> getEpisodes() {
+        Collections.sort(episodeL);
         return episodeL;
     }
 
@@ -77,9 +79,9 @@ public class TvSeason implements Comparable<TvSeason> {
 
     @Override
     public int compareTo(@NonNull TvSeason season) {
-        String c1 = getLongSortTitle();
-        String c2 = season.getLongSortTitle();
-        return c1.compareTo(c2);
+        String sort1 = series.getEffectiveTitle()+":"+title;
+        String sort2 = season.getSeries().getEffectiveTitle()+":"+season.getTitle();
+        return sort1.compareTo(sort2);
     }
 
 }

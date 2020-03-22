@@ -41,17 +41,24 @@
                 android:layout_height="wrap_content"
                 android:text="System Commands" />
 
-            <Button
-                android:id="@+id/send-video-commands"
+            <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Video Commands" />
+                android:orientation="vertical"
+                tools:layout_editor_absoluteX="0dp"
+                >
+                <Button
+                    android:id="@+id/send-video-commands"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Video Commands" />
 
-            <Button
-                android:id="@+id/send-audio-commands"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Audio Commands" />
+                <Button
+                    android:id="@+id/send-audio-commands"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Audio Commands" />
+            </LinearLayout>
         </LinearLayout>
 
 

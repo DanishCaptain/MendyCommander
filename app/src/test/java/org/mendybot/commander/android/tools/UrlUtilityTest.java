@@ -35,9 +35,9 @@ public class UrlUtilityTest {
     public void exchangeMovieJson() {
 //        String json = "[{\"title\": \"Harry Potter and the Deathly Hallows\", \"fileName\": \"hp/hp7a.mp3\"}]";
 //        String result = UrlUtility.exchangeJson("https://sspservices.pub.network/ssp-services/lookup/site?t=60aa4471-4219-483d-bc56-7b2ff581638b", "{}");
-//        String result = UrlUtility.exchangeJson("http://192.168.100.50:21121/audio", json);
-        String result = UrlUtility.grabJson("http://192.168.100.50:21122/movies");
-//        String result = UrlUtility.grabJson("http://192.168.100.50:21121/tv_shows");
+//        String result = UrlUtility.exchangeJson("http://10.10.10.50:21121/audio", json);
+        String result = UrlUtility.grabJson("http://10.10.10.50:21122/movies");
+//        String result = UrlUtility.grabJson("http://10.10.10.50:21121/tv_shows");
         assertNotNull(result);
         GsonBuilder b = new GsonBuilder();
         Gson g = b.create();
@@ -67,13 +67,13 @@ public class UrlUtilityTest {
         String request = g.toJson(vv);
         System.out.println(request);
 
-        String rr = UrlUtility.exchangeJson("http://192.168.100.50:21122/video", request);
+        String rr = UrlUtility.exchangeJson("http://10.10.10.50:21122/video", request);
         System.out.println(rr);
     }
 
     //@Test
     public void exchangeTvShowsJson() {
-        String result = UrlUtility.grabJson("http://192.168.100.50:21122/tv_shows");
+        String result = UrlUtility.grabJson("http://10.10.10.50:21122/tv_shows");
         assertNotNull(result);
         GsonBuilder b = new GsonBuilder();
         Gson g = b.create();
@@ -92,14 +92,14 @@ public class UrlUtilityTest {
         String request = g.toJson(vv);
         System.out.println(request);
 
-        String rr = UrlUtility.exchangeJson("http://192.168.100.50:21122/video", request);
+        String rr = UrlUtility.exchangeJson("http://10.10.10.50:21122/video", request);
         System.out.println(rr);
     }
 
     //@Test
     public void sendQuitJson() {
         String request = "{\"CMD\": \"QUIT\"}";
-        String rr = UrlUtility.exchangeJson("http://192.168.100.50:21222/videos/cmd", request);
+        String rr = UrlUtility.exchangeJson("http://10.10.10.50:21222/videos/cmd", request);
         System.out.println(rr);
     }
 }

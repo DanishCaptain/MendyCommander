@@ -26,6 +26,14 @@ public class TvSeries implements Comparable<TvSeries> {
         this.sortTitle = sortTitle;
     }
 
+    public String getEffectiveTitle() {
+        if (sortTitle != null) {
+            return sortTitle;
+        } else {
+            return title;
+        }
+    }
+
     public TvSeason lookupSeason(UUID uuid) {
         TvSeason a = seasonM.get(uuid);
         if (a == null) {
@@ -51,7 +59,19 @@ public class TvSeries implements Comparable<TvSeries> {
 
     @Override
     public int compareTo(@NonNull TvSeries series) {
-        return title.compareTo(series.title);
+        String useTitle1;
+        if (sortTitle != null) {
+            useTitle1 = sortTitle;
+        } else {
+            useTitle1 = title;
+        }
+        String useTitle2;
+        if (series.sortTitle != null) {
+            useTitle2 = series.sortTitle;
+        } else {
+            useTitle2 = series.title;
+        }
+        return useTitle1.compareTo(useTitle2);
     }
 
 }

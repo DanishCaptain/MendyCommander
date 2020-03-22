@@ -11,6 +11,7 @@ public class SongAlbum implements Comparable<SongAlbum> {
     private final SongArtist artist;
     private final UUID uuid;
     private String title;
+    private String sortTitle;
     private ArrayList<SongTrack> trackL = new ArrayList<>();
     private HashMap<UUID, SongTrack> trackM = new HashMap<>();
 
@@ -35,6 +36,14 @@ public class SongAlbum implements Comparable<SongAlbum> {
         this.title = title;
     }
 
+    public String getSortTitle() {
+        return sortTitle;
+    }
+
+    public void setSortTitle(String sortTitle) {
+        this.sortTitle = sortTitle;
+    }
+
     public List<SongTrack> getTracks() {
         return trackL;
     }
@@ -50,7 +59,19 @@ public class SongAlbum implements Comparable<SongAlbum> {
     }
 
     private String getLongName() {
-        return artist.getName()+"::"+title;
+        if (sortTitle == null) {
+            return artist.getName()+"::"+title;
+        } else {
+            return artist.getName()+"::"+sortTitle;
+        }
+    }
+
+    private String getSortName() {
+        if (sortTitle == null) {
+            return title;
+        } else {
+            return sortTitle;
+        }
     }
 
     @Override
@@ -69,7 +90,7 @@ public class SongAlbum implements Comparable<SongAlbum> {
 
     @Override
     public int compareTo(@NonNull SongAlbum albumn) {
-        return getLongName().compareTo(albumn.getLongName());
+        return getSortName().compareTo(albumn.getSortName());
     }
 
 }

@@ -35,6 +35,9 @@
         <activity android:name=".activity.command.MediaStatusActivity"
             android:label="@string/title_activity_media_status"
             />
+        <activity android:name=".activity.command.SystemCommandsActivity"
+            android:label="@string/title_activity_system_status"
+            />
         <activity android:name=".activity.audioBook.ScheduleAudioBookAlbumActivity"
             android:label="@string/title_activity_schedule_audio_book"
             />

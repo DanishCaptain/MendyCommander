@@ -13,6 +13,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 
+import org.mendybot.commander.android.domain.AudioBookInput;
 import org.mendybot.commander.android.domain.MediaFile;
 import org.mendybot.commander.android.domain.SongAlbum;
 import org.mendybot.commander.android.domain.Movie;
@@ -77,10 +78,9 @@ public final class MediaModel implements AdapterView.OnItemSelectedListener {
     private String host;
 
     private MediaModel() {
-        hostL.add("192.168.100.50");
-        hostL.add("192.168.100.51");
-        hostL.add("192.168.100.12");
-        hostL.add("192.168.100.50");
+        hostL.add("10.10.10.50");
+        hostL.add("10.10.10.51");
+//        hostL.add("192.168.100.12");
         host = hostL.get(0);
     }
 
@@ -187,12 +187,12 @@ public final class MediaModel implements AdapterView.OnItemSelectedListener {
                     trackListManager.notifyAllChanged();
                 } else if (KEY_AUDIO_BOOK.equals(key)) {
                     Log.d(TAG, "load audio books from db");
-                    Type type = new TypeToken<List<SongInput>>(){}.getType();
-                    List<SongInput> songs = g.fromJson(json, type);
+                    Type type = new TypeToken<List<AudioBookInput>>(){}.getType();
+                    List<AudioBookInput> songs = g.fromJson(json, type);
                     abArtistM.clear();
                     abAlbumL.clear();
-                    for (SongInput song : songs) {
-                        String artistName = song.getArtist();
+                    for (AudioBookInput song : songs) {
+                        String artistName = song.getAuthor();
                         SongArtist artist = abArtistM.get(artistName);
                         if (artist == null) {
                             artist = new SongArtist(artistName);
@@ -200,7 +200,8 @@ public final class MediaModel implements AdapterView.OnItemSelectedListener {
                         }
                         UUID albumUuid = UUID.fromString(song.getUuid());
                         SongAlbum album = artist.lookupAlbum(albumUuid);
-                        album.setTitle(song.getAlbum());
+                        album.setTitle(song.getTitle());
+                        album.setSortTitle(song.getSortTitle());
                         if (!abAlbumL.contains(album)) {
                             abAlbumL.add(album);
                         }
@@ -391,6 +392,7 @@ public final class MediaModel implements AdapterView.OnItemSelectedListener {
     }
 
     public List<TvSeason> getTvSeasons() {
+        Collections.sort(seasonL);
         return seasonL;
     }
 

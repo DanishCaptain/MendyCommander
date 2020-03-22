@@ -1,0 +1,3811 @@
+[
+  {
+    "author": "Burroughs, Edgar Rice",
+    "files": [
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/6bfc3f00-eef3-4990-8c37-c7e701f1b1e4.mp3",
+        "title": "tarzan_of_the_apes_01_burroughs_64kb",
+        "uuid": "6bfc3f00-eef3-4990-8c37-c7e701f1b1e4"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/1469d92b-5b83-4ccb-97e5-098335218516.mp3",
+        "title": "tarzan_of_the_apes_02_burroughs_64kb",
+        "uuid": "1469d92b-5b83-4ccb-97e5-098335218516"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/46169254-4253-4e10-a0fc-395c125b23ea.mp3",
+        "title": "tarzan_of_the_apes_03_burroughs_64kb",
+        "uuid": "46169254-4253-4e10-a0fc-395c125b23ea"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/cd102e28-d3f9-4540-a180-40bea28eb94a.mp3",
+        "title": "tarzan_of_the_apes_04_burroughs_64kb",
+        "uuid": "cd102e28-d3f9-4540-a180-40bea28eb94a"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/b64db091-2cdb-4d55-a05c-b158fd3f1087.mp3",
+        "title": "tarzan_of_the_apes_05_burroughs_64kb",
+        "uuid": "b64db091-2cdb-4d55-a05c-b158fd3f1087"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/8ef51a8e-8ac5-4c60-b0bf-9f93c467066d.mp3",
+        "title": "tarzan_of_the_apes_06_burroughs_64kb",
+        "uuid": "8ef51a8e-8ac5-4c60-b0bf-9f93c467066d"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/fa9203c7-acfd-44ac-a3ba-adf396b5c063.mp3",
+        "title": "tarzan_of_the_apes_07_burroughs_64kb",
+        "uuid": "fa9203c7-acfd-44ac-a3ba-adf396b5c063"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/29c02eee-46ca-4b4d-bf47-db14d2449283.mp3",
+        "title": "tarzan_of_the_apes_08_burroughs_64kb",
+        "uuid": "29c02eee-46ca-4b4d-bf47-db14d2449283"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/463bf41c-6d2d-47a6-9b26-5e403ed29091.mp3",
+        "title": "tarzan_of_the_apes_09_burroughs_64kb",
+        "uuid": "463bf41c-6d2d-47a6-9b26-5e403ed29091"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/58cb5b8d-7845-4e15-b1c4-881c5bb63000.mp3",
+        "title": "tarzan_of_the_apes_10_burroughs_64kb",
+        "uuid": "58cb5b8d-7845-4e15-b1c4-881c5bb63000"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/5f36d6c4-654c-4956-a938-5a4301bb412a.mp3",
+        "title": "tarzan_of_the_apes_11_burroughs_64kb",
+        "uuid": "5f36d6c4-654c-4956-a938-5a4301bb412a"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/191650de-b100-4807-9f33-4897977ad9b5.mp3",
+        "title": "tarzan_of_the_apes_12_burroughs_64kb",
+        "uuid": "191650de-b100-4807-9f33-4897977ad9b5"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/f47f813a-60cb-48cd-b0a4-7ff306972224.mp3",
+        "title": "tarzan_of_the_apes_13_burroughs_64kb",
+        "uuid": "f47f813a-60cb-48cd-b0a4-7ff306972224"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/bd36e1b8-6a23-4374-a47f-11619dde66f5.mp3",
+        "title": "tarzan_of_the_apes_14_burroughs_64kb",
+        "uuid": "bd36e1b8-6a23-4374-a47f-11619dde66f5"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/f13ab644-7d2f-42f7-9473-b56fa1f50650.mp3",
+        "title": "tarzan_of_the_apes_15_burroughs_64kb",
+        "uuid": "f13ab644-7d2f-42f7-9473-b56fa1f50650"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/2731325e-4e68-4027-ba88-668f81dc6789.mp3",
+        "title": "tarzan_of_the_apes_16_burroughs_64kb",
+        "uuid": "2731325e-4e68-4027-ba88-668f81dc6789"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/8459b400-dfd0-455b-965d-b8180adb7695.mp3",
+        "title": "tarzan_of_the_apes_17_burroughs_64kb",
+        "uuid": "8459b400-dfd0-455b-965d-b8180adb7695"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/a7895bb2-d86d-4563-bd1b-1a3cc6bf5766.mp3",
+        "title": "tarzan_of_the_apes_18_burroughs_64kb",
+        "uuid": "a7895bb2-d86d-4563-bd1b-1a3cc6bf5766"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/643a7ca5-74ab-4aac-955a-7913d3ea57e8.mp3",
+        "title": "tarzan_of_the_apes_19_burroughs_64kb",
+        "uuid": "643a7ca5-74ab-4aac-955a-7913d3ea57e8"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/1b8f43b7-9f6d-4468-a0f6-869cddd764f9.mp3",
+        "title": "tarzan_of_the_apes_20_burroughs_64kb",
+        "uuid": "1b8f43b7-9f6d-4468-a0f6-869cddd764f9"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/ddd892c9-e2c1-4a0f-aa9f-4ec6a85ccfc6.mp3",
+        "title": "tarzan_of_the_apes_21_burroughs_64kb",
+        "uuid": "ddd892c9-e2c1-4a0f-aa9f-4ec6a85ccfc6"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/6bc43346-5305-4d71-8fd5-e21df6f92c85.mp3",
+        "title": "tarzan_of_the_apes_22_burroughs_64kb",
+        "uuid": "6bc43346-5305-4d71-8fd5-e21df6f92c85"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/ef7e6762-2dad-420c-b233-ab2d6fef39f9.mp3",
+        "title": "tarzan_of_the_apes_23_burroughs_64kb",
+        "uuid": "ef7e6762-2dad-420c-b233-ab2d6fef39f9"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/f7791514-b9ce-4001-bc46-9d3daeaba984.mp3",
+        "title": "tarzan_of_the_apes_24_burroughs_64kb",
+        "uuid": "f7791514-b9ce-4001-bc46-9d3daeaba984"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/7efaa57d-aee7-46f5-b8a8-0b4dc1f1b3ea.mp3",
+        "title": "tarzan_of_the_apes_25_burroughs_64kb",
+        "uuid": "7efaa57d-aee7-46f5-b8a8-0b4dc1f1b3ea"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/f40324e8-9da3-48b7-aa99-e5d71bd117ce.mp3",
+        "title": "tarzan_of_the_apes_26_burroughs_64kb",
+        "uuid": "f40324e8-9da3-48b7-aa99-e5d71bd117ce"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/fae27338-6d02-4d82-8f99-2515e285f65f.mp3",
+        "title": "tarzan_of_the_apes_27_burroughs_64kb",
+        "uuid": "fae27338-6d02-4d82-8f99-2515e285f65f"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/929ab1a7-9a18-42e4-bb88-bcfabbad711d.mp3",
+        "title": "tarzan_of_the_apes_28_burroughs_64kb",
+        "uuid": "929ab1a7-9a18-42e4-bb88-bcfabbad711d"
+      }
+    ],
+    "title": "1-Tarzan of the Apes"
+  },
+  {
+    "author": "Burroughs, Edgar Rice",
+    "files": [
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/800339ea-3f25-4f5d-b2e9-2e64e0c9599f.mp3",
+        "title": "returnoftarzan_01_burroughs_64kb",
+        "uuid": "800339ea-3f25-4f5d-b2e9-2e64e0c9599f"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/50cfbc46-7d45-4e59-8114-94ab0fcdc4bf.mp3",
+        "title": "returnoftarzan_02_burroughs_64kb",
+        "uuid": "50cfbc46-7d45-4e59-8114-94ab0fcdc4bf"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/98bf22a8-5b57-4a29-8974-189fca6a82d5.mp3",
+        "title": "returnoftarzan_03_burroughs_64kb",
+        "uuid": "98bf22a8-5b57-4a29-8974-189fca6a82d5"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/5833a6ea-25e5-4faa-99d3-57b6702e007d.mp3",
+        "title": "returnoftarzan_04_burroughs_64kb",
+        "uuid": "5833a6ea-25e5-4faa-99d3-57b6702e007d"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/5d6721e4-021d-4623-9264-20e5740cfe72.mp3",
+        "title": "returnoftarzan_05_burroughs_64kb",
+        "uuid": "5d6721e4-021d-4623-9264-20e5740cfe72"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/e46cb50d-ee95-4f2d-9c3b-119c527bb3bf.mp3",
+        "title": "returnoftarzan_06_burroughs_64kb",
+        "uuid": "e46cb50d-ee95-4f2d-9c3b-119c527bb3bf"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/54ce1220-cd91-49ff-b6e9-14977cfedfbd.mp3",
+        "title": "returnoftarzan_07_burroughs_64kb",
+        "uuid": "54ce1220-cd91-49ff-b6e9-14977cfedfbd"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/8d45f8a0-d45d-487c-9a21-abdb7dead170.mp3",
+        "title": "returnoftarzan_08_burroughs_64kb",
+        "uuid": "8d45f8a0-d45d-487c-9a21-abdb7dead170"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/16ebc6de-50d1-4aaf-a92d-a80882a23946.mp3",
+        "title": "returnoftarzan_09_burroughs_64kb",
+        "uuid": "16ebc6de-50d1-4aaf-a92d-a80882a23946"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/52f141c3-6e7a-4e51-a668-200a6ee8b300.mp3",
+        "title": "returnoftarzan_10_burroughs_64kb",
+        "uuid": "52f141c3-6e7a-4e51-a668-200a6ee8b300"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/7d125226-7fbf-446c-b136-1c78672c9e45.mp3",
+        "title": "returnoftarzan_11_burroughs_64kb",
+        "uuid": "7d125226-7fbf-446c-b136-1c78672c9e45"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/aa4299c4-ed97-4d0b-a39d-e9a5666d24e5.mp3",
+        "title": "returnoftarzan_12_burroughs_64kb",
+        "uuid": "aa4299c4-ed97-4d0b-a39d-e9a5666d24e5"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/b0397ed3-5938-45ba-8782-09d57b32d45b.mp3",
+        "title": "returnoftarzan_13_burroughs_64kb",
+        "uuid": "b0397ed3-5938-45ba-8782-09d57b32d45b"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/c656f19b-269f-45ca-9e24-1d16f4883b76.mp3",
+        "title": "returnoftarzan_14_burroughs_64kb",
+        "uuid": "c656f19b-269f-45ca-9e24-1d16f4883b76"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/d02c8b72-a97f-423c-a512-6267a9127f33.mp3",
+        "title": "returnoftarzan_15_burroughs_64kb",
+        "uuid": "d02c8b72-a97f-423c-a512-6267a9127f33"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/c53f7a9d-01e6-4f61-a609-136e9ce83327.mp3",
+        "title": "returnoftarzan_16_burroughs_64kb",
+        "uuid": "c53f7a9d-01e6-4f61-a609-136e9ce83327"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/f8f0b584-37e8-483a-8df4-19347350ec82.mp3",
+        "title": "returnoftarzan_17_burroughs_64kb",
+        "uuid": "f8f0b584-37e8-483a-8df4-19347350ec82"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/8e2fb687-e5e1-4cfc-ab52-e87b9b5b2fb2.mp3",
+        "title": "returnoftarzan_18_burroughs_64kb",
+        "uuid": "8e2fb687-e5e1-4cfc-ab52-e87b9b5b2fb2"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/8078727d-05e2-455b-836f-6008db63e25a.mp3",
+        "title": "returnoftarzan_19_burroughs_64kb",
+        "uuid": "8078727d-05e2-455b-836f-6008db63e25a"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/91d59704-05e4-4477-a671-2604a1e68027.mp3",
+        "title": "returnoftarzan_20_burroughs_64kb",
+        "uuid": "91d59704-05e4-4477-a671-2604a1e68027"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/b01c6ce2-6bc7-43fc-adf2-98f0387ffcc1.mp3",
+        "title": "returnoftarzan_21_burroughs_64kb",
+        "uuid": "b01c6ce2-6bc7-43fc-adf2-98f0387ffcc1"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/6bae4ae1-2165-4585-80ca-e13a80db4ffa.mp3",
+        "title": "returnoftarzan_22_burroughs_64kb",
+        "uuid": "6bae4ae1-2165-4585-80ca-e13a80db4ffa"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/b9bc85fa-d696-46e0-a3b4-5de921189dde.mp3",
+        "title": "returnoftarzan_23_burroughs_64kb",
+        "uuid": "b9bc85fa-d696-46e0-a3b4-5de921189dde"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/e46ac1bf-a183-44b8-8e7a-5659ca9c19c4.mp3",
+        "title": "returnoftarzan_24_burroughs_64kb",
+        "uuid": "e46ac1bf-a183-44b8-8e7a-5659ca9c19c4"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/c3f66fc1-b6e1-4ed6-9f08-278a38800cbb.mp3",
+        "title": "returnoftarzan_25_burroughs_64kb",
+        "uuid": "c3f66fc1-b6e1-4ed6-9f08-278a38800cbb"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/bbd9a72b-36c6-41e9-b2c4-eaf7d92d29e6.mp3",
+        "title": "returnoftarzan_26_burroughs_64kb",
+        "uuid": "bbd9a72b-36c6-41e9-b2c4-eaf7d92d29e6"
+      }
+    ],
+    "title": "2-The Return of Tarzan"
+  },
+  {
+    "author": "McLain,  Paula",
+    "files": [],
+    "title": "A Mind of Her Own"
+  },
+  {
+    "author": "Twain, Mark",
+    "files": [
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/d972f05a-714d-4929-9663-0fc317b31915.mp3",
+        "title": "huckleberryfinn_dr_00_twain_64kb",
+        "uuid": "d972f05a-714d-4929-9663-0fc317b31915"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/87517d50-ecdd-4d93-91b2-4514e9ee3dd2.mp3",
+        "title": "huckleberryfinn_dr_01_twain_64kb",
+        "uuid": "87517d50-ecdd-4d93-91b2-4514e9ee3dd2"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/00e9abaa-79d6-4702-bc02-cc9b5d98a8aa.mp3",
+        "title": "huckleberryfinn_dr_02_twain_64kb",
+        "uuid": "00e9abaa-79d6-4702-bc02-cc9b5d98a8aa"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/6b0eaecd-ca29-4765-a934-671449d99abf.mp3",
+        "title": "huckleberryfinn_dr_03_twain_64kb",
+        "uuid": "6b0eaecd-ca29-4765-a934-671449d99abf"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/12b9e762-305a-44c4-ae91-ced5e62ba029.mp3",
+        "title": "huckleberryfinn_dr_04_twain_64kb",
+        "uuid": "12b9e762-305a-44c4-ae91-ced5e62ba029"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/73d05c60-a720-4fee-9f07-153e6f96e8ea.mp3",
+        "title": "huckleberryfinn_dr_05_twain_64kb",
+        "uuid": "73d05c60-a720-4fee-9f07-153e6f96e8ea"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/92720cb6-7af6-41b6-87e3-1fb8235a0dca.mp3",
+        "title": "huckleberryfinn_dr_06_twain_64kb",
+        "uuid": "92720cb6-7af6-41b6-87e3-1fb8235a0dca"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/5afb7559-0b6d-458c-bbb8-c9c286c512c9.mp3",
+        "title": "huckleberryfinn_dr_07_twain_64kb",
+        "uuid": "5afb7559-0b6d-458c-bbb8-c9c286c512c9"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/0e0c7194-af47-4ea6-b8e7-b022670d5062.mp3",
+        "title": "huckleberryfinn_dr_08_twain_64kb",
+        "uuid": "0e0c7194-af47-4ea6-b8e7-b022670d5062"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/27ed31b6-0d06-4b3a-ad03-62c0ef121846.mp3",
+        "title": "huckleberryfinn_dr_09_twain_64kb",
+        "uuid": "27ed31b6-0d06-4b3a-ad03-62c0ef121846"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/9a6dbee5-de8d-4d4a-a474-79614fa16035.mp3",
+        "title": "huckleberryfinn_dr_10_twain_64kb",
+        "uuid": "9a6dbee5-de8d-4d4a-a474-79614fa16035"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/460869a8-5efa-42e0-91f0-bf8ef46804e8.mp3",
+        "title": "huckleberryfinn_dr_11_twain_64kb",
+        "uuid": "460869a8-5efa-42e0-91f0-bf8ef46804e8"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/aabb7b51-144b-4c4f-99d3-6ae22fe89b08.mp3",
+        "title": "huckleberryfinn_dr_12_twain_64kb",
+        "uuid": "aabb7b51-144b-4c4f-99d3-6ae22fe89b08"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/831d3d58-8b55-4a88-b7df-e14d6bb45e09.mp3",
+        "title": "huckleberryfinn_dr_13_twain_64kb",
+        "uuid": "831d3d58-8b55-4a88-b7df-e14d6bb45e09"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/03be0d27-b145-4386-8930-f576b9771227.mp3",
+        "title": "huckleberryfinn_dr_14_twain_64kb",
+        "uuid": "03be0d27-b145-4386-8930-f576b9771227"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/d8b24719-5eb6-4876-a3c1-a2a10b0694ae.mp3",
+        "title": "huckleberryfinn_dr_15_twain_64kb",
+        "uuid": "d8b24719-5eb6-4876-a3c1-a2a10b0694ae"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/bb26cc4f-e764-40fb-821a-e7e4a693b5f3.mp3",
+        "title": "huckleberryfinn_dr_16_twain_64kb",
+        "uuid": "bb26cc4f-e764-40fb-821a-e7e4a693b5f3"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/0878bd1b-77dc-4ccd-ac3e-e106a48dcc8b.mp3",
+        "title": "huckleberryfinn_dr_17_twain_64kb",
+        "uuid": "0878bd1b-77dc-4ccd-ac3e-e106a48dcc8b"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/752a8758-5fec-45da-98c6-d1704aa70266.mp3",
+        "title": "huckleberryfinn_dr_18_twain_64kb",
+        "uuid": "752a8758-5fec-45da-98c6-d1704aa70266"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/a4dcfd06-8b86-409f-8dbf-4f55bc2e38c4.mp3",
+        "title": "huckleberryfinn_dr_19_twain_64kb",
+        "uuid": "a4dcfd06-8b86-409f-8dbf-4f55bc2e38c4"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/04c3ef69-17b4-4b78-80ec-ca0eb26f9c8b.mp3",
+        "title": "huckleberryfinn_dr_20_twain_64kb",
+        "uuid": "04c3ef69-17b4-4b78-80ec-ca0eb26f9c8b"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/cdf53e16-6e50-4dd9-8246-aab2cbede11f.mp3",
+        "title": "huckleberryfinn_dr_21_twain_64kb",
+        "uuid": "cdf53e16-6e50-4dd9-8246-aab2cbede11f"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/babb13b1-b3ee-4613-ab9c-108d0958b8db.mp3",
+        "title": "huckleberryfinn_dr_22_twain_64kb",
+        "uuid": "babb13b1-b3ee-4613-ab9c-108d0958b8db"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/e16191ab-0419-4926-a35d-8fbffb6cdf5d.mp3",
+        "title": "huckleberryfinn_dr_23_twain_64kb",
+        "uuid": "e16191ab-0419-4926-a35d-8fbffb6cdf5d"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/a74a4182-8b25-439d-8b2f-9de022d17475.mp3",
+        "title": "huckleberryfinn_dr_24_twain_64kb",
+        "uuid": "a74a4182-8b25-439d-8b2f-9de022d17475"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/e63cf13c-5c0e-4a75-9991-479bd65b5613.mp3",
+        "title": "huckleberryfinn_dr_25_twain_64kb",
+        "uuid": "e63cf13c-5c0e-4a75-9991-479bd65b5613"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/032486bd-a736-47d1-b8b5-e2e9d43d6108.mp3",
+        "title": "huckleberryfinn_dr_26_twain_64kb",
+        "uuid": "032486bd-a736-47d1-b8b5-e2e9d43d6108"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/af9d47c7-e950-4032-a37a-02d811cb971e.mp3",
+        "title": "huckleberryfinn_dr_27_twain_64kb",
+        "uuid": "af9d47c7-e950-4032-a37a-02d811cb971e"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/088be7a2-8798-4510-84af-1a4301209417.mp3",
+        "title": "huckleberryfinn_dr_28_twain_64kb",
+        "uuid": "088be7a2-8798-4510-84af-1a4301209417"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/34aa8c08-7fcb-46ee-a666-347d838f7e2e.mp3",
+        "title": "huckleberryfinn_dr_29_twain_64kb",
+        "uuid": "34aa8c08-7fcb-46ee-a666-347d838f7e2e"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/bd7dac83-1064-4df2-8f4d-4667ebfda89d.mp3",
+        "title": "huckleberryfinn_dr_30_twain_64kb",
+        "uuid": "bd7dac83-1064-4df2-8f4d-4667ebfda89d"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/3a843faa-f03b-425e-94ef-5af356a6f05a.mp3",
+        "title": "huckleberryfinn_dr_31_twain_64kb",
+        "uuid": "3a843faa-f03b-425e-94ef-5af356a6f05a"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/35b81797-07f0-438b-8aee-34e582ef3ccb.mp3",
+        "title": "huckleberryfinn_dr_32_twain_64kb",
+        "uuid": "35b81797-07f0-438b-8aee-34e582ef3ccb"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/55a1e84b-be84-4e8c-aaf6-0fcfd3a8434b.mp3",
+        "title": "huckleberryfinn_dr_33_twain_64kb",
+        "uuid": "55a1e84b-be84-4e8c-aaf6-0fcfd3a8434b"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/8143ea3b-1630-453e-b835-a73f1bd1660d.mp3",
+        "title": "huckleberryfinn_dr_34_twain_64kb",
+        "uuid": "8143ea3b-1630-453e-b835-a73f1bd1660d"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/1a0d82c3-2c90-476d-8d6b-5b019e53409b.mp3",
+        "title": "huckleberryfinn_dr_35_twain_64kb",
+        "uuid": "1a0d82c3-2c90-476d-8d6b-5b019e53409b"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/439efe50-788d-430c-928c-a5630663c139.mp3",
+        "title": "huckleberryfinn_dr_36_twain_64kb",
+        "uuid": "439efe50-788d-430c-928c-a5630663c139"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/e3ab2fe6-762a-4496-a75c-4a371c795e78.mp3",
+        "title": "huckleberryfinn_dr_37_twain_64kb",
+        "uuid": "e3ab2fe6-762a-4496-a75c-4a371c795e78"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/b531e09b-55c0-46a4-8b41-2c0145a1a89b.mp3",
+        "title": "huckleberryfinn_dr_38_twain_64kb",
+        "uuid": "b531e09b-55c0-46a4-8b41-2c0145a1a89b"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/df7a8dbf-0e15-4db6-901e-ad855607b29c.mp3",
+        "title": "huckleberryfinn_dr_39_twain_64kb",
+        "uuid": "df7a8dbf-0e15-4db6-901e-ad855607b29c"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/d51a0ccf-42e2-40c5-81c5-5618a87e55ec.mp3",
+        "title": "huckleberryfinn_dr_40_twain_64kb",
+        "uuid": "d51a0ccf-42e2-40c5-81c5-5618a87e55ec"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/e40e55ab-b862-42f3-91be-a9c74ef663c6.mp3",
+        "title": "huckleberryfinn_dr_41_twain_64kb",
+        "uuid": "e40e55ab-b862-42f3-91be-a9c74ef663c6"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/4e968b88-819a-4d8e-bc56-8b8b87375055.mp3",
+        "title": "huckleberryfinn_dr_42_twain_64kb",
+        "uuid": "4e968b88-819a-4d8e-bc56-8b8b87375055"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/0389be21-bd98-4b6b-9217-7d0b358a51a0.mp3",
+        "title": "huckleberryfinn_dr_43_twain_64kb",
+        "uuid": "0389be21-bd98-4b6b-9217-7d0b358a51a0"
+      }
+    ],
+    "title": "AdventuresHuckleberryFinn"
+  },
+  {
+    "author": "Twain, Mark",
+    "files": [
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/bd0c3672-540e-40c9-ba14-039db961339c.mp3",
+        "title": "adventuresoftomsawyer_00_twain_64kb",
+        "uuid": "bd0c3672-540e-40c9-ba14-039db961339c"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/6a4ae63c-45e6-4f6d-8ce3-912e68747cd7.mp3",
+        "title": "adventuresoftomsawyer_01_twain_64kb",
+        "uuid": "6a4ae63c-45e6-4f6d-8ce3-912e68747cd7"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/44ccf6b6-9e02-4e34-b019-bb7fc9b4130d.mp3",
+        "title": "adventuresoftomsawyer_02_twain_64kb",
+        "uuid": "44ccf6b6-9e02-4e34-b019-bb7fc9b4130d"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/960baffc-b489-421f-a6a4-e7768a8bcde7.mp3",
+        "title": "adventuresoftomsawyer_03_twain_64kb",
+        "uuid": "960baffc-b489-421f-a6a4-e7768a8bcde7"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/06fecda8-f5e7-4b43-aec6-e6e1809ecd0d.mp3",
+        "title": "adventuresoftomsawyer_04_twain_64kb",
+        "uuid": "06fecda8-f5e7-4b43-aec6-e6e1809ecd0d"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/1e2b1684-49cc-4fb1-a6b5-5f9f620a95a6.mp3",
+        "title": "adventuresoftomsawyer_05_twain_64kb",
+        "uuid": "1e2b1684-49cc-4fb1-a6b5-5f9f620a95a6"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/a5f947f5-161e-4506-a7d3-79243edfb688.mp3",
+        "title": "adventuresoftomsawyer_06_twain_64kb",
+        "uuid": "a5f947f5-161e-4506-a7d3-79243edfb688"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/bff34bdb-d3f8-4c08-bcc5-024071ca2374.mp3",
+        "title": "adventuresoftomsawyer_07_twain_64kb",
+        "uuid": "bff34bdb-d3f8-4c08-bcc5-024071ca2374"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/aca48fe7-65ad-4482-b58b-7831c368709b.mp3",
+        "title": "adventuresoftomsawyer_08_twain_64kb",
+        "uuid": "aca48fe7-65ad-4482-b58b-7831c368709b"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/91401463-3515-4e78-b58a-fa0ccee13567.mp3",
+        "title": "adventuresoftomsawyer_09_twain_64kb",
+        "uuid": "91401463-3515-4e78-b58a-fa0ccee13567"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/ebd51532-89ad-4de3-8ed9-4c6df1b0103c.mp3",
+        "title": "adventuresoftomsawyer_10_twain_64kb",
+        "uuid": "ebd51532-89ad-4de3-8ed9-4c6df1b0103c"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/57d0c04a-3a68-492c-a4f8-a65ac33d009c.mp3",
+        "title": "adventuresoftomsawyer_11_twain_64kb",
+        "uuid": "57d0c04a-3a68-492c-a4f8-a65ac33d009c"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/eb3a9739-e1ef-4784-bd2a-72b6c25b5d60.mp3",
+        "title": "adventuresoftomsawyer_12_twain_64kb",
+        "uuid": "eb3a9739-e1ef-4784-bd2a-72b6c25b5d60"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/109405ca-4b34-4512-9767-2eafdd6b3b76.mp3",
+        "title": "adventuresoftomsawyer_13_twain_64kb",
+        "uuid": "109405ca-4b34-4512-9767-2eafdd6b3b76"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/a3f504c2-824f-4689-a23d-688fbf1a3e46.mp3",
+        "title": "adventuresoftomsawyer_14_twain_64kb",
+        "uuid": "a3f504c2-824f-4689-a23d-688fbf1a3e46"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/259277bc-e54b-488b-a712-10456f06baf9.mp3",
+        "title": "adventuresoftomsawyer_15_twain_64kb",
+        "uuid": "259277bc-e54b-488b-a712-10456f06baf9"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/81294ca3-8c8e-4ab4-9d51-07155b6aafff.mp3",
+        "title": "adventuresoftomsawyer_16_twain_64kb",
+        "uuid": "81294ca3-8c8e-4ab4-9d51-07155b6aafff"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/b32b4d2b-a73f-4a0a-aa3b-b2d76768751d.mp3",
+        "title": "adventuresoftomsawyer_17_twain_64kb",
+        "uuid": "b32b4d2b-a73f-4a0a-aa3b-b2d76768751d"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/59e30fab-1c96-4538-b2e1-a41ac0f7f436.mp3",
+        "title": "adventuresoftomsawyer_18_twain_64kb",
+        "uuid": "59e30fab-1c96-4538-b2e1-a41ac0f7f436"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/83ef86f1-84da-4b5a-adc0-6c844ba5e8e8.mp3",
+        "title": "adventuresoftomsawyer_19_twain_64kb",
+        "uuid": "83ef86f1-84da-4b5a-adc0-6c844ba5e8e8"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/406e8b86-3f35-442c-a304-88afe1e66189.mp3",
+        "title": "adventuresoftomsawyer_20_twain_64kb",
+        "uuid": "406e8b86-3f35-442c-a304-88afe1e66189"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/413bdc3b-d2f3-4a49-9466-21a21f7a92c5.mp3",
+        "title": "adventuresoftomsawyer_21_twain_64kb",
+        "uuid": "413bdc3b-d2f3-4a49-9466-21a21f7a92c5"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/56fec061-6c88-43d2-b69f-8ad3c7272463.mp3",
+        "title": "adventuresoftomsawyer_22_twain_64kb",
+        "uuid": "56fec061-6c88-43d2-b69f-8ad3c7272463"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/d9d57078-6e26-461b-ac06-8d0192ec9a6b.mp3",
+        "title": "adventuresoftomsawyer_23_twain_64kb",
+        "uuid": "d9d57078-6e26-461b-ac06-8d0192ec9a6b"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/afd9c45e-4044-4fb6-af6e-0bc121481581.mp3",
+        "title": "adventuresoftomsawyer_24_twain_64kb",
+        "uuid": "afd9c45e-4044-4fb6-af6e-0bc121481581"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/9cb451b8-3202-46ee-a922-84a0582e93a2.mp3",
+        "title": "adventuresoftomsawyer_25_twain_64kb",
+        "uuid": "9cb451b8-3202-46ee-a922-84a0582e93a2"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/bdafe00e-4445-493f-8e99-def1c1ce0a21.mp3",
+        "title": "adventuresoftomsawyer_26_twain_64kb",
+        "uuid": "bdafe00e-4445-493f-8e99-def1c1ce0a21"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/f09a2a8d-39ff-4a64-a964-9fdc6487c542.mp3",
+        "title": "adventuresoftomsawyer_27_twain_64kb",
+        "uuid": "f09a2a8d-39ff-4a64-a964-9fdc6487c542"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/421f7503-82e0-443d-8a5d-4cc2c1b611b8.mp3",
+        "title": "adventuresoftomsawyer_28_twain_64kb",
+        "uuid": "421f7503-82e0-443d-8a5d-4cc2c1b611b8"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/afa2dfde-7ef1-471b-84ea-50af76bc2a19.mp3",
+        "title": "adventuresoftomsawyer_29_twain_64kb",
+        "uuid": "afa2dfde-7ef1-471b-84ea-50af76bc2a19"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/9a0ebf29-8218-4a86-878a-d21de89bb94e.mp3",
+        "title": "adventuresoftomsawyer_30_twain_64kb",
+        "uuid": "9a0ebf29-8218-4a86-878a-d21de89bb94e"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/7a3c3bab-bccc-49a6-9e65-cfccda33f5bc.mp3",
+        "title": "adventuresoftomsawyer_31_twain_64kb",
+        "uuid": "7a3c3bab-bccc-49a6-9e65-cfccda33f5bc"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/5e3f5e50-093a-4db0-b193-fc7bdb974770.mp3",
+        "title": "adventuresoftomsawyer_32_twain_64kb",
+        "uuid": "5e3f5e50-093a-4db0-b193-fc7bdb974770"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/b4098bb3-379e-4787-964b-480565d72ff4.mp3",
+        "title": "adventuresoftomsawyer_33_twain_64kb",
+        "uuid": "b4098bb3-379e-4787-964b-480565d72ff4"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/14e6d7e2-2d57-40ba-9ba3-42aaca3c66c8.mp3",
+        "title": "adventuresoftomsawyer_34_twain_64kb",
+        "uuid": "14e6d7e2-2d57-40ba-9ba3-42aaca3c66c8"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/934cd647-b480-4acb-ba0f-116c94b119cf.mp3",
+        "title": "adventuresoftomsawyer_35_twain_64kb",
+        "uuid": "934cd647-b480-4acb-ba0f-116c94b119cf"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/4ee5db08-81d0-46d1-9891-3743bb7568b9.mp3",
+        "title": "adventuresoftomsawyer_36_twain_64kb",
+        "uuid": "4ee5db08-81d0-46d1-9891-3743bb7568b9"
+      }
+    ],
+    "title": "AdventuresOfTomSawyer"
+  },
+  {
+    "author": "Peake, Tim",
+    "files": [],
+    "title": "Ask an Astronaut"
+  },
+  {
+    "author": "Sagan, Carl",
+    "files": [
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/b8750ed1-56a5-44e0-9262-af21603cc9eb.mp3",
+        "title": "ContactPart1_mp332",
+        "uuid": "b8750ed1-56a5-44e0-9262-af21603cc9eb"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/3702da1f-d15a-4302-a047-2beccd921149.mp3",
+        "title": "ContactPart2_mp332",
+        "uuid": "3702da1f-d15a-4302-a047-2beccd921149"
+      }
+    ],
+    "title": "Contact"
+  },
+  {
+    "author": "Bray, Olive - Translation",
+    "files": [
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/0f3657e0-c513-4172-bd02-f4ebba8523f9.mp3",
+        "title": "01_elderedda_bray",
+        "uuid": "0f3657e0-c513-4172-bd02-f4ebba8523f9"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/06e9198c-987b-4905-97d6-8313fb92508a.mp3",
+        "title": "02_elderedda_bray",
+        "uuid": "06e9198c-987b-4905-97d6-8313fb92508a"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/8b9d6659-efa7-41c8-931e-5770694ae649.mp3",
+        "title": "03_elderedda_bray",
+        "uuid": "8b9d6659-efa7-41c8-931e-5770694ae649"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/440175ac-bf73-4586-b845-2cd2069d8998.mp3",
+        "title": "04_elderedda_bray",
+        "uuid": "440175ac-bf73-4586-b845-2cd2069d8998"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/bb049cee-1e62-4f26-9b65-41308513bd1e.mp3",
+        "title": "05_elderedda_bray",
+        "uuid": "bb049cee-1e62-4f26-9b65-41308513bd1e"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/18bb7b63-2e50-4b0c-8790-a785ce298079.mp3",
+        "title": "06_elderedda_bray",
+        "uuid": "18bb7b63-2e50-4b0c-8790-a785ce298079"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/e4c64e6c-f6f6-4ab7-8006-fe7f92e2418e.mp3",
+        "title": "07_elderedda_bray",
+        "uuid": "e4c64e6c-f6f6-4ab7-8006-fe7f92e2418e"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/ab755546-a4e2-47de-908f-72cf8df0b10f.mp3",
+        "title": "08_elderedda_bray",
+        "uuid": "ab755546-a4e2-47de-908f-72cf8df0b10f"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/0b550378-2e96-4a95-ae18-c21d6dd3367b.mp3",
+        "title": "09_elderedda_bray",
+        "uuid": "0b550378-2e96-4a95-ae18-c21d6dd3367b"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/2a4728bb-e24f-47d2-bfc5-69548034a00a.mp3",
+        "title": "10_elderedda_bray",
+        "uuid": "2a4728bb-e24f-47d2-bfc5-69548034a00a"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/e70f352b-678d-4c19-95b0-e4718a94303e.mp3",
+        "title": "11_elderedda_bray",
+        "uuid": "e70f352b-678d-4c19-95b0-e4718a94303e"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/7ca1e008-a6d3-45b9-b9ff-f7805350de54.mp3",
+        "title": "12_elderedda_bray",
+        "uuid": "7ca1e008-a6d3-45b9-b9ff-f7805350de54"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/10bd0d8f-9a89-43de-a95f-bcf92a461c7b.mp3",
+        "title": "13_elderedda_bray",
+        "uuid": "10bd0d8f-9a89-43de-a95f-bcf92a461c7b"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/f7c722d0-77a1-4681-92c8-2bfd1ca54daf.mp3",
+        "title": "14_elderedda_bray",
+        "uuid": "f7c722d0-77a1-4681-92c8-2bfd1ca54daf"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/ff535bf1-d349-40b7-a087-bae7cadb289d.mp3",
+        "title": "15_elderedda_bray",
+        "uuid": "ff535bf1-d349-40b7-a087-bae7cadb289d"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/4f172df9-f5a0-4c24-a18d-7f21512a409f.mp3",
+        "title": "16_elderedda_bray",
+        "uuid": "4f172df9-f5a0-4c24-a18d-7f21512a409f"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/9fad24c6-b733-4c23-892a-1c89d322ec26.mp3",
+        "title": "17_elderedda_bray",
+        "uuid": "9fad24c6-b733-4c23-892a-1c89d322ec26"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/4223e7e4-e8d9-41e4-903f-d35c4e684b3b.mp3",
+        "title": "18_elderedda_bray",
+        "uuid": "4223e7e4-e8d9-41e4-903f-d35c4e684b3b"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/8247c0fd-167e-4934-8267-c830e6300be1.mp3",
+        "title": "19_elderedda_bray",
+        "uuid": "8247c0fd-167e-4934-8267-c830e6300be1"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/ccc6545d-7b27-41c7-a1e8-6dbf2dd21b6f.mp3",
+        "title": "20_elderedda_bray",
+        "uuid": "ccc6545d-7b27-41c7-a1e8-6dbf2dd21b6f"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/919cf865-dd77-4c76-8f59-25cca4ff5be8.mp3",
+        "title": "21_elderedda_bray",
+        "uuid": "919cf865-dd77-4c76-8f59-25cca4ff5be8"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/c78ba263-34fd-4987-b8d9-8a7ad206ac4e.mp3",
+        "title": "22_elderedda_bray",
+        "uuid": "c78ba263-34fd-4987-b8d9-8a7ad206ac4e"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/9e7e6d78-49f0-4fef-80e1-29478b0c8c0e.mp3",
+        "title": "23_elderedda_bray",
+        "uuid": "9e7e6d78-49f0-4fef-80e1-29478b0c8c0e"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/07a425d4-954a-425e-8a56-e532ac8ab2eb.mp3",
+        "title": "24_elderedda_bray",
+        "uuid": "07a425d4-954a-425e-8a56-e532ac8ab2eb"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/5332a43d-acb2-4a30-a613-7753b823ad13.mp3",
+        "title": "25_elderedda_bray",
+        "uuid": "5332a43d-acb2-4a30-a613-7753b823ad13"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/77c8f2f5-11ae-4324-9ad1-c5b73db8f32f.mp3",
+        "title": "26_elderedda_bray",
+        "uuid": "77c8f2f5-11ae-4324-9ad1-c5b73db8f32f"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/e15f4ff5-a012-4a57-aad3-fe59b68941c3.mp3",
+        "title": "27_elderedda_bray",
+        "uuid": "e15f4ff5-a012-4a57-aad3-fe59b68941c3"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/d6c43a3d-8f12-4ad3-b5c1-e4b5132aeea7.mp3",
+        "title": "28_elderedda_bray",
+        "uuid": "d6c43a3d-8f12-4ad3-b5c1-e4b5132aeea7"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/ba0ca1f5-c436-4efc-8aba-ae5308f7b377.mp3",
+        "title": "29_elderedda_bray",
+        "uuid": "ba0ca1f5-c436-4efc-8aba-ae5308f7b377"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/a893d008-559e-426c-ac63-88a177b3f323.mp3",
+        "title": "30_elderedda_bray",
+        "uuid": "a893d008-559e-426c-ac63-88a177b3f323"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/5e17ca19-8f16-473c-84dc-c3cd4a4b190a.mp3",
+        "title": "31_elderedda_bray",
+        "uuid": "5e17ca19-8f16-473c-84dc-c3cd4a4b190a"
+      }
+    ],
+    "title": "Elder Edda"
+  },
+  {
+    "sortTitle": "Harry Potter - 1",
+    "author": "Rowling, JK",
+    "files": [
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/c1930247-1edb-40f1-8218-2b61fb943285.mp3",
+        "title": "Harry Potter And The Sorcerer's Stone",
+        "uuid": "c1930247-1edb-40f1-8218-2b61fb943285"
+      }
+    ],
+    "title": "HP And The Sorcerer's Stone"
+  },
+  {
+    "sortTitle": "Harry Potter - 2",
+    "author": "Rowling, JK",
+    "files": [
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/e8039b72-3e4e-4106-abb6-d7e653d140d1.mp3",
+        "title": "Harry Potter And The Chamber of Secrets",
+        "uuid": "e8039b72-3e4e-4106-abb6-d7e653d140d1"
+      }
+    ],
+    "title": "HP And The Chamber of Secrets"
+  },
+  {
+    "sortTitle": "Harry Potter - 3",
+    "author": "Rowling, JK",
+    "files": [
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/8738f1db-3421-4c15-b964-c0f30d0063c6.mp3",
+        "title": "Harry Potter And The Prisoner of Azkaban",
+        "uuid": "8738f1db-3421-4c15-b964-c0f30d0063c6"
+      }
+    ],
+    "title": "HP And The Prisoner of Azkaban"
+  },
+  {
+    "sortTitle": "Harry Potter - 4",
+    "author": "Rowling, JK",
+    "files": [
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/c6db151f-fbd2-40cf-bfd7-09e22fa1a1b6.mp3",
+        "title": "Harry Potter And The Goblet of Fire part I",
+        "uuid": "c6db151f-fbd2-40cf-bfd7-09e22fa1a1b6"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/baf8c01e-4e0e-4ccc-a2bb-314a1dc60432.mp3",
+        "title": "Harry Potter And The Goblet of Fire part II",
+        "uuid": "baf8c01e-4e0e-4ccc-a2bb-314a1dc60432"
+      }
+    ],
+    "title": "HP And The Goblet of Fire"
+  },
+  {
+    "sortTitle": "Harry Potter - 5",
+    "author": "Rowling, JK",
+    "files": [
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/55019e31-b3e8-49b0-be04-06587fbb517e.mp3",
+        "title": "Harry Potter 5A_ HP And The Order of the Phoenix",
+        "uuid": "55019e31-b3e8-49b0-be04-06587fbb517e"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/7f58472c-6d75-4d75-ba38-505122c7d881.mp3",
+        "title": "Harry Potter And The Order of the Phoenix part II",
+        "uuid": "7f58472c-6d75-4d75-ba38-505122c7d881"
+      }
+    ],
+    "title": "HP And The Order of the Phoenix"
+  },
+  {
+    "sortTitle": "Harry Potter - 6",
+    "author": "Rowling, JK",
+    "files": [
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/5fa244df-decf-439e-9ded-765dcc6163da.mp3",
+        "title": "Harry Potter And The Half-Blood Prince part I",
+        "uuid": "5fa244df-decf-439e-9ded-765dcc6163da"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/a3ffd09f-1ff6-4229-bb3c-d8dbff5738cc.mp3",
+        "title": "Harry Potter And The Half-Blood Prince part II",
+        "uuid": "a3ffd09f-1ff6-4229-bb3c-d8dbff5738cc"
+      }
+    ],
+    "title": "HP And The Half-Blood Prince"
+  },
+  {
+    "sortTitle": "Harry Potter - 7",
+    "author": "Rowling, JK",
+    "files": [
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/8810c9e2-946d-4f6a-85f2-9fb61293dc8c.mp3",
+        "title": "Harry Potter And The Deathly Hallows part I",
+        "uuid": "8810c9e2-946d-4f6a-85f2-9fb61293dc8c"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/47bcfa23-d73b-4224-983c-d138f5bb05e1.mp3",
+        "title": "Harry Potter And The Deathly Hallows part II",
+        "uuid": "47bcfa23-d73b-4224-983c-d138f5bb05e1"
+      }
+    ],
+    "title": "HP And The Deathly Hallows"
+  },
+  {
+    "author": "Tolkien, JRR",
+    "files": [],
+    "title": "Hobbit"
+  },
+  {
+    "author": "YouTube",
+    "files": [
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/e9a15e31-881d-4115-bbe5-a7c126a44cdb.mp4",
+        "title": "18th Century Bacon - Q&A",
+        "uuid": "e9a15e31-881d-4115-bbe5-a7c126a44cdb"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/f89b3dbc-06e7-4ece-b104-226581c1279d.mp4",
+        "title": "Fried Chicken In The 18th Century_",
+        "uuid": "f89b3dbc-06e7-4ece-b104-226581c1279d"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/c69d9fc6-20c4-467b-b669-da23bdba304f.mp4",
+        "title": "Making Fresh Sauerkraut",
+        "uuid": "c69d9fc6-20c4-467b-b669-da23bdba304f"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/b59a3332-e560-4a26-bbde-ddb1031fc04c.mp4",
+        "title": "_Mead_ - The Drink That Fell From Favor",
+        "uuid": "b59a3332-e560-4a26-bbde-ddb1031fc04c"
+      }
+    ],
+    "title": "Jas Townsends"
+  },
+  {
+    "author": "Ehrman, Bart D",
+    "files": [
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/1da5a772-bbed-4678-95cd-9e763275740d.m4b",
+        "title": "01 Jesus, Interrupted Part 1",
+        "uuid": "1da5a772-bbed-4678-95cd-9e763275740d"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/576495ad-22a0-4faf-bd8f-533e4d2a7289.m4b",
+        "title": "02 Jesus, Interrupted Part 2",
+        "uuid": "576495ad-22a0-4faf-bd8f-533e4d2a7289"
+      }
+    ],
+    "title": "Jesus Interrupted"
+  },
+  {
+    "author": "Les Bohem, Les",
+    "files": [],
+    "title": "Junk"
+  },
+  {
+    "author": "Crichton, Michael",
+    "files": [],
+    "title": "Jurassic Park"
+  },
+  {
+    "author": "Tolkien, JRR",
+    "files": [],
+    "title": "Lord of the Rings"
+  },
+  {
+    "author": "Blakely, Lauren",
+    "files": [
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/2f84e228-6ab5-4147-8859-77a4877c7e7f.mp3",
+        "title": "LuckySuit_mp332",
+        "uuid": "2f84e228-6ab5-4147-8859-77a4877c7e7f"
+      }
+    ],
+    "title": "Lucky Suit"
+  },
+  {
+    "author": "Ehrman, Bart D",
+    "files": [
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/ca6e58b5-6709-47d9-870a-98e967718219.mp3",
+        "title": "301 Misquoting Jesus",
+        "uuid": "ca6e58b5-6709-47d9-870a-98e967718219"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/fa0bd2c0-39c7-42bd-8d61-647ecbef5d82.mp3",
+        "title": "302 Misquoting Jesus",
+        "uuid": "fa0bd2c0-39c7-42bd-8d61-647ecbef5d82"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/e5cd1bf4-7605-4054-b70e-784d2ad50dce.mp3",
+        "title": "303 Misquoting Jesus",
+        "uuid": "e5cd1bf4-7605-4054-b70e-784d2ad50dce"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/3e03ce4e-d163-4701-92f7-fd866397725d.mp3",
+        "title": "304 Misquoting Jesus",
+        "uuid": "3e03ce4e-d163-4701-92f7-fd866397725d"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/b23c7c04-d549-4e56-b734-b3ee5524b139.mp3",
+        "title": "305 Misquoting Jesus",
+        "uuid": "b23c7c04-d549-4e56-b734-b3ee5524b139"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/72d6b0e4-5c94-4933-83df-4a203befa383.mp3",
+        "title": "306 Misquoting Jesus",
+        "uuid": "72d6b0e4-5c94-4933-83df-4a203befa383"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/e62ceb6e-df4b-4024-b99b-d4b07a071f20.mp3",
+        "title": "307 Misquoting Jesus",
+        "uuid": "e62ceb6e-df4b-4024-b99b-d4b07a071f20"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/1f48e944-a3a7-48f4-b201-173d2056066c.mp3",
+        "title": "308 Misquoting Jesus",
+        "uuid": "1f48e944-a3a7-48f4-b201-173d2056066c"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/998d8e90-a841-4f4a-ad55-c9eef21f2020.mp3",
+        "title": "309 Misquoting Jesus",
+        "uuid": "998d8e90-a841-4f4a-ad55-c9eef21f2020"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/bd7a999e-cea1-42fb-b1db-0710a4a5ee82.mp3",
+        "title": "310 Misquoting Jesus",
+        "uuid": "bd7a999e-cea1-42fb-b1db-0710a4a5ee82"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/b64e2287-b2ae-4269-b41a-45fff745947e.mp3",
+        "title": "311 Misquoting Jesus",
+        "uuid": "b64e2287-b2ae-4269-b41a-45fff745947e"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/924a0b30-1fee-4c3a-816f-fbd83cffbbd1.mp3",
+        "title": "312 Misquoting Jesus",
+        "uuid": "924a0b30-1fee-4c3a-816f-fbd83cffbbd1"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/ed917109-8d2b-49d3-87a1-1af00cf4b4fb.mp3",
+        "title": "313 Misquoting Jesus",
+        "uuid": "ed917109-8d2b-49d3-87a1-1af00cf4b4fb"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/310ba1d0-4520-442a-993c-bc7d8394d2ed.mp3",
+        "title": "314 Misquoting Jesus",
+        "uuid": "310ba1d0-4520-442a-993c-bc7d8394d2ed"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/467d7c3f-e089-4cc3-8f1f-ca916470e137.mp3",
+        "title": "315 Misquoting Jesus",
+        "uuid": "467d7c3f-e089-4cc3-8f1f-ca916470e137"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/549a8d37-62b6-4ebc-a8cb-5b585ee8a77d.mp3",
+        "title": "316 Misquoting Jesus",
+        "uuid": "549a8d37-62b6-4ebc-a8cb-5b585ee8a77d"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/a904f90b-8ef6-40a9-91e2-1c928f88ec20.mp3",
+        "title": "317 Misquoting Jesus",
+        "uuid": "a904f90b-8ef6-40a9-91e2-1c928f88ec20"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/841cf75f-385a-437a-96c4-2463da319165.mp3",
+        "title": "318 Misquoting Jesus",
+        "uuid": "841cf75f-385a-437a-96c4-2463da319165"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/9cb78aed-2b5c-4c1f-bbe6-844a2f4313c7.mp3",
+        "title": "319 Misquoting Jesus",
+        "uuid": "9cb78aed-2b5c-4c1f-bbe6-844a2f4313c7"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/8c325739-5d12-4390-bd7e-0af41e42774e.mp3",
+        "title": "320 Misquoting Jesus",
+        "uuid": "8c325739-5d12-4390-bd7e-0af41e42774e"
+      }
+    ],
+    "title": "Misquoting Jesus"
+  },
+  {
+    "author": "Melville, Herman",
+    "files": [
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/43643589-15e0-4f66-89de-fd15c3236ea8.mp3",
+        "title": "000_mobydick_melville",
+        "uuid": "43643589-15e0-4f66-89de-fd15c3236ea8"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/46151a8a-e949-477f-b93c-40dd3824744a.mp3",
+        "title": "001_002_mobydick_melville",
+        "uuid": "46151a8a-e949-477f-b93c-40dd3824744a"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/f4a5f528-32b5-495d-a3da-1378479c3f78.mp3",
+        "title": "003_mobydick_melville",
+        "uuid": "f4a5f528-32b5-495d-a3da-1378479c3f78"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/1636cdd3-672d-4ce8-bb77-8914557275cb.mp3",
+        "title": "004_007_mobydick_melville",
+        "uuid": "1636cdd3-672d-4ce8-bb77-8914557275cb"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/af4802bd-860d-4f4d-a647-67d8185e135a.mp3",
+        "title": "008_009_mobydick_melville",
+        "uuid": "af4802bd-860d-4f4d-a647-67d8185e135a"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/7b251d47-69e8-4477-85ed-65779877e0d9.mp3",
+        "title": "010_012_mobydick_melville",
+        "uuid": "7b251d47-69e8-4477-85ed-65779877e0d9"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/710d2de8-ebbb-457e-9890-93a35c430cd0.mp3",
+        "title": "013_015_mobydick_melville",
+        "uuid": "710d2de8-ebbb-457e-9890-93a35c430cd0"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/188054c2-957a-4d14-9c48-29e97b46454f.mp3",
+        "title": "016_mobydick_melville",
+        "uuid": "188054c2-957a-4d14-9c48-29e97b46454f"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/d3cfe3a0-0418-4f09-a82f-c9cb181bd69a.mp3",
+        "title": "017_021_mobydick_melville",
+        "uuid": "d3cfe3a0-0418-4f09-a82f-c9cb181bd69a"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/f09242bf-07d2-4f80-8124-c5550c928d76.mp3",
+        "title": "022_025_mobydick_melville",
+        "uuid": "f09242bf-07d2-4f80-8124-c5550c928d76"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/97ee03ed-e557-4fc9-ae5c-c85993d889d2.mp3",
+        "title": "026_027_mobydick_melville",
+        "uuid": "97ee03ed-e557-4fc9-ae5c-c85993d889d2"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/ae354eef-6333-4b96-be86-f760d1b37bc7.mp3",
+        "title": "028_031_mobydick_melville",
+        "uuid": "ae354eef-6333-4b96-be86-f760d1b37bc7"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/82438af3-ce40-44f6-8f4d-1a541a2fa659.mp3",
+        "title": "032_mobydick_melville",
+        "uuid": "82438af3-ce40-44f6-8f4d-1a541a2fa659"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/920072a1-7594-4ef5-801b-2dcb342616e8.mp3",
+        "title": "033_035_mobydick_melville",
+        "uuid": "920072a1-7594-4ef5-801b-2dcb342616e8"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/e4de5c87-ed96-4db9-a803-d24b27db7337.mp3",
+        "title": "036_040_mobydick_melville",
+        "uuid": "e4de5c87-ed96-4db9-a803-d24b27db7337"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/a71e6a33-8720-4f08-8612-f8686bf60d1c.mp3",
+        "title": "041_mobydick_melville",
+        "uuid": "a71e6a33-8720-4f08-8612-f8686bf60d1c"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/b66bed18-2c25-4e72-89f7-afe7638eae9a.mp3",
+        "title": "042_044_mobydick_melville",
+        "uuid": "b66bed18-2c25-4e72-89f7-afe7638eae9a"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/77c66b92-7c45-4c67-82e3-c55401bbbb33.mp3",
+        "title": "045_047_mobydick_melville",
+        "uuid": "77c66b92-7c45-4c67-82e3-c55401bbbb33"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/6b281cc4-f332-4dfb-8195-1b1452e9d35e.mp3",
+        "title": "048_050_mobydick_melville",
+        "uuid": "6b281cc4-f332-4dfb-8195-1b1452e9d35e"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/7c5696eb-35a6-4035-9f86-01f6b58a50ab.mp3",
+        "title": "051_053_mobydick_melville",
+        "uuid": "7c5696eb-35a6-4035-9f86-01f6b58a50ab"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/e1936fdd-1a43-4b03-9426-c2a0e8d0f75e.mp3",
+        "title": "054_mobydick_melville",
+        "uuid": "e1936fdd-1a43-4b03-9426-c2a0e8d0f75e"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/7a767bde-039d-47bb-8c08-2f68c1344790.mp3",
+        "title": "055_058_mobydick_melville",
+        "uuid": "7a767bde-039d-47bb-8c08-2f68c1344790"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/27819bc9-1a0c-459b-a867-c574751fc928.mp3",
+        "title": "059_063_mobydick_melville",
+        "uuid": "27819bc9-1a0c-459b-a867-c574751fc928"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/31043eca-f94d-4f71-8076-d7ddfe75c471.mp3",
+        "title": "064_067_mobydick_melville",
+        "uuid": "31043eca-f94d-4f71-8076-d7ddfe75c471"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/7670bb7a-2c1b-4e00-8ac4-692d2dcdc85d.mp3",
+        "title": "068_071_mobydick_melville",
+        "uuid": "7670bb7a-2c1b-4e00-8ac4-692d2dcdc85d"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/27d275e1-7c47-4bf0-bb11-e776f31f09b2.mp3",
+        "title": "072_073_mobydick_melville",
+        "uuid": "27d275e1-7c47-4bf0-bb11-e776f31f09b2"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/949269c8-df19-42a4-8eb7-f2de4542223a.mp3",
+        "title": "074_077_mobydick_melville",
+        "uuid": "949269c8-df19-42a4-8eb7-f2de4542223a"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/d21fedcd-4354-4242-9766-7c6fad343086.mp3",
+        "title": "078_080_mobydick_melville",
+        "uuid": "d21fedcd-4354-4242-9766-7c6fad343086"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/d0b529dc-9a74-431c-9a93-c29a7d4c7628.mp3",
+        "title": "081_082_mobydick_melville",
+        "uuid": "d0b529dc-9a74-431c-9a93-c29a7d4c7628"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/7b8c2491-8d11-4f4f-931c-7d5ae209475b.mp3",
+        "title": "083_086_mobydick_melville",
+        "uuid": "7b8c2491-8d11-4f4f-931c-7d5ae209475b"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/b41ae728-27f8-47dc-b88d-f8402e24d808.mp3",
+        "title": "087_088_mobydick_melville",
+        "uuid": "b41ae728-27f8-47dc-b88d-f8402e24d808"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/87234440-177e-4b4b-a077-02e930584f01.mp3",
+        "title": "089_091_mobydick_melville",
+        "uuid": "87234440-177e-4b4b-a077-02e930584f01"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/0a989b8f-8e52-4e52-847b-2458a1122949.mp3",
+        "title": "092_096_mobydick_melville",
+        "uuid": "0a989b8f-8e52-4e52-847b-2458a1122949"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/7fede524-f160-40e5-ae72-67e3221601cb.mp3",
+        "title": "097_100_mobydick_melville",
+        "uuid": "7fede524-f160-40e5-ae72-67e3221601cb"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/913685fa-d542-43d1-af57-0b64461fc332.mp3",
+        "title": "101_104_mobydick_melville",
+        "uuid": "913685fa-d542-43d1-af57-0b64461fc332"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/480b3560-768b-4337-a2e4-6f93abb071a2.mp3",
+        "title": "105_108_mobydick_melville",
+        "uuid": "480b3560-768b-4337-a2e4-6f93abb071a2"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/8fc45a14-10f0-47a7-9128-df48d4e8fe74.mp3",
+        "title": "109_113_mobydick_melville",
+        "uuid": "8fc45a14-10f0-47a7-9128-df48d4e8fe74"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/2ecb0d70-d93f-4bab-b720-5b04c0f1316b.mp3",
+        "title": "114_118_mobydick_melville",
+        "uuid": "2ecb0d70-d93f-4bab-b720-5b04c0f1316b"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/bf173c15-6ee3-4056-9d4d-a4421073df70.mp3",
+        "title": "119_123_mobydick_melville",
+        "uuid": "bf173c15-6ee3-4056-9d4d-a4421073df70"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/6fc84136-bea0-437d-8ca8-a57c362b3363.mp3",
+        "title": "124_127_mobydick_melville",
+        "uuid": "6fc84136-bea0-437d-8ca8-a57c362b3363"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/9bed5846-0463-46fd-b7fb-072feb3282db.mp3",
+        "title": "128_132_mobydick_melville",
+        "uuid": "9bed5846-0463-46fd-b7fb-072feb3282db"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/854fc3ba-b923-457a-9896-e8e1ee6f4f60.mp3",
+        "title": "133_mobydick_melville",
+        "uuid": "854fc3ba-b923-457a-9896-e8e1ee6f4f60"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/613e4369-d90a-4d95-b18f-3a1034347a0f.mp3",
+        "title": "134_mobydick_melville",
+        "uuid": "613e4369-d90a-4d95-b18f-3a1034347a0f"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/cdc9b160-77a6-4a38-a6c2-021d0622cbc6.mp3",
+        "title": "135_mobydick_melville",
+        "uuid": "cdc9b160-77a6-4a38-a6c2-021d0622cbc6"
+      }
+    ],
+    "title": "Moby Dick"
+  },
+  {
+    "author": "Various",
+    "files": [],
+    "title": "More Bedtime Stories for Cynics"
+  },
+  {
+    "author": "YouTube",
+    "files": [
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/162ec3da-0971-4161-87a6-6e1d4c9a86f8.mp4",
+        "title": "#thankyoupatrons",
+        "uuid": "162ec3da-0971-4161-87a6-6e1d4c9a86f8"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/5d3657a4-065d-4cd7-88df-2b6d73941acb.mp4",
+        "title": "2017 Youtube Retrospective",
+        "uuid": "5d3657a4-065d-4cd7-88df-2b6d73941acb"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/8176e345-9312-4dd8-886c-3747bee9834b.mp4",
+        "title": "2018 Youtube Retrospective",
+        "uuid": "8176e345-9312-4dd8-886c-3747bee9834b"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/93f6ea3c-10fd-4269-890c-146467d221d5.mp4",
+        "title": "A Visit with Wardruna and Eivør",
+        "uuid": "93f6ea3c-10fd-4269-890c-146467d221d5"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/aae87af8-0640-4024-9f43-de1a7730a70a.mp4",
+        "title": "About Me",
+        "uuid": "aae87af8-0640-4024-9f43-de1a7730a70a"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/1a68f059-5465-4e18-9ac0-7f0bde6ae98a.mp4",
+        "title": "American Gods and Real Norse Myth",
+        "uuid": "1a68f059-5465-4e18-9ac0-7f0bde6ae98a"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/9775a190-1104-41cd-9ea8-092d0b755ec3.mp4",
+        "title": "American Gods s2 e5 \u2018The Ways of the Dead\u2019_ The Old Norse Lines",
+        "uuid": "9775a190-1104-41cd-9ea8-092d0b755ec3"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/4a23c4e3-097a-48d3-9448-68d17e0e4eff.mp4",
+        "title": "American Gods s2 e6 'Donar the Great'_ The Old Norse Lines",
+        "uuid": "4a23c4e3-097a-48d3-9448-68d17e0e4eff"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/4cd4349e-707e-404e-a677-3f3e9a89e700.mp4",
+        "title": "At (Old Norse Words with Many Meanings)",
+        "uuid": "4cd4349e-707e-404e-a677-3f3e9a89e700"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/c8f48085-a208-45b2-a1c6-c9f9b71d6d27.mp4",
+        "title": "Audiobooks_ Behind the Scenes",
+        "uuid": "c8f48085-a208-45b2-a1c6-c9f9b71d6d27"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/9476d257-f0e4-4d80-8ee9-79dcd00a6a9d.mp4",
+        "title": "Berserkers (Berserkir) and Úlfhéðnar",
+        "uuid": "9476d257-f0e4-4d80-8ee9-79dcd00a6a9d"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/d765a619-6738-448d-adce-995b282f8610.mp4",
+        "title": "Beyond the Eddas_ Other Sources of Norse Myth (Patreon Questions)",
+        "uuid": "d765a619-6738-448d-adce-995b282f8610"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/051298e9-f986-4e66-aae0-a64aa4b4dd43.mp4",
+        "title": "Bifrǫst _ Bilrǫst",
+        "uuid": "051298e9-f986-4e66-aae0-a64aa4b4dd43"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/046451c9-a8a7-4f53-9c9a-f83d5b4c17bf.mp4",
+        "title": "Bindrunes and Ægishjálmr",
+        "uuid": "046451c9-a8a7-4f53-9c9a-f83d5b4c17bf"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/bfe36e88-ad66-438c-bda9-3e4d163fd1dd.mp4",
+        "title": "Birds of Prey in Norse Myth",
+        "uuid": "bfe36e88-ad66-438c-bda9-3e4d163fd1dd"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/90386f6f-5b96-4265-bc64-7b175aa2d44c.mp4",
+        "title": "Bronc-Bustin\u2019 Santa (an original carol)",
+        "uuid": "90386f6f-5b96-4265-bc64-7b175aa2d44c"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/3c5f5eea-c116-44c2-8fef-601668696723.mp4",
+        "title": "Christian Influence in Norse Myth_ (Patreon questions)",
+        "uuid": "3c5f5eea-c116-44c2-8fef-601668696723"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/b5432d76-a689-4f67-a814-43e83e399690.mp4",
+        "title": "Colors in Old Norse",
+        "uuid": "b5432d76-a689-4f67-a814-43e83e399690"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/ad980688-bc72-45aa-ac02-1aee9441072c.mp4",
+        "title": "Conversational Old Norse",
+        "uuid": "ad980688-bc72-45aa-ac02-1aee9441072c"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/f1b2aa15-1e44-4466-880e-89a08c086fd7.mp4",
+        "title": "Cowboy Hats",
+        "uuid": "f1b2aa15-1e44-4466-880e-89a08c086fd7"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/48c36a6c-3769-4e26-a404-d9bb5ef4d086.mp4",
+        "title": "Curses and Cursed Objects in Old Norse",
+        "uuid": "48c36a6c-3769-4e26-a404-d9bb5ef4d086"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/68c07255-8c5a-4326-b5a4-bb4c55ace258.mp4",
+        "title": "Darraðarljóð_ The Valkyries' Song of the Spear",
+        "uuid": "68c07255-8c5a-4326-b5a4-bb4c55ace258"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/1cd24726-7f3c-4281-a98e-d94dcaf9835d.mp4",
+        "title": "Dr",
+        "uuid": "1cd24726-7f3c-4281-a98e-d94dcaf9835d"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/9934333d-e4d0-4840-83b0-664ea03cc1c3.mp4",
+        "title": "Dragons in Norse Myth",
+        "uuid": "9934333d-e4d0-4840-83b0-664ea03cc1c3"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/9e255609-9d7d-4de9-a91d-fc4d0a5bdced.mp4",
+        "title": "Drengr_ The Ultimate Viking Compliment",
+        "uuid": "9e255609-9d7d-4de9-a91d-fc4d0a5bdced"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/e2d68167-2ee6-48d5-b4aa-d88115a5362c.mp4",
+        "title": "Drengskapr (Viking Manliness) and Thorstein Staff-Struck",
+        "uuid": "e2d68167-2ee6-48d5-b4aa-d88115a5362c"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/9164546a-600d-4be1-8f5f-97221516c919.mp4",
+        "title": "Dwarves and Elves in Norse Myth",
+        "uuid": "9164546a-600d-4be1-8f5f-97221516c919"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/2c5c57c9-0158-41dc-9b63-3035110abcac.mp4",
+        "title": "Earlier and Later Old Norse",
+        "uuid": "2c5c57c9-0158-41dc-9b63-3035110abcac"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/ac513a53-2b37-45b6-844d-16e0b543f6ac.mp4",
+        "title": "Ecclesiastes",
+        "uuid": "ac513a53-2b37-45b6-844d-16e0b543f6ac"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/c51a8ae0-0111-4a0d-9531-4552e646a55b.mp4",
+        "title": "Egill Skallagrímsson, pt",
+        "uuid": "c51a8ae0-0111-4a0d-9531-4552e646a55b"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/7fd4fbf0-6160-47e0-84c3-fadd205e9466.mp4",
+        "title": "Egill Skallagrímsson, pt",
+        "uuid": "7fd4fbf0-6160-47e0-84c3-fadd205e9466"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/7d3b0a78-fa6f-4e24-b417-b42b6fb4c340.mp4",
+        "title": "Egill Skallagrímsson, pt",
+        "uuid": "7d3b0a78-fa6f-4e24-b417-b42b6fb4c340"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/90198d5f-bc1c-48a9-8b4e-f3ff198b889c.mp4",
+        "title": "Egill Skallagrímsson, pt",
+        "uuid": "90198d5f-bc1c-48a9-8b4e-f3ff198b889c"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/bb8a62ac-40a1-40cb-9aa4-70a8bc0bfb67.mp4",
+        "title": "Egill Skallagrímsson, pt",
+        "uuid": "bb8a62ac-40a1-40cb-9aa4-70a8bc0bfb67"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/45f776c7-7978-4e35-a062-f3efb419dd3c.mp4",
+        "title": "Er (Old Norse Words with Many Meanings)",
+        "uuid": "45f776c7-7978-4e35-a062-f3efb419dd3c"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/cdffd021-980c-48a9-b249-2eb0d885d525.mp4",
+        "title": "Excerpt from Boulder Book Store Reading",
+        "uuid": "cdffd021-980c-48a9-b249-2eb0d885d525"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/2b05319b-f23c-445f-9b4b-e5b93352d97a.mp4",
+        "title": "FAQs 2017 Appendix_ Viking Shows_Games_Music",
+        "uuid": "2b05319b-f23c-445f-9b4b-e5b93352d97a"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/b15a1f1b-3a34-4bc7-88ba-ce0114501af1.mp4",
+        "title": "FAQs 2017_ J",
+        "uuid": "b15a1f1b-3a34-4bc7-88ba-ce0114501af1"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/7ba24abe-6847-48a6-aebf-dc0f2dd1306f.mp4",
+        "title": "FAQs 2018 (with updates)",
+        "uuid": "7ba24abe-6847-48a6-aebf-dc0f2dd1306f"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/ca3f5595-206d-49d1-82a9-25b1147e9dae.mp4",
+        "title": "FAQs_ Old Norse and My Channel (updated Nov",
+        "uuid": "ca3f5595-206d-49d1-82a9-25b1147e9dae"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/fb555e7f-7424-4ff5-be58-0d4feaf6194b.mp4",
+        "title": "Finnish and the Scandinavian Languages",
+        "uuid": "fb555e7f-7424-4ff5-be58-0d4feaf6194b"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/ee44a53c-c9ef-4097-aff7-9062fbea24d7.mp4",
+        "title": "Foreign Words in Old Norse",
+        "uuid": "ee44a53c-c9ef-4097-aff7-9062fbea24d7"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/9549d118-8368-4e5c-98ee-daa0a16c580d.mp4",
+        "title": "Forming Old Norse _Last Names_",
+        "uuid": "9549d118-8368-4e5c-98ee-daa0a16c580d"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/e807d1fa-28e1-4a37-b14f-d895bc35a0b1.mp4",
+        "title": "Getting Published",
+        "uuid": "e807d1fa-28e1-4a37-b14f-d895bc35a0b1"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/6feac7c9-5998-477a-965d-73f530172551.mp4",
+        "title": "Gods and _Giants_ in Norse Myth",
+        "uuid": "6feac7c9-5998-477a-965d-73f530172551"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/1d3cb28e-6383-4e7d-96f2-4291f0bd8962.mp4",
+        "title": "Going to Grad School",
+        "uuid": "1d3cb28e-6383-4e7d-96f2-4291f0bd8962"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/c4a5e3b4-2ae1-438d-9241-920999cdfee0.mp4",
+        "title": "Goths and Huns in Old Norse",
+        "uuid": "c4a5e3b4-2ae1-438d-9241-920999cdfee0"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/3255555b-496e-49de-a3b3-d978dd40a31d.mp4",
+        "title": "Grimm's Law and the Regularity of Sound Change",
+        "uuid": "3255555b-496e-49de-a3b3-d978dd40a31d"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/a733d2ee-d328-4a1c-b2d6-13d260c7a2f7.mp4",
+        "title": "Grímnismál 1-5 in Old Norse, with Analysis",
+        "uuid": "a733d2ee-d328-4a1c-b2d6-13d260c7a2f7"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/510b32a5-5db2-4416-9cfd-d55bfdb0cee0.mp4",
+        "title": "Grímnismál 17-36 in Old Norse, with Analysis",
+        "uuid": "510b32a5-5db2-4416-9cfd-d55bfdb0cee0"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/b9df0c2c-3f12-4de6-871b-81807ef5caac.mp4",
+        "title": "Grímnismál 37-44 in Old Norse, with Analysis",
+        "uuid": "b9df0c2c-3f12-4de6-871b-81807ef5caac"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/b21d8861-16d6-40a8-80b3-29d67ef78ffc.mp4",
+        "title": "Grímnismál 6-16 in Old Norse, with Analysis",
+        "uuid": "b21d8861-16d6-40a8-80b3-29d67ef78ffc"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/6667ed10-665b-427e-97c6-7a4dbe28ab58.mp4",
+        "title": "Grímnismál_ Odin Reveals His Names",
+        "uuid": "6667ed10-665b-427e-97c6-7a4dbe28ab58"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/539b4659-0469-4d2d-9238-da1b84cb6b97.mp4",
+        "title": "Head Injuries",
+        "uuid": "539b4659-0469-4d2d-9238-da1b84cb6b97"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/52930987-c7e2-434d-ae87-0b8c5f4cede1.mp4",
+        "title": "Historical Worship of the Norse Gods",
+        "uuid": "52930987-c7e2-434d-ae87-0b8c5f4cede1"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/35989b8d-a803-4fe4-87c7-406622659606.mp4",
+        "title": "How do we determine what languages are related_",
+        "uuid": "35989b8d-a803-4fe4-87c7-406622659606"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/acf21497-be35-444c-9fd1-b400002dd499.mp4",
+        "title": "How does language change_",
+        "uuid": "acf21497-be35-444c-9fd1-b400002dd499"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/421f3de7-c853-4eaa-81c5-cf98033c83de.mp4",
+        "title": "How old is English_",
+        "uuid": "421f3de7-c853-4eaa-81c5-cf98033c83de"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/80a48a3f-ab7c-4a23-831d-e699be5fb2de.mp4",
+        "title": "How to Learn Old Norse (or Icelandic)",
+        "uuid": "80a48a3f-ab7c-4a23-831d-e699be5fb2de"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/f02973e7-a231-4091-9996-a69673c96dbf.mp4",
+        "title": "Hyndluljóð _ Vǫluspá in skamma",
+        "uuid": "f02973e7-a231-4091-9996-a69673c96dbf"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/92e6a11f-b3a3-419d-9360-90c487b04de1.mp4",
+        "title": "Hárbarðsljóð_ Thor and Odin's Argument",
+        "uuid": "92e6a11f-b3a3-419d-9360-90c487b04de1"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/11a6ac7e-414c-4041-a7c4-77507be86410.mp4",
+        "title": "Hávamál 1-23 in Old Norse, with Analysis",
+        "uuid": "11a6ac7e-414c-4041-a7c4-77507be86410"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/c21f03ed-8ffe-4ca5-9789-857011496b3c.mp4",
+        "title": "Hávamál 104-164 in Old Norse, with Analysis",
+        "uuid": "c21f03ed-8ffe-4ca5-9789-857011496b3c"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/4953209b-5e49-4a92-a6c7-921f729a47b5.mp4",
+        "title": "Hávamál 24-41 in Old Norse, with Analysis",
+        "uuid": "4953209b-5e49-4a92-a6c7-921f729a47b5"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/48ad3a74-8c0d-41ee-a44a-74c5f65cea1f.mp4",
+        "title": "Hávamál 42-59 in Old Norse, with Analysis",
+        "uuid": "48ad3a74-8c0d-41ee-a44a-74c5f65cea1f"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/93e619fd-9967-4772-8126-811775fae5b7.mp4",
+        "title": "Hávamál 60-63 in Old Norse, with Analysis",
+        "uuid": "93e619fd-9967-4772-8126-811775fae5b7"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/0cc86e98-eb5e-43f8-8f8f-072948e2094c.mp4",
+        "title": "Hávamál 64-73 in Old Norse, with Analysis",
+        "uuid": "0cc86e98-eb5e-43f8-8f8f-072948e2094c"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/4f8816ce-8c13-4b02-8630-36cf7ae58fde.mp4",
+        "title": "Hávamál 74-89 in Old Norse, with Analysis",
+        "uuid": "4f8816ce-8c13-4b02-8630-36cf7ae58fde"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/03ce3f90-0b9b-45dc-ad8a-1bdc2a2d7633.mp4",
+        "title": "Hávamál 90-103 in Old Norse, with Analysis",
+        "uuid": "03ce3f90-0b9b-45dc-ad8a-1bdc2a2d7633"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/136b0ac1-5faf-472e-b5e0-70e03057283f.mp4",
+        "title": "Hávamál_ A Complete Reading in Old Norse",
+        "uuid": "136b0ac1-5faf-472e-b5e0-70e03057283f"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/64a18175-0e3a-4ebe-a44c-761244d6dfbc.mp4",
+        "title": "Hávamál_ The Norse Poem of Odin's Wisdom",
+        "uuid": "64a18175-0e3a-4ebe-a44c-761244d6dfbc"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/11a77e21-aa9c-4e93-af29-4b85799e26d1.mp4",
+        "title": "Illegal Poems and Words in Old Norse",
+        "uuid": "11a77e21-aa9c-4e93-af29-4b85799e26d1"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/f7adb80f-42f3-49cf-b54a-9b611b94dc44.mp4",
+        "title": "Interview on Norse Language and Myth",
+        "uuid": "f7adb80f-42f3-49cf-b54a-9b611b94dc44"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/599db7ae-09ee-41af-94a6-1b66fb673659.mp4",
+        "title": "Interview on Translating Norse Myths",
+        "uuid": "599db7ae-09ee-41af-94a6-1b66fb673659"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/688ca54c-d32f-40a5-ad19-f36d0367f252.mp4",
+        "title": "Intro",
+        "uuid": "688ca54c-d32f-40a5-ad19-f36d0367f252"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/02c25ad5-1d59-48e8-9e86-445a178e1dd9.mp4",
+        "title": "Intro",
+        "uuid": "02c25ad5-1d59-48e8-9e86-445a178e1dd9"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/cf6595db-08c0-4912-91a3-1cfb58f23bf9.mp4",
+        "title": "Introduction to Norse Mythology (25 min",
+        "uuid": "cf6595db-08c0-4912-91a3-1cfb58f23bf9"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/2cafb8da-8ccf-4bb2-92bd-6546dfb7e47c.mp4",
+        "title": "Irish and Norse (Patreon questions)",
+        "uuid": "2cafb8da-8ccf-4bb2-92bd-6546dfb7e47c"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/5b600a4e-b881-48e7-b920-a1f9da02de5d.mp4",
+        "title": "Is Ragnarok Cyclical_",
+        "uuid": "5b600a4e-b881-48e7-b920-a1f9da02de5d"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/6dbc7e32-f4e0-4ba7-846a-529cdf224fc3.mp4",
+        "title": "Jackson (Favorite Places 4)",
+        "uuid": "6dbc7e32-f4e0-4ba7-846a-529cdf224fc3"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/5be843bf-6d08-4a5e-9fb4-dc546c473e53.mp4",
+        "title": "Jackson Crawford on Patreon",
+        "uuid": "5be843bf-6d08-4a5e-9fb4-dc546c473e53"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/330fe1a1-4c7b-46a7-9200-784a5f122f02.mp4",
+        "title": "Jackson Crawford's Old Norse Channel",
+        "uuid": "330fe1a1-4c7b-46a7-9200-784a5f122f02"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/5f71f86c-37e6-4da5-8625-48018ad0422a.mp4",
+        "title": "Jól (Yule)_ The Norse Winter Holiday",
+        "uuid": "5f71f86c-37e6-4da5-8625-48018ad0422a"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/58271217-54b6-4982-b90d-891f6039a8e3.mp4",
+        "title": "Jǫrmungandr (Miðgarðsormr)",
+        "uuid": "58271217-54b6-4982-b90d-891f6039a8e3"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/76f7d1be-2af5-44d8-9ccd-a1c2fb886a30.mp4",
+        "title": "Krákumál_ Ragnar Lothbrok's Last Words_",
+        "uuid": "76f7d1be-2af5-44d8-9ccd-a1c2fb886a30"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/badfb2e4-4cf6-4c9d-8363-65a2e91a4f3d.mp4",
+        "title": "Lander (Favorite Places 3)",
+        "uuid": "badfb2e4-4cf6-4c9d-8363-65a2e91a4f3d"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/b9cc1739-bead-4ae5-8a15-6c6002de00c1.mp4",
+        "title": "Language Families and Language Isolates (Patreon Questions)",
+        "uuid": "b9cc1739-bead-4ae5-8a15-6c6002de00c1"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/53355217-e987-4227-859e-0b8540f9793d.mp4",
+        "title": "Languages of the Viking World",
+        "uuid": "53355217-e987-4227-859e-0b8540f9793d"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/86290d1b-2e24-476d-acd2-77126d187d1c.mp4",
+        "title": "Layers of Norse Myth (Patreon Questions)",
+        "uuid": "86290d1b-2e24-476d-acd2-77126d187d1c"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/9ec91c01-ea19-4baa-9202-ecdf82de9691.mp4",
+        "title": "Lokasenna_ The Norse Poem of Loki's Locker Talk",
+        "uuid": "9ec91c01-ea19-4baa-9202-ecdf82de9691"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/c270d215-d9e8-4cab-867e-87890986ab5c.mp4",
+        "title": "Loki Laufeyjarson",
+        "uuid": "c270d215-d9e8-4cab-867e-87890986ab5c"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/b7c3223c-302e-4fb3-995d-104ba8985747.mp4",
+        "title": "Loki and Thor Meet Utgard-Loki",
+        "uuid": "b7c3223c-302e-4fb3-995d-104ba8985747"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/66ca0d57-c2a9-452a-bb30-10c2e1fa09fc.mp4",
+        "title": "Lord of the Noose_ Odin and the Dead",
+        "uuid": "66ca0d57-c2a9-452a-bb30-10c2e1fa09fc"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/354cd5bf-7137-441b-b700-f36d58324215.mp4",
+        "title": "Lost Poems of the Norse Gods",
+        "uuid": "354cd5bf-7137-441b-b700-f36d58324215"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/4d2baa81-0c5e-4402-845b-6aad7b7cc4aa.mp4",
+        "title": "Love Poetry in Old Norse",
+        "uuid": "4d2baa81-0c5e-4402-845b-6aad7b7cc4aa"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/ecfee6f9-7e1e-42ea-ac27-629efe2e6b87.mp4",
+        "title": "Lunar Eclipse; Distant Wolves",
+        "uuid": "ecfee6f9-7e1e-42ea-ac27-629efe2e6b87"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/348290fc-1901-45bf-8266-66be014b2f77.mp4",
+        "title": "Manuscripts of the Eddic Poems",
+        "uuid": "348290fc-1901-45bf-8266-66be014b2f77"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/9db87849-b0a5-4186-8ad8-c969ff3a3a2a.mp4",
+        "title": "Morrison Museum (Favorite Places 1)",
+        "uuid": "9db87849-b0a5-4186-8ad8-c969ff3a3a2a"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/bd2a5499-9b46-4e67-bcfb-6f7595c8858a.mp4",
+        "title": "Mourning among the Norse",
+        "uuid": "bd2a5499-9b46-4e67-bcfb-6f7595c8858a"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/29085e53-ba00-494b-b3a3-7e64b900b7e6.mp4",
+        "title": "Muninn vs",
+        "uuid": "29085e53-ba00-494b-b3a3-7e64b900b7e6"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/cadbca8c-e030-450b-94d5-6f579aed911a.mp4",
+        "title": "My Education and Career",
+        "uuid": "cadbca8c-e030-450b-94d5-6f579aed911a"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/61424f49-37b4-4577-9d83-55b2dfcdd352.mp4",
+        "title": "My Experience Consulting on Frozen",
+        "uuid": "61424f49-37b4-4577-9d83-55b2dfcdd352"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/ee5672dd-b62d-4233-b620-d51d668f2349.mp4",
+        "title": "My New Hávamál Book [1st announcement]",
+        "uuid": "ee5672dd-b62d-4233-b620-d51d668f2349"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/78cc41cd-5965-45a0-8681-28825fb955c0.mp4",
+        "title": "My Old Star Wars Parody",
+        "uuid": "78cc41cd-5965-45a0-8681-28825fb955c0"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/2c31784b-7f63-47ee-a8bf-4e5c7d5a1ef5.mp4",
+        "title": "Myths and Dream Logic",
+        "uuid": "2c31784b-7f63-47ee-a8bf-4e5c7d5a1ef5"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/78ea0361-c908-4a2b-b314-65bcd43b55f9.mp4",
+        "title": "New sources of Norse myth_ (Patreon questions)",
+        "uuid": "78ea0361-c908-4a2b-b314-65bcd43b55f9"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/c4e210a7-0eeb-4f73-aaac-e623a9577652.mp4",
+        "title": "Njal's Saga, Part 1 (Hrut _ Young Hallgerd)",
+        "uuid": "c4e210a7-0eeb-4f73-aaac-e623a9577652"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/cb388aa4-7e97-464a-bac5-8502666bd981.mp4",
+        "title": "Njal's Saga, Part 2 (Gunnar's Rise)",
+        "uuid": "cb388aa4-7e97-464a-bac5-8502666bd981"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/ef0808f0-6259-486c-871f-d76380d6477b.mp4",
+        "title": "Njal's Saga, Part 3 (Gunnar's Fall)",
+        "uuid": "ef0808f0-6259-486c-871f-d76380d6477b"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/f37563c1-90ef-404c-984f-a8e62cbb5561.mp4",
+        "title": "Njal's Saga, Part 4 (Njal's Sons)",
+        "uuid": "f37563c1-90ef-404c-984f-a8e62cbb5561"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/964949cb-f05f-43c6-90a8-4a0fb39a5ccd.mp4",
+        "title": "Njal's Saga, Part 5 (The Burning)",
+        "uuid": "964949cb-f05f-43c6-90a8-4a0fb39a5ccd"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/341ba4d3-9f09-4fc0-b857-f7cf3a68176f.mp4",
+        "title": "Njal's Saga, Part 6 (Kari)",
+        "uuid": "341ba4d3-9f09-4fc0-b857-f7cf3a68176f"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/16a326a4-240a-4faa-b6e6-1f142c0a2073.mp4",
+        "title": "Norse Galdr [Magic Spells] and Galdralag (Patreon questions)",
+        "uuid": "16a326a4-240a-4faa-b6e6-1f142c0a2073"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/d22eb81e-99d4-4ca5-ae81-a2efcfa3443b.mp4",
+        "title": "Norse Myth and Indo-European Myth (Patreon questions)",
+        "uuid": "d22eb81e-99d4-4ca5-ae81-a2efcfa3443b"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/6971cd2f-c6d9-4ba9-a0be-97a61477a685.mp4",
+        "title": "Norse Myth_ 5 Misconceptions",
+        "uuid": "6971cd2f-c6d9-4ba9-a0be-97a61477a685"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/d5e3174a-7407-4642-9fb4-86f0c94aac8f.mp4",
+        "title": "Norse Myth_ Evidence before the Eddas",
+        "uuid": "d5e3174a-7407-4642-9fb4-86f0c94aac8f"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/88965280-3469-4742-aedf-6e53550028d3.mp4",
+        "title": "Norse Myth_ Hel (Patreon questions)",
+        "uuid": "88965280-3469-4742-aedf-6e53550028d3"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/571217d3-3d47-4a0f-92cf-9a3fe1b94153.mp4",
+        "title": "Norse Myth_ Our Sources",
+        "uuid": "571217d3-3d47-4a0f-92cf-9a3fe1b94153"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/9d82d65e-0485-496f-a8b8-83828253690d.mp4",
+        "title": "Norse Myth_ The (Absent) Aurora",
+        "uuid": "9d82d65e-0485-496f-a8b8-83828253690d"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/fd6725a2-db95-4a09-82c0-c7a97f0d030b.mp4",
+        "title": "Norse Myth_ The Creation",
+        "uuid": "fd6725a2-db95-4a09-82c0-c7a97f0d030b"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/0d6149ca-283d-4e6e-a349-e97cae734147.mp4",
+        "title": "Norse Myth_ The Gods and the Giants (Patreon questions)",
+        "uuid": "0d6149ca-283d-4e6e-a349-e97cae734147"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/cb577d9b-80bb-4ae0-bf76-d1fc7de2d689.mp4",
+        "title": "Norse Pagan _Baptism_ (Patreon Questions)",
+        "uuid": "cb577d9b-80bb-4ae0-bf76-d1fc7de2d689"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/397d45d8-948f-49ee-b78e-0e92230f7db2.mp4",
+        "title": "Norse Sagas at Boulder Book Store_ Nov",
+        "uuid": "397d45d8-948f-49ee-b78e-0e92230f7db2"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/286b6109-999f-4d79-ad2c-f5718fefabea.mp4",
+        "title": "Norse Sports and Games",
+        "uuid": "286b6109-999f-4d79-ad2c-f5718fefabea"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/14969676-b679-4a1f-a604-23bc2cf7c88e.mp4",
+        "title": "Norwegian Poet Olav H",
+        "uuid": "14969676-b679-4a1f-a604-23bc2cf7c88e"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/9ce001ac-2080-43fd-9221-d19dad3d81a6.mp4",
+        "title": "Noun Cases_ A Basic Intro",
+        "uuid": "9ce001ac-2080-43fd-9221-d19dad3d81a6"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/cd1babf8-03e1-4660-a9a2-813ed4b84763.mp4",
+        "title": "Numbers in Old Norse",
+        "uuid": "cd1babf8-03e1-4660-a9a2-813ed4b84763"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/5eec8917-afd8-41e9-b166-63e0af6432cd.mp4",
+        "title": "Nynorsk and Bokmål_ Why are there two ways to write Norwegian_",
+        "uuid": "5eec8917-afd8-41e9-b166-63e0af6432cd"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/899f7aa9-929f-4785-82b1-77abdab1ff78.mp4",
+        "title": "Níðstǫng_ The Old Norse _Scorn Pole_",
+        "uuid": "899f7aa9-929f-4785-82b1-77abdab1ff78"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/c6a87610-e1fb-4a64-ba09-4b139f1ff09d.mp4",
+        "title": "Odin and Wisdom",
+        "uuid": "c6a87610-e1fb-4a64-ba09-4b139f1ff09d"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/1f834996-0547-405f-83b7-7c3788a374bb.mp4",
+        "title": "Odin vs",
+        "uuid": "1f834996-0547-405f-83b7-7c3788a374bb"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/8c98294e-4030-4ff2-885e-e39d7db23c03.mp4",
+        "title": "Odin's Names",
+        "uuid": "8c98294e-4030-4ff2-885e-e39d7db23c03"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/34bfb9cf-a225-4a2d-ae49-514398614ad7.mp4",
+        "title": "Odin's Spear Gungnir",
+        "uuid": "34bfb9cf-a225-4a2d-ae49-514398614ad7"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/9f0fbab3-cac2-4d70-8007-b9ae1abd25d6.mp4",
+        "title": "Odin's Title _Allfather_ (Alfǫðr)",
+        "uuid": "9f0fbab3-cac2-4d70-8007-b9ae1abd25d6"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/b4ea65b4-d1f8-46bc-98c1-08cd433c9183.mp4",
+        "title": "Odin, Wotan, Woden_ The Difference",
+        "uuid": "b4ea65b4-d1f8-46bc-98c1-08cd433c9183"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/41029093-22c8-408d-9180-7889c075d897.mp4",
+        "title": "Odin\u2019s Names (with Runes)_ Grímnismál 45-54",
+        "uuid": "41029093-22c8-408d-9180-7889c075d897"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/6280c2eb-8fb8-4d06-882c-d5c316503c06.mp4",
+        "title": "Old Icelandic vs",
+        "uuid": "6280c2eb-8fb8-4d06-882c-d5c316503c06"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/1d468644-303e-4706-9718-3099d8252d7a.mp4",
+        "title": "Old Norse 'Skjaldmær' (Shieldmaiden)",
+        "uuid": "1d468644-303e-4706-9718-3099d8252d7a"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/0afcb2ea-a479-460e-a20d-9f26d252baa7.mp4",
+        "title": "Old Norse Death Poems",
+        "uuid": "0afcb2ea-a479-460e-a20d-9f26d252baa7"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/bfea5490-da2d-4dd9-99fc-005503c5b6ca.mp4",
+        "title": "Old Norse Lesson 15_ Weak Adjectives",
+        "uuid": "bfea5490-da2d-4dd9-99fc-005503c5b6ca"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/f0529748-e58d-4b37-94cc-85c9684733c9.mp4",
+        "title": "Old Norse Lesson 16_ Preterite-Present Verbs",
+        "uuid": "f0529748-e58d-4b37-94cc-85c9684733c9"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/d706b735-fcf5-4944-b4ca-768f2c04812e.mp4",
+        "title": "Old Norse Lesson 17_ More About Possession",
+        "uuid": "d706b735-fcf5-4944-b4ca-768f2c04812e"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/57b2baa5-b515-4ed1-950a-6f003e432bdf.mp4",
+        "title": "Old Norse Lesson 18_ Basics of Word Order",
+        "uuid": "57b2baa5-b515-4ed1-950a-6f003e432bdf"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/1f9ac2b5-cc0c-4f28-9ca4-54e447a51a99.mp4",
+        "title": "Old Norse Names_ Meanings and Customs",
+        "uuid": "1f9ac2b5-cc0c-4f28-9ca4-54e447a51a99"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/e99ce61e-e358-45e5-94b7-3b3a03b002a0.mp4",
+        "title": "Old Norse Quotes on Love and Romance",
+        "uuid": "e99ce61e-e358-45e5-94b7-3b3a03b002a0"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/f993a82b-f70b-4654-b14c-e130b1245ebc.mp4",
+        "title": "Old Norse Unit 2, Lesson 1_ Using a Dictionary to Read Old Norse",
+        "uuid": "f993a82b-f70b-4654-b14c-e130b1245ebc"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/84ca5f75-3535-4f8b-a4ee-16672307cdf5.mp4",
+        "title": "Old Norse Unit 2, Lesson 2_ Continued Reading Practice",
+        "uuid": "84ca5f75-3535-4f8b-a4ee-16672307cdf5"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/acfb312f-29e8-428f-81ce-704442e8d050.mp4",
+        "title": "Old Norse Vocabulary_ Basic Nature",
+        "uuid": "acfb312f-29e8-428f-81ce-704442e8d050"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/a4045ac0-b8be-4bb8-91a3-aedcb5642324.mp4",
+        "title": "Old Norse Vocabulary_ Basic Weapons",
+        "uuid": "a4045ac0-b8be-4bb8-91a3-aedcb5642324"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/424915d4-f50c-4b85-a3e3-c218775f77b1.mp4",
+        "title": "Old Norse Words for Gods",
+        "uuid": "424915d4-f50c-4b85-a3e3-c218775f77b1"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/037a92b7-edb7-45d0-9adc-4eaac61bee16.mp4",
+        "title": "Old Norse and Old English",
+        "uuid": "037a92b7-edb7-45d0-9adc-4eaac61bee16"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/1409305f-8848-40f2-b4eb-da89618a1537.mp4",
+        "title": "Old Norse and the Latin Alphabet",
+        "uuid": "1409305f-8848-40f2-b4eb-da89618a1537"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/f6057449-f86f-4ba2-baf9-5f3fdab9bfa4.mp4",
+        "title": "Old Norse and the Modern Scandinavian Languages",
+        "uuid": "f6057449-f86f-4ba2-baf9-5f3fdab9bfa4"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/0800700e-b811-4e88-b846-5ac90bbaef5a.mp4",
+        "title": "Old Norse names in the Vikings TV show",
+        "uuid": "0800700e-b811-4e88-b846-5ac90bbaef5a"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/aca48b22-df5b-43d6-89f4-125747e62fc5.mp4",
+        "title": "Old Norse, Its Relatives, and Runes_ A Timeline and Introduction",
+        "uuid": "aca48b22-df5b-43d6-89f4-125747e62fc5"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/d7ae71fa-1c52-4e5b-9f5d-118db21e8b89.mp4",
+        "title": "Old Norse_ How Nouns Work",
+        "uuid": "d7ae71fa-1c52-4e5b-9f5d-118db21e8b89"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/3cadbfc1-478c-41ec-b797-e300b586ff40.mp4",
+        "title": "Old Norse_ Word Order Basics",
+        "uuid": "3cadbfc1-478c-41ec-b797-e300b586ff40"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/4e8f1c15-fb82-4eec-bf94-8dc97f37dd33.mp4",
+        "title": "Origin of the Runes",
+        "uuid": "4e8f1c15-fb82-4eec-bf94-8dc97f37dd33"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/64558e66-0959-45be-9d73-123927802d10.mp4",
+        "title": "Origins of Heimdall",
+        "uuid": "64558e66-0959-45be-9d73-123927802d10"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/cf75e1cc-3c0a-485e-afca-523db2ff7068.mp4",
+        "title": "Poetic Edda Audiobook",
+        "uuid": "cf75e1cc-3c0a-485e-afca-523db2ff7068"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/ebeb7131-4d4e-4897-9d76-8f671e99ae42.mp4",
+        "title": "Poetic Edda vs",
+        "uuid": "ebeb7131-4d4e-4897-9d76-8f671e99ae42"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/51322f46-3a43-4220-8c66-cb9e18c20838.mp4",
+        "title": "Possession in Old Norse",
+        "uuid": "51322f46-3a43-4220-8c66-cb9e18c20838"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/9da8d405-f2aa-4c95-83c7-4b1923744f33.mp4",
+        "title": "Preterite-Present Verbs in Old Norse",
+        "uuid": "9da8d405-f2aa-4c95-83c7-4b1923744f33"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/a5bc51a7-e90a-41b3-9a47-e9f4afa00cc9.mp4",
+        "title": "Pronunciation of Old Norse (Medieval _ Reconstructed)",
+        "uuid": "a5bc51a7-e90a-41b3-9a47-e9f4afa00cc9"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/a8fe3f57-f925-4334-8eb7-cc9d4b4268e8.mp4",
+        "title": "Ravens in Norse Mythology",
+        "uuid": "a8fe3f57-f925-4334-8eb7-cc9d4b4268e8"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/ffd38c14-8711-4b58-84dd-d2ad64155e33.mp4",
+        "title": "Reading Old Norse Manuscripts_ Tips & Tricks",
+        "uuid": "ffd38c14-8711-4b58-84dd-d2ad64155e33"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/f1607af2-f09a-4bd8-80c4-6bda2853bc16.mp4",
+        "title": "Reconstructing Languages",
+        "uuid": "f1607af2-f09a-4bd8-80c4-6bda2853bc16"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/94c29f3a-6d5b-4c33-a6f9-76b2ac260f06.mp4",
+        "title": "Relative Clauses in Old Norse (Patreon Questions)",
+        "uuid": "94c29f3a-6d5b-4c33-a6f9-76b2ac260f06"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/868b8482-042b-48cb-a861-e043e0360017.mp4",
+        "title": "Robinson Jeffers",
+        "uuid": "868b8482-042b-48cb-a861-e043e0360017"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/39ec14e8-88f6-40b6-8555-1480c7b16200.mp4",
+        "title": "Runes in Egil\u2019s Saga",
+        "uuid": "39ec14e8-88f6-40b6-8555-1480c7b16200"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/ba8d9c3a-a783-4525-8354-e7696be00134.mp4",
+        "title": "Rígsþula_ Heimdallr Fathers the Human Classes",
+        "uuid": "ba8d9c3a-a783-4525-8354-e7696be00134"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/9eeae0d7-a835-42f8-81e3-50ceecf3d9aa.mp4",
+        "title": "Saga of Gunnlaug Wormtongue",
+        "uuid": "9eeae0d7-a835-42f8-81e3-50ceecf3d9aa"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/85cd64fb-5933-4762-9353-0392b4d32caa.mp4",
+        "title": "Sagas of Icelanders (Patreon questions)",
+        "uuid": "85cd64fb-5933-4762-9353-0392b4d32caa"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/2a9dc195-1e1c-4ec7-92b7-537c362a4a08.mp4",
+        "title": "Scandinavian Pronunciation of Y (Patreon Questions)",
+        "uuid": "2a9dc195-1e1c-4ec7-92b7-537c362a4a08"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/10637424-2d87-441f-9e2b-63092a839628.mp4",
+        "title": "Seiðr Magic and Gender",
+        "uuid": "10637424-2d87-441f-9e2b-63092a839628"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/9c1abd25-6f74-4df4-9bf1-3121ed37b817.mp4",
+        "title": "Shieldmaidens in Viking Sagas and Graves",
+        "uuid": "9c1abd25-6f74-4df4-9bf1-3121ed37b817"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/9eada7cc-7fbb-4f15-92f6-ef7099903692.mp4",
+        "title": "Skaði (Skadi _ Skathi)",
+        "uuid": "9eada7cc-7fbb-4f15-92f6-ef7099903692"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/56360b1c-a876-42b7-9cb5-6ed2e0ad518a.mp4",
+        "title": "Snorri and the Trojans (Quick Takes)",
+        "uuid": "56360b1c-a876-42b7-9cb5-6ed2e0ad518a"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/37220480-24c0-4204-b9e9-c3ad02b7e526.mp4",
+        "title": "Snorri's Lists of Gods and Goddesses",
+        "uuid": "37220480-24c0-4204-b9e9-c3ad02b7e526"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/85c58825-49bf-46e8-92f6-51f99dfd653c.mp4",
+        "title": "Some Old Norse Family Vocabulary",
+        "uuid": "85c58825-49bf-46e8-92f6-51f99dfd653c"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/374eb85f-c11d-4357-bed0-4345c61c402b.mp4",
+        "title": "Special Letters in Old Norse_ þ ð æ ø ǫ",
+        "uuid": "374eb85f-c11d-4357-bed0-4345c61c402b"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/f497c909-9989-46f2-afc4-2ba1e3ab26c4.mp4",
+        "title": "Starting Old Norse Studies",
+        "uuid": "f497c909-9989-46f2-afc4-2ba1e3ab26c4"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/8a8680da-6b27-4d19-90c0-72d4af820ca3.mp4",
+        "title": "Studying Grímnismál in Old Norse (prologue-st",
+        "uuid": "8a8680da-6b27-4d19-90c0-72d4af820ca3"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/503135f8-c069-4237-919d-c78d43658f4f.mp4",
+        "title": "Studying Grímnismál in Old Norse (st",
+        "uuid": "503135f8-c069-4237-919d-c78d43658f4f"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/04d71814-b9a4-4e9e-b688-269b062cffa8.mp4",
+        "title": "Studying Grímnismál in Old Norse (st",
+        "uuid": "04d71814-b9a4-4e9e-b688-269b062cffa8"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/10e8af14-7656-4c16-9120-c129fa50f3ea.mp4",
+        "title": "Studying Grímnismál in Old Norse (st",
+        "uuid": "10e8af14-7656-4c16-9120-c129fa50f3ea"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/33360f9f-0bdc-41f3-9ac4-57337f906f9d.mp4",
+        "title": "Studying Hávamál in Old Norse (st",
+        "uuid": "33360f9f-0bdc-41f3-9ac4-57337f906f9d"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/8337a745-3f3c-4a33-825b-bdcca609325c.mp4",
+        "title": "Studying Hávamál in Old Norse (st",
+        "uuid": "8337a745-3f3c-4a33-825b-bdcca609325c"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/61a9fee3-5c7a-4fdc-b6db-02e3e6f22b89.mp4",
+        "title": "Studying Hávamál in Old Norse (st",
+        "uuid": "61a9fee3-5c7a-4fdc-b6db-02e3e6f22b89"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/6065f824-4570-450e-b60f-8f7f9a1b7196.mp4",
+        "title": "Studying Hávamál in Old Norse (st",
+        "uuid": "6065f824-4570-450e-b60f-8f7f9a1b7196"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/669954e2-f9ef-4e2d-9588-bc0e590dcb51.mp4",
+        "title": "Studying Hávamál in Old Norse (st",
+        "uuid": "669954e2-f9ef-4e2d-9588-bc0e590dcb51"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/6c195017-2c91-450e-92f7-d63a14ced132.mp4",
+        "title": "Studying Hávamál in Old Norse (st",
+        "uuid": "6c195017-2c91-450e-92f7-d63a14ced132"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/f8f13bc7-b034-4f8e-a7bf-9d254a3c9464.mp4",
+        "title": "Studying Hávamál in Old Norse (st",
+        "uuid": "f8f13bc7-b034-4f8e-a7bf-9d254a3c9464"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/7f8f7e51-ede5-4e85-9899-d33a60c25add.mp4",
+        "title": "Studying Hávamál in Old Norse (st",
+        "uuid": "7f8f7e51-ede5-4e85-9899-d33a60c25add"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/ca921fad-2490-47b8-a96b-c1b44871bf51.mp4",
+        "title": "Studying Vǫluspá in Old Norse (Hauksbók stanzas)",
+        "uuid": "ca921fad-2490-47b8-a96b-c1b44871bf51"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/eb069f74-2abc-408e-bc8d-bdc493063fc7.mp4",
+        "title": "Studying Vǫluspá in Old Norse (st",
+        "uuid": "eb069f74-2abc-408e-bc8d-bdc493063fc7"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/d52b55fd-891f-4222-9021-c253101353bf.mp4",
+        "title": "Studying Vǫluspá in Old Norse (st",
+        "uuid": "d52b55fd-891f-4222-9021-c253101353bf"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/1d01f1c6-0c45-4d66-9897-df058177e45e.mp4",
+        "title": "Studying Vǫluspá in Old Norse (st",
+        "uuid": "1d01f1c6-0c45-4d66-9897-df058177e45e"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/6f2908ca-10b2-4b40-8ec3-ade02959ee74.mp4",
+        "title": "Studying Vǫluspá in Old Norse (st",
+        "uuid": "6f2908ca-10b2-4b40-8ec3-ade02959ee74"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/901e9206-082d-4771-895d-dd95a734ba83.mp4",
+        "title": "Studying Vǫluspá in Old Norse (st",
+        "uuid": "901e9206-082d-4771-895d-dd95a734ba83"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/cf44987b-80e2-4bb7-9bd9-dfee39f59c1b.mp4",
+        "title": "Supporters' Questions, Part 1_ About Me",
+        "uuid": "cf44987b-80e2-4bb7-9bd9-dfee39f59c1b"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/baae0bf9-1d10-4ebc-abb1-66d3e93dc401.mp4",
+        "title": "Supporters' Questions, Part 2_ Manuscripts",
+        "uuid": "baae0bf9-1d10-4ebc-abb1-66d3e93dc401"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/8a6f8d2b-bce6-4147-a3f3-50ddf58a9e7f.mp4",
+        "title": "The 9 Worlds of Norse Myth",
+        "uuid": "8a6f8d2b-bce6-4147-a3f3-50ddf58a9e7f"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/6f96c17c-a1a8-4d45-b58e-1dc586a9495b.mp4",
+        "title": "The Afterlife in Norse Myth",
+        "uuid": "6f96c17c-a1a8-4d45-b58e-1dc586a9495b"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/287ce8f9-b3cd-418c-9f08-188774ed02ef.mp4",
+        "title": "The Afterlife in Norse Myth (pt",
+        "uuid": "287ce8f9-b3cd-418c-9f08-188774ed02ef"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/76fad4b3-1af0-41fb-8eca-afd8385e7d29.mp4",
+        "title": "The Art of Viking Poetry_ A How-To (Includes Kennings)",
+        "uuid": "76fad4b3-1af0-41fb-8eca-afd8385e7d29"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/bb449518-f52f-44ce-8c8a-436cffb79885.mp4",
+        "title": "The Codex Regius of the Poetic Edda",
+        "uuid": "bb449518-f52f-44ce-8c8a-436cffb79885"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/d2484755-2f45-4c07-be36-b1cd124affb8.mp4",
+        "title": "The Cowboy Hávamál",
+        "uuid": "d2484755-2f45-4c07-be36-b1cd124affb8"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/1b7baae3-4891-4982-a5f2-138a22c62757.mp4",
+        "title": "The Death of Baldr",
+        "uuid": "1b7baae3-4891-4982-a5f2-138a22c62757"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/1ad72df6-ae3e-403a-912d-ae51dcb2f96a.mp4",
+        "title": "The Discovery of Heimdalargaldr",
+        "uuid": "1ad72df6-ae3e-403a-912d-ae51dcb2f96a"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/c8bb8fbf-4a2c-449d-b50b-06994a842e62.mp4",
+        "title": "The Discovery of Heimdalargaldr [April Fools' 2019]",
+        "uuid": "c8bb8fbf-4a2c-449d-b50b-06994a842e62"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/7a31a347-610a-415e-966f-791efe5a0ca2.mp4",
+        "title": "The God Óðinn (Odin)",
+        "uuid": "7a31a347-610a-415e-966f-791efe5a0ca2"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/56a4ef51-31dc-4765-9091-12831b696075.mp4",
+        "title": "The Indo-European Languages (An Overview)",
+        "uuid": "56a4ef51-31dc-4765-9091-12831b696075"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/740948bd-5a8a-4b37-be58-6dc889dc217b.mp4",
+        "title": "The Names of the Norns",
+        "uuid": "740948bd-5a8a-4b37-be58-6dc889dc217b"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/b3cf3ff8-b1b8-4079-b272-d3b34b517084.mp4",
+        "title": "The Names of the Runes (Elder Futhark)",
+        "uuid": "b3cf3ff8-b1b8-4079-b272-d3b34b517084"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/662f2dac-04e2-4f21-aba4-4695dc8276e5.mp4",
+        "title": "The Names of the Runes (Younger Futhark)",
+        "uuid": "662f2dac-04e2-4f21-aba4-4695dc8276e5"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/855ebbae-7ea5-4141-8adf-64439d74dc6a.mp4",
+        "title": "The Norns and the Moirai (Patreon questions)",
+        "uuid": "855ebbae-7ea5-4141-8adf-64439d74dc6a"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/9a8766cb-a76c-48e0-9231-ec555f2341ae.mp4",
+        "title": "The Norse Creation Myth",
+        "uuid": "9a8766cb-a76c-48e0-9231-ec555f2341ae"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/c1eafbea-44e7-4c26-820e-6c95332a4308.mp4",
+        "title": "The Norse Gods and Goddesses (Intro",
+        "uuid": "c1eafbea-44e7-4c26-820e-6c95332a4308"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/66d5757a-8205-4306-b224-8531e3f1b0f2.mp4",
+        "title": "The Norse Gods and Goddesses (remake_improved)",
+        "uuid": "66d5757a-8205-4306-b224-8531e3f1b0f2"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/7c7ebcad-caf5-40c6-9510-21432ee2b5b3.mp4",
+        "title": "The Norse Gods' Names in Runes",
+        "uuid": "7c7ebcad-caf5-40c6-9510-21432ee2b5b3"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/2701dea9-611b-4887-93d8-8b8b13597a3d.mp4",
+        "title": "The Old Norwegian Rune Poem",
+        "uuid": "2701dea9-611b-4887-93d8-8b8b13597a3d"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/855673ff-8723-4fb6-a1b0-49b2e8f3f9b2.mp4",
+        "title": "The Poetic Edda and Snorri's Prose Edda",
+        "uuid": "855673ff-8723-4fb6-a1b0-49b2e8f3f9b2"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/b0893ff5-0ee2-41c5-9f9f-3209cce03dcb.mp4",
+        "title": "The Riddles of Gestumblindi",
+        "uuid": "b0893ff5-0ee2-41c5-9f9f-3209cce03dcb"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/23986c28-b1b3-4790-8d30-08f770d26c90.mp4",
+        "title": "The Saga of Gisli Sursson, pt",
+        "uuid": "23986c28-b1b3-4790-8d30-08f770d26c90"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/6267d403-7a20-4b46-8e86-bdd6fb9de211.mp4",
+        "title": "The Saga of Hervor and Heidrek",
+        "uuid": "6267d403-7a20-4b46-8e86-bdd6fb9de211"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/f91bac68-07f6-4f62-b259-78727588c697.mp4",
+        "title": "The Saga of Hrafnkel",
+        "uuid": "f91bac68-07f6-4f62-b259-78727588c697"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/47aba334-b329-4412-9459-5b1e771aaad5.mp4",
+        "title": "The Saga of Ragnar Lothbrok",
+        "uuid": "47aba334-b329-4412-9459-5b1e771aaad5"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/b277931d-91f6-458e-8d9e-b698c53ceabe.mp4",
+        "title": "The Saga of the Volsungs, Part 1 (Volsung and Sigmund)",
+        "uuid": "b277931d-91f6-458e-8d9e-b698c53ceabe"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/2b53e2b6-5eb4-4647-b74b-3721835887e8.mp4",
+        "title": "The Saga of the Volsungs, Part 2 (Young Sigurd _ Regin's Flashback)",
+        "uuid": "2b53e2b6-5eb4-4647-b74b-3721835887e8"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/fa5e8e53-ca2c-47f7-af16-505bc4d94552.mp4",
+        "title": "The Saga of the Volsungs, Part 3 (A Dragon and a Valkyrie)",
+        "uuid": "fa5e8e53-ca2c-47f7-af16-505bc4d94552"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/08e47576-7038-419e-8d9e-e8b1d40e121c.mp4",
+        "title": "The Saga of the Volsungs, Part 4 (Betrayals)",
+        "uuid": "08e47576-7038-419e-8d9e-e8b1d40e121c"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/0a263a45-beec-4b8b-8b10-9ea965e46bc4.mp4",
+        "title": "The Saga of the Volsungs, Part 5 (Die like a drengr)",
+        "uuid": "0a263a45-beec-4b8b-8b10-9ea965e46bc4"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/b582f5c0-8dc8-4d41-b41f-caabee4ca8d1.mp4",
+        "title": "The Saga of the Volsungs, Part 6 (Gudrun's Rage)",
+        "uuid": "b582f5c0-8dc8-4d41-b41f-caabee4ca8d1"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/605a1818-69fc-41ec-8917-4cb5fb9d191e.mp4",
+        "title": "The Shieldmaiden Hervor",
+        "uuid": "605a1818-69fc-41ec-8917-4cb5fb9d191e"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/63f98e3a-8fc9-40a1-9e93-3256f63b06d7.mp4",
+        "title": "The Sons of Ragnar",
+        "uuid": "63f98e3a-8fc9-40a1-9e93-3256f63b06d7"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/ab066e26-af49-497a-a003-4712334b4bee.mp4",
+        "title": "The Sun, the Moon, and Stars in Norse Myth",
+        "uuid": "ab066e26-af49-497a-a003-4712334b4bee"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/c3049e92-8c33-4848-86fc-a3c96c124188.mp4",
+        "title": "The Vanir",
+        "uuid": "c3049e92-8c33-4848-86fc-a3c96c124188"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/fc11e311-983a-40d2-9087-c5a038f12537.mp4",
+        "title": "The Vǫlva (Norse Seeress) and Seiðr",
+        "uuid": "fc11e311-983a-40d2-9087-c5a038f12537"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/5ea5b5e7-7528-4ca3-9422-2e89aad1dec4.mp4",
+        "title": "The Waking of Angantýr",
+        "uuid": "5ea5b5e7-7528-4ca3-9422-2e89aad1dec4"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/4d88aaf0-7e6b-48e4-90ed-f7970c665688.mp4",
+        "title": "The Word _Viking_ (Quick Takes)",
+        "uuid": "4d88aaf0-7e6b-48e4-90ed-f7970c665688"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/f708a370-0949-4610-ba53-03f45d992541.mp4",
+        "title": "The Younger Futhark Runes ᚱ (reið) and ᛦ (ýr)",
+        "uuid": "f708a370-0949-4610-ba53-03f45d992541"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/fdc1e423-6cd0-4213-aefc-0716afff9bb2.mp4",
+        "title": "The _Christian Influence_ Anxiety",
+        "uuid": "fdc1e423-6cd0-4213-aefc-0716afff9bb2"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/67a76d7a-e3f7-4e64-b954-10d5d1ea5d47.mp4",
+        "title": "The _Genealogy_ of Information and Norse Myth",
+        "uuid": "67a76d7a-e3f7-4e64-b954-10d5d1ea5d47"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/4d235274-f065-4b5a-ace3-74f5daffe48d.mp4",
+        "title": "Thermopolis (Favorite Places 2)",
+        "uuid": "4d235274-f065-4b5a-ace3-74f5daffe48d"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/5475365f-b651-46a1-9292-a782ab94412f.mp4",
+        "title": "Thor's Hammer_ Old Norse Pronunciation and Spelling",
+        "uuid": "5475365f-b651-46a1-9292-a782ab94412f"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/33d31728-6ab8-4c57-a78c-c96d4329e37c.mp4",
+        "title": "Thor, Donar_ The Difference",
+        "uuid": "33d31728-6ab8-4c57-a78c-c96d4329e37c"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/5f6de5df-21f3-4e13-90e8-063c72c8a0b9.mp4",
+        "title": "Time in Old Norse",
+        "uuid": "5f6de5df-21f3-4e13-90e8-063c72c8a0b9"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/e076442d-02b8-4d88-aa41-f639353e42ba.mp4",
+        "title": "To and from Hel",
+        "uuid": "e076442d-02b8-4d88-aa41-f639353e42ba"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/9d542421-23cf-445c-b7b3-740a7f25b89b.mp4",
+        "title": "Trigger Time (Favorite Places 5)",
+        "uuid": "9d542421-23cf-445c-b7b3-740a7f25b89b"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/18f7d47c-503d-45e0-bd0c-7a1d663bfc74.mp4",
+        "title": "Two Old Tales of Thor the Giant Killer",
+        "uuid": "18f7d47c-503d-45e0-bd0c-7a1d663bfc74"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/6da2860a-5591-4dae-826f-4c883bd8fba4.mp4",
+        "title": "Updates_ Audiobooks and Videos",
+        "uuid": "6da2860a-5591-4dae-826f-4c883bd8fba4"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/31d98003-5348-4be3-91e6-1324f3c38f44.mp4",
+        "title": "Valhalla (Valhǫll)_ The Afterlife, pt",
+        "uuid": "31d98003-5348-4be3-91e6-1324f3c38f44"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/8712fc49-5543-4c65-8dc5-5ec45932ced9.mp4",
+        "title": "Valkyries",
+        "uuid": "8712fc49-5543-4c65-8dc5-5ec45932ced9"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/ad1cdbc3-c9e9-4430-b3c5-46ed20da138b.mp4",
+        "title": "Valkyries (Valkyrjur)",
+        "uuid": "ad1cdbc3-c9e9-4430-b3c5-46ed20da138b"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/14e7a057-baa5-4ba3-9ede-972744f0d23d.mp4",
+        "title": "Viking Fantasy and Viking Reality",
+        "uuid": "14e7a057-baa5-4ba3-9ede-972744f0d23d"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/1f9f921d-b9e1-4e8a-aeba-2e9e218b5c7b.mp4",
+        "title": "Við (Old Norse Words with Many Meanings)",
+        "uuid": "1f9f921d-b9e1-4e8a-aeba-2e9e218b5c7b"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/d91cde0f-7f75-4129-a4ce-1b71fc06656a.mp4",
+        "title": "Vǫluspá (Hauksbók stanzas) in Old Norse, with Analysis",
+        "uuid": "d91cde0f-7f75-4129-a4ce-1b71fc06656a"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/5e6d4eac-8358-4f06-8bb6-26491a3882ab.mp4",
+        "title": "Vǫluspá 1-20 in Old Norse, with Analysis",
+        "uuid": "5e6d4eac-8358-4f06-8bb6-26491a3882ab"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/e6f81e32-3670-46a7-8ebb-7109273b173b.mp4",
+        "title": "Vǫluspá 21-26 in Old Norse, with Analysis",
+        "uuid": "e6f81e32-3670-46a7-8ebb-7109273b173b"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/d228c821-b64c-408b-ae1e-754469082ca0.mp4",
+        "title": "Vǫluspá 27-34 in Old Norse, with Analysis",
+        "uuid": "d228c821-b64c-408b-ae1e-754469082ca0"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/311ba41f-bb7c-407c-9f2f-5c2de760e544.mp4",
+        "title": "Vǫluspá 35-44 in Old Norse, with Analysis",
+        "uuid": "311ba41f-bb7c-407c-9f2f-5c2de760e544"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/3bfd9afc-58a7-4a96-960b-be01ad8a9c20.mp4",
+        "title": "Vǫluspá 45-63 in Old Norse, with Analysis",
+        "uuid": "3bfd9afc-58a7-4a96-960b-be01ad8a9c20"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/2f10d13f-9e6c-4ea4-8ebc-9c127d373c61.mp4",
+        "title": "Vǫluspá_ A Complete Reading in Old Norse (reconstructed pronunciation)",
+        "uuid": "2f10d13f-9e6c-4ea4-8ebc-9c127d373c61"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/b5bd3a00-0f6d-4c3d-857e-26ee41432451.mp4",
+        "title": "Vǫluspá_ The Norse Poem of Creation and Ragnarok",
+        "uuid": "b5bd3a00-0f6d-4c3d-857e-26ee41432451"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/2edb5826-4240-4478-9324-951a674390b7.mp4",
+        "title": "Weak Adjectives in Old Norse",
+        "uuid": "2edb5826-4240-4478-9324-951a674390b7"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/b2640791-a163-43ce-adc2-91d6481d375f.mp4",
+        "title": "What Old Norse Sounded Like",
+        "uuid": "b2640791-a163-43ce-adc2-91d6481d375f"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/1c7903b4-e69d-4e7a-acef-44dc7b5283c8.mp4",
+        "title": "What do the Norse gods' names mean_",
+        "uuid": "1c7903b4-e69d-4e7a-acef-44dc7b5283c8"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/c06834cb-fdc9-4c15-8ecc-7513107a92d6.mp4",
+        "title": "What is the Poetic Edda_",
+        "uuid": "c06834cb-fdc9-4c15-8ecc-7513107a92d6"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/cefbf708-6d4a-484d-92bc-9f9da0eb01bb.mp4",
+        "title": "What's the _realistic_ Viking language_",
+        "uuid": "cefbf708-6d4a-484d-92bc-9f9da0eb01bb"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/3feca579-f8a5-43f2-9cdc-447ae2f744cd.mp4",
+        "title": "When Myth Is Inconsistent",
+        "uuid": "3feca579-f8a5-43f2-9cdc-447ae2f744cd"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/ae272f2b-fc1c-4754-af1e-f5e438b9bc5a.mp4",
+        "title": "Where do the runes come from_",
+        "uuid": "ae272f2b-fc1c-4754-af1e-f5e438b9bc5a"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/b7fcb9ff-d3a3-4207-9f01-f805e15e4891.mp4",
+        "title": "Which runes go with which language_",
+        "uuid": "b7fcb9ff-d3a3-4207-9f01-f805e15e4891"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/833434e6-86d4-43d7-851f-fdd5f4d11833.mp4",
+        "title": "Who is Thor_",
+        "uuid": "833434e6-86d4-43d7-851f-fdd5f4d11833"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/b1dbc3ff-b084-48a3-b909-220aad4646dd.mp4",
+        "title": "Who is Týr_",
+        "uuid": "b1dbc3ff-b084-48a3-b909-220aad4646dd"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/74d861aa-ee9b-43d7-b5d3-af2e817f8f29.mp4",
+        "title": "Who is god of what in Norse myth_",
+        "uuid": "74d861aa-ee9b-43d7-b5d3-af2e817f8f29"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/cb243dbb-f689-4d03-8f71-846d1b269d82.mp4",
+        "title": "Who was Ragnar Lothbrok_",
+        "uuid": "cb243dbb-f689-4d03-8f71-846d1b269d82"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/37156242-af9d-4c07-aea6-aa7e0912a587.mp4",
+        "title": "Why a new Edda translation_",
+        "uuid": "37156242-af9d-4c07-aea6-aa7e0912a587"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/76337328-ea96-4bf8-bd6a-7f1f259a4f0e.mp4",
+        "title": "Why are Norse names spelled so inconsistently_",
+        "uuid": "76337328-ea96-4bf8-bd6a-7f1f259a4f0e"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/a40233a9-9d07-4f1d-9710-015208d2a791.mp4",
+        "title": "Wolves in Norse Mythology",
+        "uuid": "a40233a9-9d07-4f1d-9710-015208d2a791"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/69785308-9808-429b-bb81-8132adfe36da.mp4",
+        "title": "Working at Universities",
+        "uuid": "69785308-9808-429b-bb81-8132adfe36da"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/331fef20-827a-4242-b8c6-9269ae674da6.mp4",
+        "title": "Writing English in Runes",
+        "uuid": "331fef20-827a-4242-b8c6-9269ae674da6"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/fb9ab961-cf1f-4f75-842d-c9bcd1609a67.mp4",
+        "title": "Writing Old Norse in Runes (remake_improved)",
+        "uuid": "fb9ab961-cf1f-4f75-842d-c9bcd1609a67"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/5074c4dc-dbec-45cb-84f0-b4292caf6298.mp4",
+        "title": "_I love you_ in Old Norse",
+        "uuid": "5074c4dc-dbec-45cb-84f0-b4292caf6298"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/2a186888-059c-42d9-86e6-960c5f013a42.mp4",
+        "title": "_The_ in Scandinavian and English (Patreon questions)",
+        "uuid": "2a186888-059c-42d9-86e6-960c5f013a42"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/28552da6-5716-4c8e-87f6-d1edd8c8e4fb.mp4",
+        "title": "_Thor_ or _Tor__ The _th_ sound in Scandinavian",
+        "uuid": "28552da6-5716-4c8e-87f6-d1edd8c8e4fb"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/b60242c8-c072-42e9-a70c-bb0eb8fc9863.mp4",
+        "title": "Á (Old Norse Words with Many Meanings)",
+        "uuid": "b60242c8-c072-42e9-a70c-bb0eb8fc9863"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/4b8fb796-8b68-49e4-a5e5-bf530a112fe6.mp4",
+        "title": "Ásatrú",
+        "uuid": "4b8fb796-8b68-49e4-a5e5-bf530a112fe6"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/44c93a1a-d77e-40e3-8156-439005a14ea3.mp4",
+        "title": "Óðrerir_ The Norse Mead of Poetry",
+        "uuid": "44c93a1a-d77e-40e3-8156-439005a14ea3"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/5a501e31-247b-4c24-abaf-cbe5982a3d4e.mp4",
+        "title": "Þrymskviða_ Thor Gets His Hammer Back",
+        "uuid": "5a501e31-247b-4c24-abaf-cbe5982a3d4e"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/0cb2e179-b79c-4d14-be08-4e3bf80b0c6a.mp4",
+        "title": "Þá (Old Norse Words with Many Meanings)",
+        "uuid": "0cb2e179-b79c-4d14-be08-4e3bf80b0c6a"
+      }
+    ],
+    "title": "Norse"
+  },
+  {
+    "author": "Gaiman, Neil",
+    "files": [
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/60a330f0-c308-48d9-a65c-abf20e768bf2.mp3",
+        "title": "NorseMythology_mp332",
+        "uuid": "60a330f0-c308-48d9-a65c-abf20e768bf2"
+      }
+    ],
+    "title": "NorseMythology"
+  },
+  {
+    "author": "Brown, Dan",
+    "files": [],
+    "title": "Origin"
+  },
+  {
+    "author": "Courses",
+    "files": [],
+    "title": "Pimsleur"
+  },
+  {
+    "author": "Crawford, Jackson",
+    "files": [
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/b5b084c9-4cdb-437f-a8c8-1d1ac2c7c4ef.mp3",
+        "title": "ThePoeticEddaStoriesoftheNorseGodsandHeroes",
+        "uuid": "b5b084c9-4cdb-437f-a8c8-1d1ac2c7c4ef"
+      }
+    ],
+    "title": "Poetic Edda"
+  },
+  {
+    "author": "YouTube",
+    "files": [
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/9cfb4ef6-7db2-430c-b71d-467ccadd4e91.mp4",
+        "title": "Building Robot X #10 Robot Arm Control _ XRobots",
+        "uuid": "9cfb4ef6-7db2-430c-b71d-467ccadd4e91"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/8c0433c5-2e33-4632-bc1d-0746b06e1eab.mp4",
+        "title": "Building Robot X #5 Initial Dynamic Stability _ XRobots",
+        "uuid": "8c0433c5-2e33-4632-bc1d-0746b06e1eab"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/4e9da200-94fd-466d-afed-f0dc8c8b1b51.mp4",
+        "title": "Building Robot X #6 More Dynamic Stability _ XRobots",
+        "uuid": "4e9da200-94fd-466d-afed-f0dc8c8b1b51"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/31530628-c8d7-414b-a1df-445bf1a8828f.mp4",
+        "title": "Building Robot X #7 Futurama Bender _ XRobots",
+        "uuid": "31530628-c8d7-414b-a1df-445bf1a8828f"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/5a41025d-0de4-4cb8-918f-f5265d761c80.mp4",
+        "title": "Building Robot X #8 New Motors - It Walks _ XRobots",
+        "uuid": "5a41025d-0de4-4cb8-918f-f5265d761c80"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/b4ae5849-3a0c-440e-8c8b-b00c74f1bf82.mp4",
+        "title": "Building Robot X #9 Arms with four Axes _ XRobots",
+        "uuid": "b4ae5849-3a0c-440e-8c8b-b00c74f1bf82"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/6cb92bfd-f008-4438-94c9-81b3b819e21e.mp4",
+        "title": "Building Robot X - #1, Feet & lower legs",
+        "uuid": "6cb92bfd-f008-4438-94c9-81b3b819e21e"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/9c0bae46-ec96-40d4-a0d7-d54a857d0bc5.mp4",
+        "title": "Building Robot X - #2, Legs & Hips",
+        "uuid": "9c0bae46-ec96-40d4-a0d7-d54a857d0bc5"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/e270d08b-ffa3-44b2-a6bc-23b388a2ec41.mp4",
+        "title": "Building Robot X - #3, Body & Electronics",
+        "uuid": "e270d08b-ffa3-44b2-a6bc-23b388a2ec41"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/c8b41a57-36a8-428f-bf49-578ac43a0df6.mp4",
+        "title": "Building Robot X - #4, Electronics and First Tests",
+        "uuid": "c8b41a57-36a8-428f-bf49-578ac43a0df6"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/a29d9b01-8e53-4012-a7e4-6a2fa58bfd31.mp4",
+        "title": "Futurama Bender #1 Building the Head on Robot X _ XRobots",
+        "uuid": "a29d9b01-8e53-4012-a7e4-6a2fa58bfd31"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/4b6be209-6bb9-4cdf-99b9-8e26b6b86cf9.mp4",
+        "title": "Futurama Bender #2 Building the Body & Arms _ XRobots",
+        "uuid": "4b6be209-6bb9-4cdf-99b9-8e26b6b86cf9"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/19e041c1-bf48-4483-9b8e-f51586112cf1.mp4",
+        "title": "Futurama Bender #3 Cosmetic Finishing _ XRobots",
+        "uuid": "19e041c1-bf48-4483-9b8e-f51586112cf1"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/540c3060-5299-4cd7-ab53-80a3f52818a6.mp4",
+        "title": "Futurama Bender #4 Dancing Robot! _ XRobots",
+        "uuid": "540c3060-5299-4cd7-ab53-80a3f52818a6"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/7d0a219a-1767-405b-a7fb-527def3292aa.mp4",
+        "title": "Iron Spiderman Robot #1, Building the Head and Eye Mechanism _ XRobots",
+        "uuid": "7d0a219a-1767-405b-a7fb-527def3292aa"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/fb738d67-bbc2-459b-9470-628182e58b0b.mp4",
+        "title": "Iron Spiderman Robot #2, Building Animatronic Neck & Chest _ XRobots",
+        "uuid": "fb738d67-bbc2-459b-9470-628182e58b0b"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/a8980632-5770-4856-ad94-34848e1458e2.mp4",
+        "title": "Iron Spiderman Robot #3, Making it Walk Again _ XRobots",
+        "uuid": "a8980632-5770-4856-ad94-34848e1458e2"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/bdecd8ff-0ebe-422e-b5aa-8194e2cb813b.mp4",
+        "title": "Iron Spiderman Robot #4, Web Shooter! _ XRobots",
+        "uuid": "bdecd8ff-0ebe-422e-b5aa-8194e2cb813b"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/a38f8178-2147-4e30-9944-6ec7f9cb0fe4.mp4",
+        "title": "Iron Spiderman Robot #5, Eye lenses, Cosmetics & Motion Tuning _ XRobots",
+        "uuid": "a38f8178-2147-4e30-9944-6ec7f9cb0fe4"
+      }
+    ],
+    "title": "Robot X"
+  },
+  {
+    "author": "Hawthorne, Nathaniel",
+    "files": [
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/d27cc1ec-3959-4b1c-a925-ff1b0dca9eb3.mp3",
+        "title": "00a_scarletletter_hawthorne",
+        "uuid": "d27cc1ec-3959-4b1c-a925-ff1b0dca9eb3"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/fe18134d-6300-4eb8-8e84-6b24bfa76d85.mp3",
+        "title": "00b_scarletletter_hawthorne",
+        "uuid": "fe18134d-6300-4eb8-8e84-6b24bfa76d85"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/de733547-c94e-4979-9c39-246a06e40c2f.mp3",
+        "title": "01_scarletletter_hawthorne",
+        "uuid": "de733547-c94e-4979-9c39-246a06e40c2f"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/f7d1ac69-41fa-44d9-babb-1353eae89b5f.mp3",
+        "title": "02_scarletletter_hawthorne",
+        "uuid": "f7d1ac69-41fa-44d9-babb-1353eae89b5f"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/24492306-61a6-4341-9887-248fde02bde8.mp3",
+        "title": "03_scarletletter_hawthorne",
+        "uuid": "24492306-61a6-4341-9887-248fde02bde8"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/15a22960-dfcf-442b-ba73-7914b63519f8.mp3",
+        "title": "04_scarletletter_hawthorne",
+        "uuid": "15a22960-dfcf-442b-ba73-7914b63519f8"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/762c7204-96be-49ab-a024-3375eddbd337.mp3",
+        "title": "05_scarletletter_hawthorne",
+        "uuid": "762c7204-96be-49ab-a024-3375eddbd337"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/552abd5a-281a-4221-8bfb-a165c0ce6105.mp3",
+        "title": "06_scarletletter_hawthorne",
+        "uuid": "552abd5a-281a-4221-8bfb-a165c0ce6105"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/2b5ebbf1-25db-47bd-9deb-8cb5d80f70e8.mp3",
+        "title": "07_scarletletter_hawthorne",
+        "uuid": "2b5ebbf1-25db-47bd-9deb-8cb5d80f70e8"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/4e50a4de-f929-48fc-be93-0e4b549787cb.mp3",
+        "title": "08_scarletletter_hawthorne",
+        "uuid": "4e50a4de-f929-48fc-be93-0e4b549787cb"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/5c5eae56-7986-4c31-a710-4d2c784ff4c0.mp3",
+        "title": "09_scarletletter_hawthorne",
+        "uuid": "5c5eae56-7986-4c31-a710-4d2c784ff4c0"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/d72444ba-cba9-41f9-8f95-64248b0ea968.mp3",
+        "title": "10_scarletletter_hawthorne",
+        "uuid": "d72444ba-cba9-41f9-8f95-64248b0ea968"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/1f166334-fbea-4cab-831c-335c224f1068.mp3",
+        "title": "11_scarletletter_hawthorne",
+        "uuid": "1f166334-fbea-4cab-831c-335c224f1068"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/e9288c02-8744-4dae-9bd8-9bb3004c949f.mp3",
+        "title": "12_scarletletter_hawthorne",
+        "uuid": "e9288c02-8744-4dae-9bd8-9bb3004c949f"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/478cc836-6691-4e65-b14c-276814a8c74a.mp3",
+        "title": "13_scarletletter_hawthorne",
+        "uuid": "478cc836-6691-4e65-b14c-276814a8c74a"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/ac7a748d-efd8-4b43-9d4e-fbe834aadeae.mp3",
+        "title": "14_scarletletter_hawthorne",
+        "uuid": "ac7a748d-efd8-4b43-9d4e-fbe834aadeae"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/07957716-9d76-4ea5-bdc6-40b29b8eb173.mp3",
+        "title": "15_scarletletter_hawthorne",
+        "uuid": "07957716-9d76-4ea5-bdc6-40b29b8eb173"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/99ccedbd-3c50-41ee-94d6-9f447e0eed2e.mp3",
+        "title": "16_scarletletter_hawthorne",
+        "uuid": "99ccedbd-3c50-41ee-94d6-9f447e0eed2e"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/60265685-d22a-4a51-b2fa-531912d59241.mp3",
+        "title": "17_scarletletter_hawthorne",
+        "uuid": "60265685-d22a-4a51-b2fa-531912d59241"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/0c9dc11e-faf7-47a4-b8c5-c7bb3c9572d3.mp3",
+        "title": "18_scarletletter_hawthorne",
+        "uuid": "0c9dc11e-faf7-47a4-b8c5-c7bb3c9572d3"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/bef3c7b1-5869-4cd5-91a8-d9e245f1cfa2.mp3",
+        "title": "19_scarletletter_hawthorne",
+        "uuid": "bef3c7b1-5869-4cd5-91a8-d9e245f1cfa2"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/b884355b-2a81-4b17-a1f7-a83a86a366b1.mp3",
+        "title": "20_scarletletter_hawthorne",
+        "uuid": "b884355b-2a81-4b17-a1f7-a83a86a366b1"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/ff90fb16-6823-4c2f-832c-f63271a82452.mp3",
+        "title": "21_scarletletter_hawthorne",
+        "uuid": "ff90fb16-6823-4c2f-832c-f63271a82452"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/a4a66f13-35e8-48c1-8183-258bbf5c4d1c.mp3",
+        "title": "22_scarletletter_hawthorne",
+        "uuid": "a4a66f13-35e8-48c1-8183-258bbf5c4d1c"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/09f1e9f6-481b-4793-ade6-9932b0d23fdb.mp3",
+        "title": "23_scarletletter_hawthorne",
+        "uuid": "09f1e9f6-481b-4793-ade6-9932b0d23fdb"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/a00ca519-30ce-43a4-b60f-a0574abfa100.mp3",
+        "title": "24_scarletletter_hawthorne",
+        "uuid": "a00ca519-30ce-43a4-b60f-a0574abfa100"
+      }
+    ],
+    "title": "Scarlet Letter"
+  },
+  {
+    "author": "YouTube",
+    "files": [
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/32e52017-64e8-403d-a452-77dd954661e1.mp4",
+        "title": "John Smith organ How It All Began",
+        "uuid": "32e52017-64e8-403d-a452-77dd954661e1"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/cd895823-b685-47a8-ac48-d015a9b1a9df.mp4",
+        "title": "Senior 20 Organ (00) Introduction - What Happened To The Busker",
+        "uuid": "cd895823-b685-47a8-ac48-d015a9b1a9df"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/ce78d923-79ea-4ebb-b34d-b780e053386e.mp4",
+        "title": "Senior 20 Organ (01) Bellows & Reservoir Part 1",
+        "uuid": "ce78d923-79ea-4ebb-b34d-b780e053386e"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/4f526460-66a9-48b0-a743-1c48cfd36ea9.mp4",
+        "title": "Senior 20 Organ (02) Bellows & Reservoir Part 2",
+        "uuid": "4f526460-66a9-48b0-a743-1c48cfd36ea9"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/7644792e-4d69-4866-97cf-a64fd7b8005a.mp4",
+        "title": "Senior 20 Organ (03) Pressure Box Lid   Inset Window Installation",
+        "uuid": "7644792e-4d69-4866-97cf-a64fd7b8005a"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/740b69a6-41be-44cc-bdb0-eaddc52a5fe3.mp4",
+        "title": "Senior 20 Organ (04) Making The Take Up Spool - Machining PVC Pipe",
+        "uuid": "740b69a6-41be-44cc-bdb0-eaddc52a5fe3"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/029b2cce-529d-473f-adf1-f79fa58a9659.mp4",
+        "title": "Senior 20 Organ (05) Pressure Box Assembly - Branding Iron",
+        "uuid": "029b2cce-529d-473f-adf1-f79fa58a9659"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/948a25b9-bbbd-42a3-82da-dc795277e9ae.mp4",
+        "title": "Senior 20 Organ (06) Making The Cranking Wheel",
+        "uuid": "948a25b9-bbbd-42a3-82da-dc795277e9ae"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/25a2240b-6b72-4112-84b1-213d1f8fcf47.mp4",
+        "title": "Senior 20 Organ (07) Rewind Pulleys & Drive Discs",
+        "uuid": "25a2240b-6b72-4112-84b1-213d1f8fcf47"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/b3a78808-deef-4790-bee2-f7fcfaa8a956.mp4",
+        "title": "Senior 20 Organ (08) Rewind Handle",
+        "uuid": "b3a78808-deef-4790-bee2-f7fcfaa8a956"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/5b25b085-8045-4d88-b9c4-67b4d7102a09.mp4",
+        "title": "Senior 20 Organ (09) Spools & Crankshaft",
+        "uuid": "5b25b085-8045-4d88-b9c4-67b4d7102a09"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/d18903f6-55be-4125-b2bc-8f17a02b84a7.mp4",
+        "title": "Senior 20 Organ (10) Pressure Box Progress Review",
+        "uuid": "d18903f6-55be-4125-b2bc-8f17a02b84a7"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/070a64bc-4c11-4c6d-880d-8ae7af857b35.mp4",
+        "title": "Senior 20 Organ (11) Redrilling (Accurately Centering) A Previously Drilled Hole",
+        "uuid": "070a64bc-4c11-4c6d-880d-8ae7af857b35"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/17299852-dfe7-4105-aa03-9eb46ed0de84.mp4",
+        "title": "Senior 20 Organ (12) Idler Disc & Hoover Belt",
+        "uuid": "17299852-dfe7-4105-aa03-9eb46ed0de84"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/3b6a2504-519b-4ed7-9293-0a9588c797be.mp4",
+        "title": "Senior 20 Organ (13) Rewind Hex Drive",
+        "uuid": "3b6a2504-519b-4ed7-9293-0a9588c797be"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/50dd243b-0fd4-4cf9-bc9c-1c1499978873.mp4",
+        "title": "Senior 20 Organ (14) Hose Connection - Reservoir To Pressure Box",
+        "uuid": "50dd243b-0fd4-4cf9-bc9c-1c1499978873"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/55cedf43-f9e9-43ac-b061-21aac61f3312.mp4",
+        "title": "Senior 20 Organ (15) Clutch Mechanism",
+        "uuid": "55cedf43-f9e9-43ac-b061-21aac61f3312"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/6d01546a-f5b2-4537-a89b-ac480572bd07.mp4",
+        "title": "Senior 20 Organ (16) Crankshaft & Connecting Rods",
+        "uuid": "6d01546a-f5b2-4537-a89b-ac480572bd07"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/db898836-5f0b-4262-9794-f7d84adacb02.mp4",
+        "title": "Senior 20 Organ (17) Wood Base",
+        "uuid": "db898836-5f0b-4262-9794-f7d84adacb02"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/2d8507f0-e3f9-4ec6-ba11-e04ddc43aef2.mp4",
+        "title": "Senior 20 Organ (18) Pressure Box Lid Latch",
+        "uuid": "2d8507f0-e3f9-4ec6-ba11-e04ddc43aef2"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/2ae3e27d-b405-443e-8be5-b624240b40a1.mp4",
+        "title": "Senior 20 Organ (19) Motor Mount & Pipe Configuration Part 1",
+        "uuid": "2ae3e27d-b405-443e-8be5-b624240b40a1"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/048e1cc4-c361-41ad-bee3-d22aa7842ebe.mp4",
+        "title": "Senior 20 Organ (20) Drive Motor Adaptor",
+        "uuid": "048e1cc4-c361-41ad-bee3-d22aa7842ebe"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/9b96594b-8045-4414-abad-07427bf5f0da.mp4",
+        "title": "Senior 20 Organ (21) Motor Mount & Pipe Configuration Part 2",
+        "uuid": "9b96594b-8045-4414-abad-07427bf5f0da"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/f398ad13-7a51-4721-8375-8a3ca46ff9c3.mp4",
+        "title": "Senior 20 Organ (22) Making Pipes",
+        "uuid": "f398ad13-7a51-4721-8375-8a3ca46ff9c3"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/0df90e01-680f-40de-b0d9-cfedfffb5fba.mp4",
+        "title": "Senior 20 Organ (23) Tracker Bar Construction",
+        "uuid": "0df90e01-680f-40de-b0d9-cfedfffb5fba"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/cb907c0a-4de5-4230-8593-1df0f334bb0c.mp4",
+        "title": "Senior 20 Organ (24) Pressure Testing (Leak Testing) Tracker Bars",
+        "uuid": "cb907c0a-4de5-4230-8593-1df0f334bb0c"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/2afb264a-590c-4daa-8e84-083b8145f3dd.mp4",
+        "title": "Senior 20 Organ (25) Making The 17 Front Pipes",
+        "uuid": "2afb264a-590c-4daa-8e84-083b8145f3dd"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/c11d2999-4883-45e0-a410-3f81d95d2f08.mp4",
+        "title": "Senior 20 Organ (26) Making The Case",
+        "uuid": "c11d2999-4883-45e0-a410-3f81d95d2f08"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/6cadc2ac-a769-49b1-904e-6c79bab9dd93.mp4",
+        "title": "Senior 20 Organ (27) Rewind Mechanism Installation & Demo",
+        "uuid": "6cadc2ac-a769-49b1-904e-6c79bab9dd93"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/3202cbde-42b4-4a82-8573-4fe2c4be19b3.mp4",
+        "title": "Senior 20 Organ (28) Music Test Roll & Project Conclusion",
+        "uuid": "3202cbde-42b4-4a82-8573-4fe2c4be19b3"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/f8b50e4e-612e-455c-9f00-3c3173af90b8.mp4",
+        "title": "Senior 20 Organ (29) Laser Cut Ply Music Spool Ends",
+        "uuid": "f8b50e4e-612e-455c-9f00-3c3173af90b8"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/6b6e87df-762f-463b-956c-dff8eb23abde.mp4",
+        "title": "Senior 20 Organ (30) Music Spool With Laser Cut Ply Ends Part 1",
+        "uuid": "6b6e87df-762f-463b-956c-dff8eb23abde"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/4a8cb0bd-bd66-4ce8-aacf-fc760a64f80e.mp4",
+        "title": "Senior 20 Organ (31) Music Roll Spool Assembly & Testing Part 2",
+        "uuid": "4a8cb0bd-bd66-4ce8-aacf-fc760a64f80e"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/a5b5e26e-3bcc-4cd1-8726-fe9b033c7874.mp4",
+        "title": "Senior 20 Organ (32) Experimental Gearmotor Drive",
+        "uuid": "a5b5e26e-3bcc-4cd1-8726-fe9b033c7874"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/faffe14c-c317-4efa-be4f-0b7705d9be75.mp4",
+        "title": "Senior 20 Organ (33) 12V Scooter Motor Test",
+        "uuid": "faffe14c-c317-4efa-be4f-0b7705d9be75"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/0302dbec-1673-40fd-90ff-85703866a6f0.mp4",
+        "title": "Senior 20 Organ (34) Operational 12V Motor Drive Part 1",
+        "uuid": "0302dbec-1673-40fd-90ff-85703866a6f0"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/e6b321f4-01c6-43ec-967c-458305c78c47.mp4",
+        "title": "Senior 20 Organ (35) Operational 12V Motor Drive Part 2 Demo",
+        "uuid": "e6b321f4-01c6-43ec-967c-458305c78c47"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/3e6c80e7-70c5-4157-a826-471d758f7ff2.mp4",
+        "title": "Senior 20 Organ (36) 12V Motor Powered Music Roll Rewind Demo",
+        "uuid": "3e6c80e7-70c5-4157-a826-471d758f7ff2"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/ccdb116b-24b7-4b61-83f0-b9ae534e34fa.mp4",
+        "title": "Senior 20 Organ (37) 12 Volt Battery Box",
+        "uuid": "ccdb116b-24b7-4b61-83f0-b9ae534e34fa"
+      }
+    ],
+    "title": "Senior 20"
+  },
+  {
+    "author": "Hirsch, Jeff",
+    "files": [
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/4447d717-bd45-4759-aa50-37e289b0c10e.mp3",
+        "title": "Sovereign_mp332",
+        "uuid": "4447d717-bd45-4759-aa50-37e289b0c10e"
+      }
+    ],
+    "title": "Sovereign"
+  },
+  {
+    "author": "Norse",
+    "files": [
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/57157d80-fad5-41b0-a6d3-8f2a5117dc36.mp4",
+        "title": "st_001_023-Studying Hávamál in Old Norse",
+        "uuid": "57157d80-fad5-41b0-a6d3-8f2a5117dc36"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/d908d122-d751-4b46-abbe-a1b53dbd915b.mp4",
+        "title": "st_024_041-Studying Hávamál in Old Norse",
+        "uuid": "d908d122-d751-4b46-abbe-a1b53dbd915b"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/c8d3405f-e3a3-4349-bd1e-cf7b99bf8756.mp4",
+        "title": "st_042_059-Studying Hávamál in Old Norse",
+        "uuid": "c8d3405f-e3a3-4349-bd1e-cf7b99bf8756"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/b3fd96c9-b028-406c-a1fe-df957d985749.mp4",
+        "title": "st_060_063-Studying Hávamál in Old Norse",
+        "uuid": "b3fd96c9-b028-406c-a1fe-df957d985749"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/4aab3ae0-0eef-4ee6-9d35-0f4f6c151286.mp4",
+        "title": "st_064_073-Studying Hávamál in Old Norse",
+        "uuid": "4aab3ae0-0eef-4ee6-9d35-0f4f6c151286"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/6d231aea-843f-4fa0-a969-8898006e450d.mp4",
+        "title": "st_074_089-Studying Hávamál in Old Norse",
+        "uuid": "6d231aea-843f-4fa0-a969-8898006e450d"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/7b1424e1-33f2-4a8f-80be-22880d41c683.mp4",
+        "title": "st_090_103-Studying Hávamál in Old Norse",
+        "uuid": "7b1424e1-33f2-4a8f-80be-22880d41c683"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/a5eedce2-440c-405d-9d45-0e0764317897.mp4",
+        "title": "st_104_164-Studying Hávamál in Old Norse",
+        "uuid": "a5eedce2-440c-405d-9d45-0e0764317897"
+      }
+    ],
+    "title": "Studying Hávamál in Old Norse"
+  },
+  {
+    "author": "Ehrman, Bart D",
+    "files": [
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/b5865c3c-caf5-46c5-a186-3a655f902369.mp3",
+        "title": "0001 One-remarkable-life",
+        "uuid": "b5865c3c-caf5-46c5-a186-3a655f902369"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/d704675c-e88e-432f-9113-5a7603737f52.mp3",
+        "title": "0002 Scholars-look-at-the-life",
+        "uuid": "d704675c-e88e-432f-9113-5a7603737f52"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/0f7d35bb-d83c-4b77-9212-8d3edfb86ff3.mp3",
+        "title": "0003 Fact-and-fiction-in-the-gospels",
+        "uuid": "0f7d35bb-d83c-4b77-9212-8d3edfb86ff3"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/fad1fc30-cf5e-4cd3-9848-5f2bc7f936da.mp3",
+        "title": "0004 Taditions-and-authors",
+        "uuid": "fad1fc30-cf5e-4cd3-9848-5f2bc7f936da"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/f110337c-3c23-44d2-8c73-6faf8109a0c0.mp3",
+        "title": "0005-Bart-D-Ehrman-The-Historical-Jesus-00-06-Some-of-the-other-gospels",
+        "uuid": "f110337c-3c23-44d2-8c73-6faf8109a0c0"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/cee5e809-ab17-484b-a1cb-139a3c2e9df0.mp3",
+        "title": "0006-Bart-D-Ehrman-The-Historical-Jesus-00-07-The-coptic-gospel-of-thomas",
+        "uuid": "cee5e809-ab17-484b-a1cb-139a3c2e9df0"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/171762df-ff73-428f-97f7-0c556c923f4e.mp3",
+        "title": "0007-Bart-D-Ehrman-The-Historical-Jesus-00-08-Other-sources",
+        "uuid": "171762df-ff73-428f-97f7-0c556c923f4e"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/6ee6340c-d899-4953-90d4-714c0e69eca2.mp3",
+        "title": "0008-Bart-D-Ehrman-The-Historical-Jesus-00-09-Historical-criteria-getting-back-to-jesus",
+        "uuid": "6ee6340c-d899-4953-90d4-714c0e69eca2"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/5d5877ae-4735-4efe-8f64-fe9ac13b0ff4.mp3",
+        "title": "0009-Bart-D-Ehrman-The-Historical-Jesus-00-10-More-historical-criteria",
+        "uuid": "5d5877ae-4735-4efe-8f64-fe9ac13b0ff4"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/f7f17516-636b-49e7-af25-b2d1008a798e.mp3",
+        "title": "0010-Bart-D-Ehrman-The-Historical-Jesus-00-11-The-early-life-of-jesus",
+        "uuid": "f7f17516-636b-49e7-af25-b2d1008a798e"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/6030242f-27c7-4366-a5a8-e60770e1c321.mp3",
+        "title": "0011-Bart-D-Ehrman-The-Historical-Jesus-00-12-Jesus-in-his-context",
+        "uuid": "6030242f-27c7-4366-a5a8-e60770e1c321"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/cc26ce47-ba76-4bb0-a1fd-7bf6a7f9b7c2.mp3",
+        "title": "0012-Bart-D-Ehrman-The-Historical-Jesus-00-13-Jesus-and-Roman-rule",
+        "uuid": "cc26ce47-ba76-4bb0-a1fd-7bf6a7f9b7c2"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/f9bb11a3-4046-4116-95bd-7af4228df7e4.mp3",
+        "title": "0013-Bart-D-Ehrman-The-Historical-Jesus-00-14-Jesus-the-apocalyptic-prophet",
+        "uuid": "f9bb11a3-4046-4116-95bd-7af4228df7e4"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/d5884606-f54a-42d7-a0f4-cdb43aace1fd.mp3",
+        "title": "0014-Bart-D-Ehrman-The-Historical-Jesus-00-15-The-apocalyptic-teachings-of-Jesus",
+        "uuid": "d5884606-f54a-42d7-a0f4-cdb43aace1fd"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/92f7654e-46e4-4c16-95cf-ab37cb5163e2.mp3",
+        "title": "0015-Bart-D-Ehrman-The-Historical-Jesus-00-16-Other-teachings-of-jesus",
+        "uuid": "92f7654e-46e4-4c16-95cf-ab37cb5163e2"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/69ce1e22-9732-4fce-ad54-e72ba8e15d58.mp3",
+        "title": "0016-Bart-D-Ehrman-The-Historical-Jesus-00-17-The-deeds-of-jesus",
+        "uuid": "69ce1e22-9732-4fce-ad54-e72ba8e15d58"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/9723b3b2-4f6a-4f84-b8f1-0acbb8c78e9a.mp3",
+        "title": "0017-Bart-D-Ehrman-The-Historical-Jesus-00-18-Still-other-word-and-deeds",
+        "uuid": "9723b3b2-4f6a-4f84-b8f1-0acbb8c78e9a"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/90e2f60f-c973-45f6-8ee2-d737bcdfc3bc.mp3",
+        "title": "0018-Bart-D-Ehrman-The-Historical-Jesus-00-19-How-was-Jesus-received",
+        "uuid": "90e2f60f-c973-45f6-8ee2-d737bcdfc3bc"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/90ecf91d-2d82-4162-9117-c8352e56d191.mp3",
+        "title": "0019-Bart-D-Ehrman-The-Historical-Jesus-00-20-The-last-days-of-Jesus",
+        "uuid": "90ecf91d-2d82-4162-9117-c8352e56d191"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/914dabe8-3f44-423f-942c-d8665dd8bba2.mp3",
+        "title": "0020-Bart-D-Ehrman-The-Historical-Jesus-00-21-The-last-hours-of-Jesus",
+        "uuid": "914dabe8-3f44-423f-942c-d8665dd8bba2"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/1901fba5-9db5-41d6-ad1c-01297671e0c1.mp3",
+        "title": "0021-Bart-D-Ehrman-The-Historical-Jesus-00-22-The-death-and-resurrection-of-Jesus",
+        "uuid": "1901fba5-9db5-41d6-ad1c-01297671e0c1"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/de4b2978-6d50-43bd-ac14-f8603ae304a8.mp3",
+        "title": "0022-Bart-D-Ehrman-The-Historical-Jesus-00-23-The-afterlife-of-Jesus",
+        "uuid": "de4b2978-6d50-43bd-ac14-f8603ae304a8"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/8220d0bc-65f1-4fa4-805e-9a776d182624.mp3",
+        "title": "0023-Bart-D-Ehrman-The-Historical-Jesus-00-24-The-prophet-of-the-new-millennium",
+        "uuid": "8220d0bc-65f1-4fa4-805e-9a776d182624"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/00b65e92-726f-4f4b-a474-f9ef7b0b6c37.mp3",
+        "title": "0024-BartDEhrmanTheHistoricalJesus0001Themanyfacesofjesus",
+        "uuid": "00b65e92-726f-4f4b-a474-f9ef7b0b6c37"
+      }
+    ],
+    "title": "The  Historical Jesus"
+  },
+  {
+    "author": "Williams, Florence",
+    "files": [],
+    "title": "The 3-Day Effect"
+  },
+  {
+    "author": "Auel, Jean M",
+    "files": [
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/6e4c9ca9-e689-4f76-a9a6-8c3a13e3d3f8.mp3",
+        "title": "TheClanoftheCaveBear_1_EarthsChildrenPart1",
+        "uuid": "6e4c9ca9-e689-4f76-a9a6-8c3a13e3d3f8"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/b3f092a2-eb3a-4fe0-bcd7-4378b5c18b82.mp3",
+        "title": "TheClanoftheCaveBear_1_EarthsChildrenPart2",
+        "uuid": "b3f092a2-eb3a-4fe0-bcd7-4378b5c18b82"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/df17a3b5-067c-4e21-840b-9cb7241c74e8.mp3",
+        "title": "TheClanoftheCaveBear_1_EarthsChildrenPart3",
+        "uuid": "df17a3b5-067c-4e21-840b-9cb7241c74e8"
+      }
+    ],
+    "title": "The Clan of the Cave Bear_1_Earth's Children"
+  },
+  {
+    "author": "Weir, Andy",
+    "files": [
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/4b899241-cd53-4810-bf54-ad504e20dfc8.mp3",
+        "title": "TheMartian_p1",
+        "uuid": "4b899241-cd53-4810-bf54-ad504e20dfc8"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/492c52b7-50ff-4c84-8e48-631e2ea5bf48.mp3",
+        "title": "TheMartian_p2",
+        "uuid": "492c52b7-50ff-4c84-8e48-631e2ea5bf48"
+      }
+    ],
+    "title": "The Martian"
+  },
+  {
+    "author": "Crawford, Jackson",
+    "files": [],
+    "title": "The Saga of the Volsungs"
+  },
+  {
+    "author": "Twain, Mark",
+    "files": [
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/70098657-6dc0-4100-8f26-b489f4aa1247.mp3",
+        "title": "TwainsFeast_mp332",
+        "uuid": "70098657-6dc0-4100-8f26-b489f4aa1247"
+      }
+    ],
+    "title": "Twains Feast"
+  },
+  {
+    "author": "Fry, Stephen",
+    "files": [
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/13946f80-f75e-4f9a-a1f6-ee47f5fa413d.mp3",
+        "title": "StephenFrysVictorianSecretsAnAudibleOriginal_mp332",
+        "uuid": "13946f80-f75e-4f9a-a1f6-ee47f5fa413d"
+      }
+    ],
+    "title": "Victorian Secrets"
+  },
+  {
+    "author": "Twain, Mark",
+    "files": [
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/17b9e552-8616-42da-9369-0bdb28ed92f0.mp3",
+        "title": "yankee_01_twain_64kb",
+        "uuid": "17b9e552-8616-42da-9369-0bdb28ed92f0"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/6e7f86c1-bfdc-4574-a53f-1b36dfeab44c.mp3",
+        "title": "yankee_02_twain_64kb",
+        "uuid": "6e7f86c1-bfdc-4574-a53f-1b36dfeab44c"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/29ca98d4-b072-4f55-ba79-711e8c23577a.mp3",
+        "title": "yankee_03_twain_64kb",
+        "uuid": "29ca98d4-b072-4f55-ba79-711e8c23577a"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/c32b5a32-bfbe-4c87-803b-c458374d87a6.mp3",
+        "title": "yankee_04_twain_64kb",
+        "uuid": "c32b5a32-bfbe-4c87-803b-c458374d87a6"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/e99c35cb-35a4-410a-b58b-d8e3cc332023.mp3",
+        "title": "yankee_05_twain_64kb",
+        "uuid": "e99c35cb-35a4-410a-b58b-d8e3cc332023"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/a69af43b-d02e-4a12-8a63-30bab10a29bb.mp3",
+        "title": "yankee_06_twain_64kb",
+        "uuid": "a69af43b-d02e-4a12-8a63-30bab10a29bb"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/56137589-986e-4344-80cc-d71ce1a077c7.mp3",
+        "title": "yankee_07_twain_64kb",
+        "uuid": "56137589-986e-4344-80cc-d71ce1a077c7"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/7e59345a-04eb-49a4-800e-ecdf35003aad.mp3",
+        "title": "yankee_08_twain_64kb",
+        "uuid": "7e59345a-04eb-49a4-800e-ecdf35003aad"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/88ef1899-611d-4732-998f-1f8a621724ff.mp3",
+        "title": "yankee_09_twain_64kb",
+        "uuid": "88ef1899-611d-4732-998f-1f8a621724ff"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/634ede52-dc25-43cd-854c-03df82211b05.mp3",
+        "title": "yankee_10_twain_64kb",
+        "uuid": "634ede52-dc25-43cd-854c-03df82211b05"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/679d8b1e-8fd4-40f3-aefd-afea18e5102c.mp3",
+        "title": "yankee_11_twain_64kb",
+        "uuid": "679d8b1e-8fd4-40f3-aefd-afea18e5102c"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/b534abb8-e16a-4821-b35a-7f336827dbe4.mp3",
+        "title": "yankee_12_twain_64kb",
+        "uuid": "b534abb8-e16a-4821-b35a-7f336827dbe4"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/7a51d9e7-d8a4-4207-a766-9fb47a59acb0.mp3",
+        "title": "yankee_13_twain_64kb",
+        "uuid": "7a51d9e7-d8a4-4207-a766-9fb47a59acb0"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/7124a9fa-5871-4433-882e-515bfb81bf03.mp3",
+        "title": "yankee_14_twain_64kb",
+        "uuid": "7124a9fa-5871-4433-882e-515bfb81bf03"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/bb0a1e2e-083c-46c5-b8fd-ada2baa4af9c.mp3",
+        "title": "yankee_15_twain_64kb",
+        "uuid": "bb0a1e2e-083c-46c5-b8fd-ada2baa4af9c"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/5a8bb137-26b9-4d11-b9ab-d2ce8cc17ca2.mp3",
+        "title": "yankee_16_twain_64kb",
+        "uuid": "5a8bb137-26b9-4d11-b9ab-d2ce8cc17ca2"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/74326661-557f-4f68-be3b-2beaca18e425.mp3",
+        "title": "yankee_17_twain_64kb",
+        "uuid": "74326661-557f-4f68-be3b-2beaca18e425"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/9cf76e6d-1007-4f95-955b-fba6bfb6f2eb.mp3",
+        "title": "yankee_18_twain_64kb",
+        "uuid": "9cf76e6d-1007-4f95-955b-fba6bfb6f2eb"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/c60445f9-cbf3-40e7-9ee2-58074c347a70.mp3",
+        "title": "yankee_19_twain_64kb",
+        "uuid": "c60445f9-cbf3-40e7-9ee2-58074c347a70"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/a003ce8d-b574-42cf-a0d7-0042de0236f1.mp3",
+        "title": "yankee_20_twain_64kb",
+        "uuid": "a003ce8d-b574-42cf-a0d7-0042de0236f1"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/195f92e1-4f9e-4e20-a51f-8f130c1e06e6.mp3",
+        "title": "yankee_21_twain_64kb",
+        "uuid": "195f92e1-4f9e-4e20-a51f-8f130c1e06e6"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/a60b445b-7837-47c6-912a-ebb15a5726aa.mp3",
+        "title": "yankee_22_twain_64kb",
+        "uuid": "a60b445b-7837-47c6-912a-ebb15a5726aa"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/87b3dc22-bc3f-4fb1-bb25-e1508ff82f0f.mp3",
+        "title": "yankee_23_twain_64kb",
+        "uuid": "87b3dc22-bc3f-4fb1-bb25-e1508ff82f0f"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/73864384-b68d-4c97-8a0f-1f7b1c696995.mp3",
+        "title": "yankee_24_twain_64kb",
+        "uuid": "73864384-b68d-4c97-8a0f-1f7b1c696995"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/02cf6153-b688-41ea-8207-049da043e125.mp3",
+        "title": "yankee_25_twain_64kb",
+        "uuid": "02cf6153-b688-41ea-8207-049da043e125"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/c4bdd51f-95bd-4484-8bdc-9cf42c830c0f.mp3",
+        "title": "yankee_26_twain_64kb",
+        "uuid": "c4bdd51f-95bd-4484-8bdc-9cf42c830c0f"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/88da2071-7f4b-484d-8180-c4543a335475.mp3",
+        "title": "yankee_27_twain_64kb",
+        "uuid": "88da2071-7f4b-484d-8180-c4543a335475"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/1a576748-586e-4b53-9031-deebaa4b1071.mp3",
+        "title": "yankee_28_twain_64kb",
+        "uuid": "1a576748-586e-4b53-9031-deebaa4b1071"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/3fdabca5-821a-4849-84ac-4ab751d38044.mp3",
+        "title": "yankee_29_twain_64kb",
+        "uuid": "3fdabca5-821a-4849-84ac-4ab751d38044"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/6937bb77-9de4-45af-a90d-ca18a469bc01.mp3",
+        "title": "yankee_30_twain_64kb",
+        "uuid": "6937bb77-9de4-45af-a90d-ca18a469bc01"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/f42a542a-2ab6-4a60-999a-bf6fc7b7722c.mp3",
+        "title": "yankee_31_twain_64kb",
+        "uuid": "f42a542a-2ab6-4a60-999a-bf6fc7b7722c"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/f556cab6-3c15-4825-bb20-fd2ba8935cf5.mp3",
+        "title": "yankee_32_twain_64kb",
+        "uuid": "f556cab6-3c15-4825-bb20-fd2ba8935cf5"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/f6c7d92e-94c9-4432-9472-f803cf58f45c.mp3",
+        "title": "yankee_33_twain_64kb",
+        "uuid": "f6c7d92e-94c9-4432-9472-f803cf58f45c"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/4d3cc684-e11e-4b65-ae40-580297e01315.mp3",
+        "title": "yankee_34_twain_64kb",
+        "uuid": "4d3cc684-e11e-4b65-ae40-580297e01315"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/c2d01a10-a847-43a4-8e1b-4050f01d2564.mp3",
+        "title": "yankee_35_twain_64kb",
+        "uuid": "c2d01a10-a847-43a4-8e1b-4050f01d2564"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/a07519e0-90d9-4852-93ef-a83763532321.mp3",
+        "title": "yankee_36_twain_64kb",
+        "uuid": "a07519e0-90d9-4852-93ef-a83763532321"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/3b3da540-312a-40b6-90b2-fa3ef64d8fbb.mp3",
+        "title": "yankee_37_twain_64kb",
+        "uuid": "3b3da540-312a-40b6-90b2-fa3ef64d8fbb"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/ae53adfd-1a74-4411-b4db-18a85d368764.mp3",
+        "title": "yankee_38_twain_64kb",
+        "uuid": "ae53adfd-1a74-4411-b4db-18a85d368764"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/f020b695-db10-4715-a9fc-361087e7b105.mp3",
+        "title": "yankee_39_twain_64kb",
+        "uuid": "f020b695-db10-4715-a9fc-361087e7b105"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/d72ab551-b51a-43ff-b41a-d0082d0dd3e8.mp3",
+        "title": "yankee_40_twain_64kb",
+        "uuid": "d72ab551-b51a-43ff-b41a-d0082d0dd3e8"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/9dd434db-a6fa-4ab5-a040-74c77e9f02cd.mp3",
+        "title": "yankee_41_twain_64kb",
+        "uuid": "9dd434db-a6fa-4ab5-a040-74c77e9f02cd"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/88cb79da-1453-4a90-a668-213325f0f09b.mp3",
+        "title": "yankee_42_twain_64kb",
+        "uuid": "88cb79da-1453-4a90-a668-213325f0f09b"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/6a2d72b1-2a7e-45f6-acf9-ff9b855542e9.mp3",
+        "title": "yankee_43_twain_64kb",
+        "uuid": "6a2d72b1-2a7e-45f6-acf9-ff9b855542e9"
+      },
+      {
+        "fileName": "/opt/mendybot/archive/media/audio/mb_audio_book/61fe09f0-c490-4d7c-b633-2f17ab252fd0.mp3",
+        "title": "yankee_44_twain_64kb",
+        "uuid": "61fe09f0-c490-4d7c-b633-2f17ab252fd0"
+      }
+    ],
+    "title": "connecticut_yankee_king_arthurs_court"
+  }
+]
