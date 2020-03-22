@@ -34,7 +34,7 @@ public class CommanderActivity extends AppCompatActivity implements View.OnClick
 
         MediaModel.getInstance().init(this);
 
-        setContentView(R.layout.activity_commander);
+        setContentView(R.layout.content_commander);
 //        Toolbar toolbar = findViewById(R.id.toolbar);
 //        setSupportActionBar(toolbar);
 
@@ -54,6 +54,7 @@ public class CommanderActivity extends AppCompatActivity implements View.OnClick
         bScheduleAudioBook.setOnClickListener(this);
         bMediaStatus = findViewById(R.id.media_status);
         bMediaStatus.setOnClickListener(this);
+
         FloatingActionButton fab = findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
